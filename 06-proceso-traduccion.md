@@ -198,25 +198,30 @@ En esta fase se verifica el "sentido" del programa, asegurando que las operacion
 
 - **Compatibilidad de tipos:** Se asegura de que no se estén realizando operaciones entre tipos de datos incompatibles (ej. sumar un número a una cadena de texto).
 
+  ```csharp
+  // Error semántico en C# (tipado fuerte)
+  int resultado = "texto" + 5;  // Error: Cannot implicitly convert type 'string' to 'int'
+  ```
+
   ```python
-  # Error semántico en Python (tipado dinámico, pero igual verifica)
+  # Python (tipado dinámico, pero igual verifica)
   resultado = "texto" + 5  # TypeError
   ```
 
 - **Declaración de variables:** Verifica que todas las variables utilizadas hayan sido declaradas previamente.
 
-  ```java
-  // Error semántico en Java
-  System.out.println(x);  // x no ha sido declarado
+  ```csharp
+  // Error semántico en C#
+  Console.WriteLine(x);  // Error: The name 'x' does not exist in the current context
   ```
 
 - **Número y tipo de argumentos:** Comprueba que las llamadas a funciones tengan el número y tipo de argumentos correctos.
 
-  ```python
-  def sumar(a, b):
-      return a + b
+  ```csharp
+  // Error semántico en C#
+  static int Sumar(int a, int b) => a + b;
 
-  sumar(1, 2, 3)  # Error: demasiados argumentos
+  Sumar(1, 2, 3);  // Error: Too many arguments, expected 2
   ```
 
 Si el código supera esta fase, se garantiza que es válido y tiene un significado claro, aunque esto no asegura que funcione como el programador espera.

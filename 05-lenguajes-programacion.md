@@ -55,13 +55,15 @@ Un **lenguaje de programación** es un idioma creado de forma artificial, formad
 
 **Ejemplo de los tres componentes:**
 
-```python
-# Léxico: palabras como 'def', 'print', 'hola'
-# Sintaxis: estructura 'def nombre():' seguida de indentación
-# Semántica: lo que ocurre cuando se ejecuta la función
+```csharp
+// Léxico: palabras como 'void', 'Console', 'saludar'
+// Sintaxis: estructura 'void Saludar(string nombre)' seguida de llaves
+// Semántica: lo que ocurre cuando se ejecuta la función
 
-def saludar(nombre):
-    print(f"Hola, {nombre}!")
+void Saludar(string nombre)
+{
+    Console.WriteLine($"Hola, {nombre}!");
+}
 ```
 
 > 📝 **Nota:** La sintaxis es como la gramática de un idioma. Si dices "Yo hambre tengo" en español, se entiende pero no es correcto. Lo mismo pasa en programación: `if (x > 5` sin cerrar el paréntesis causa error de sintaxis.
@@ -162,12 +164,25 @@ int main() {
 
 ### 5.2.1.3. Lenguajes de Alto Nivel
 
-Se encuentran más cercanos al lenguaje natural que al lenguaje máquina, y son independientes de la arquitectura del ordenador. Permiten al programador olvidarse del funcionamiento interno de la máquina. Utilizan sentencias y órdenes derivadas del idioma inglés. Necesitan un traductor para ser entendidos por la máquina. Incorporan librerías y funciones predeterminadas, y suelen ofrecer *frameworks*. La mayoría de los lenguajes de programación actuales se engloban en esta categoría. Ejemplos incluyen C++, Java, Python, JavaScript, PHP.
+Se encuentran más cercanos al lenguaje natural que al lenguaje máquina, y son independientes de la arquitectura del ordenador. Permiten al programador olvidarse del funcionamiento interno de la máquina. Utilizan sentencias y órdenes derivadas del idioma inglés. Necesitan un traductor para ser entendidos por la máquina. Incorporan librerías y funciones predeterminadas, y suelen ofrecer *frameworks*. La mayoría de los lenguajes de programación actuales se engloban en esta categoría. Ejemplos incluyen C#, C++, Java, Python, JavaScript, PHP.
 
-**Ejemplo en Python:**
+**Ejemplo en C#:**
+```csharp
+int numero = 42;
+Console.WriteLine($"El número es: {numero}");
+```
+
+**Comparativa con otros lenguajes:**
 ```python
+# Python
 numero = 42
 print(f"El número es: {numero}")
+```
+
+```java
+// Java
+int numero = 42;
+System.out.println("El número es: " + numero);
 ```
 
 ```mermaid
@@ -285,7 +300,12 @@ El **sistema de tipos** de un lenguaje de programación es un conjunto de reglas
 Esta dimensión se refiere a la flexibilidad con la que un lenguaje maneja las conversiones entre tipos de datos.
 
 - **Lenguajes de Tipado Fuerte**: Requieren que los tipos de datos sean compatibles para realizar operaciones. No permiten conversiones automáticas o "implícitas" entre tipos no relacionados. Si intentas sumar un número y una cadena de texto, el lenguaje lo marcará como un error, lo que previene errores inesperados en tiempo de ejecución y hace el código más robusto.
-  - **Ejemplos**: Python, Java, C#, Ruby.
+  - **Ejemplos**: C#, Java, Python, Ruby.
+
+  ```csharp
+  // C# (tipado fuerte) - No permite concatenar string + int directamente
+  string resultado = "5" + 3;  // Error de compilación: Cannot implicitly convert type 'int' to 'string'
+  ```
 
   ```python
   # Python (tipado fuerte)
@@ -306,11 +326,18 @@ Esta dimensión se refiere a la flexibilidad con la que un lenguaje maneja las c
 Esta dimensión se basa en el momento en que se realiza la verificación de los tipos de datos.
 
 - **Lenguajes de Tipado Estático**: La verificación de tipos se realiza en **tiempo de compilación**. El tipo de cada variable debe ser conocido y, a menudo, declarado explícitamente antes de ejecutar el programa. Si hay un error de tipo, el programa no compilará. Esto garantiza mayor seguridad y rendimiento.
-  - **Ejemplos**: C++, Java, C#, Swift, TypeScript.
+  - **Ejemplos**: C#, C++, Java, Swift, TypeScript.
+
+  ```csharp
+  // C# (tipado estático)
+  int numero = 42;      // Declaramos tipo explícito
+  string texto = "hola";
+  // numero = "texto"; // Error de compilación: Cannot implicitly convert type 'string' to 'int'
+  ```
 
   ```java
   // Java (tipado estático)
-  int numero = 42;      // Declaramos tipo explícito
+  int numero = 42;
   String texto = "hola";
   // numero = "texto"; // Error de compilación
   ```
@@ -331,10 +358,11 @@ Esta dimensión se basa en el momento en que se realiza la verificación de los 
 Esta dimensión se refiere a la forma en que el programador indica el tipo de una variable.
 
 - **Tipado Explícito**: Requiere que el programador declare manualmente el tipo de cada variable. Esto hace el código más claro y fácil de leer, ya que el tipo está siempre a la vista.
-  - **Ejemplo**: En C++: `int numero = 10;`.
+  - **Ejemplo en C#**: `int numero = 10;`
+  - **Ejemplo en Java**: `int numero = 10;`
 
 - **Tipado Implícito (Inferencia de Tipos)**: El compilador o intérprete infiere el tipo de la variable a partir del valor asignado, sin que el programador tenga que declararlo. Esta característica hace que el código sea más conciso y rápido de escribir. La inferencia de tipos es muy común en lenguajes con tipado estático modernos.
-  - **Ejemplo**: En Python: `numero = 10;` (el intérprete infiere que `numero` es de tipo `int`).
+  - **Ejemplo en C#**: `var numero = 10;` (infiere `int`)
   - **Ejemplo en Kotlin**: `val numero = 10` (infiere Int)
   - **Ejemplo en TypeScript**: `let numero = 10` (infiere number)
 
@@ -401,49 +429,65 @@ Un **paradigma de programación** es un modelo fundamental para el diseño y la 
 
 - **Programación Procedimental**: Es un subtipo del paradigma imperativo. Aquí, los programas se organizan en **procedimientos** (o funciones) que manipulan el estado global del programa. Se relaciona estrechamente con la programación estructurada y modular. C, Visual Basic, y otros lenguajes permiten este estilo de programación al escribir funciones o métodos que no están necesariamente asociados a una clase.
 
-- **Programación Orientada a Objetos (POO)**: En este paradigma, los programas se construyen como una colección de **objetos** que interactúan entre sí. Un objeto es una instancia de una **clase** que contiene datos (atributos) y los métodos para operar sobre ellos. La POO promueve la reutilización de código, facilita la depuración y mejora el mantenimiento a largo plazo. Sus pilares son el **polimorfismo**, la **herencia** y la **encapsulación**. Ejemplos: C++, Python, Java, Kotlin, C#.
+- **Programación Orientada a Objetos (POO)**: En este paradigma, los programas se construyen como una colección de **objetos** que interactúan entre sí. Un objeto es una instancia de una **clase** que contiene datos (atributos) y los métodos para operar sobre ellos. La POO promueve la reutilización de código, facilita la depuración y mejora el mantenimiento a largo plazo. Sus pilares son el **polimorfismo**, la **herencia** y la **encapsulación**. Ejemplos: C#, C++, Java, Kotlin.
 
-  ```python
-  # POO en Python
-  class Coche:
-      def __init__(self, marca, modelo):
-          self.marca = marca          # Atributo
-          self.modelo = modelo        # Atributo
-      
-      def arrancar(self):             # Método
-          print(f"{self.marca} {self.modelo} arrancado")
-  
-  mi_coche = Coche("Toyota", "Corolla")  # Objeto
-  mi_coche.arrancar()                     # Llamada a método
+  ```csharp
+  // POO en C#
+  class Coche
+  {
+      public string Marca { get; set; }     // Propiedad
+      public string Modelo { get; set; }    // Propiedad
+
+      public Coche(string marca, string modelo)  // Constructor
+      {
+          Marca = marca;
+          Modelo = modelo;
+      }
+
+      public void Arrancar()               // Método
+      {
+          Console.WriteLine($"{Marca} {Modelo} arrancado");
+      }
+  }
+
+  var miCoche = new Coche("Toyota", "Corolla");  // Objeto
+  miCoche.Arrancar();                             // Llamada a método
   ```
 
 - **Programación Declarativa**: Los programas describen el **resultado deseado**, no el proceso paso a paso para lograrlo. Suelen ser lenguajes interpretados.
 
   - **Lógica**: Utiliza reglas y afirmaciones de lógica formal para que la computadora deduzca la respuesta a una consulta. Se usa mucho en inteligencia artificial. Ejemplo: Prolog.
-  - **Funcional**: Se enfoca en el uso de **funciones matemáticas** que no cambian el estado ni los datos externos. Esto resulta en un código modular y estructurado, aunque puede volverse complejo. Java a partir de la versión 8 (con expresiones lambda y la API Streams) y C# (con LINQ y expresiones lambda) han incorporado características importantes de este paradigma. Kotlin está diseñado con el paradigma funcional en mente desde el principio, con soporte para funciones de orden superior e inmutabilidad. Ejemplos: Lisp, Haskell, Scala, JavaScript (moderno).
+  - **Funcional**: Se enfoca en el uso de **funciones matemáticas** que no cambian el estado ni los datos externos. Esto resulta en un código modular y estructurado, aunque puede volverse complejo. C# (con LINQ y expresiones lambda) y Java (con Streams) han incorporado características importantes de este paradigma. Kotlin está diseñado con el paradigma funcional en mente desde el principio. Ejemplos: C#, Lisp, Haskell, Scala, JavaScript (moderno).
+
+  ```csharp
+  // Programación funcional en C# (LINQ + lambda)
+  int[] numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+  // Select aplica una función a cada elemento
+  var cuadrados = numeros.Select(x => x * x);
+
+  // Where selecciona elementos que cumplen una condición
+  var pares = numeros.Where(x => x % 2 == 0);
+
+  // Sum combina elementos
+  int suma = numeros.Aggregate((a, b) => a + b);
+  ```
 
   ```python
   # Programación funcional en Python
   numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  
-  # map aplica una función a cada elemento
   cuadrados = list(map(lambda x: x**2, numeros))
-  
-  # filter selecciona elementos que cumplen una condición
   pares = list(filter(lambda x: x % 2 == 0, numeros))
-  
-  # reduce combina elementos
-  from functools import reduce
-  suma = reduce(lambda a, b: a + b, numeros)
   ```
 
-- **Programación de Eventos**: El flujo del programa es impulsado por **eventos**, como clics del usuario, movimientos del ratón o cambios en el sistema. Es muy común en el desarrollo de interfaces gráficas de usuario (GUI) y servidores. Java (con sus listeners y event handlers) y C# (con sus eventos y delegados) son ejemplos clave de lenguajes que aplican este paradigma.
+- **Programación de Eventos**: El flujo del programa es impulsado por **eventos**, como clics del usuario, movimientos del ratón o cambios en el sistema. Es muy común en el desarrollo de interfaces gráficas de usuario (GUI) y servidores. C# (con sus eventos y delegados) y Java (con sus listeners) son ejemplos clave de lenguajes que aplican este paradigma.
 
-  ```javascript
-  // Programación de eventos en JavaScript
-  document.getElementById('miBoton').addEventListener('click', function() {
-      alert('¡Botón pulsado!');
-  });
+  ```csharp
+  // Programación de eventos en C#
+  miBoton.Click += (sender, e) =>
+  {
+      MessageBox.Show("¡Botón pulsado!");
+  };
   ```
 
 - **Programación Reactiva**: Es un subtipo de la programación de eventos que se enfoca en la gestión de flujos de datos asincrónicos y la propagación de cambios. Es ideal para aplicaciones que necesitan responder a grandes volúmenes de datos en tiempo real. Java (con librerías como RxJava) y C# (con Rx.NET) tienen un fuerte soporte para la programación reactiva.
