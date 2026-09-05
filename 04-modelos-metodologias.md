@@ -15,9 +15,26 @@
 
 # 4. Modelos y Metodologías de Desarrollo de Software
 
+---
+
+> 💡 **Pregunta gancho:** ¿Alguna vez te has preguntado por qué有些empresas entregan software a tiempo y otras siempre se retrasan? La diferencia está en el modelo de desarrollo que eligen.
+
+En el Punto 03 vimos las fases del ciclo de vida. Ahora veremos cómo se organizan estas fases en diferentes modelos y metodologías.
+
+**Objetivos de aprendizaje:**
+
+- Diferenciar entre modelos clásicos y ágiles
+- Conocer las características de cada modelo
+- Saber cuándo usar cada metodología
+- Identificar los valores y principios del Manifiesto Ágil
+
+---
+
 Siempre se debe aplicar un modelo de ciclo de vida al desarrollo de cualquier proyecto software. Estos modelos son la serie de pasos a seguir para desarrollar un programa.
 
-> **💡 Analogía:** Elegir un modelo de desarrollo es como elegir el método de construcción de una casa. No es lo mismo construir una cabaña en el bosque (modelo simple, requisitos claros) que un rascacielos en el centro de una ciudad (modelo complejo, muchos cambios durante la construcción).
+> 💡 **Analogía:** Elegir un modelo de desarrollo es como elegir el método de construcción de una casa. No es lo mismo construir una cabaña en el bosque (modelo simple, requisitos claros) que un rascacielos en el centro de una ciudad (modelo complejo, muchos cambios durante la construcción).
+
+---
 
 ## 4.1. Modelos Clásicos (Predictivos)
 
@@ -39,8 +56,8 @@ graph LR
     style B fill:#FF9800,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#4CAF50,color:#fff
-    style E fill:#f5e1ff
-    style F fill:#f44336,color:#fff
+    style E fill:#f44336,color:#fff
+    style F fill:#607D8B,color:#fff
 ```
 
 **Casos de uso:**
@@ -50,7 +67,7 @@ graph LR
 
 **Ejemplo histórico:** El desarrollo del sistema de control del Apollo 11 (llegada a la Luna en 1969) utilizó un enfoque similar al modelo en cascada, ya que no había margen para cambios una vez iniciado el proyecto.
 
-> **⚠️ Inconveniente principal:** Si en la fase de análisis te equivocas y lo descubres en fase de pruebas, tienes que volver atrás Y RECODIFICAR TODO. Esto multiplica costes.
+> ⚠️ **Advertencia:** Si en la fase de análisis te equivocas y lo descubres en fase de pruebas, tienes que volver atrás Y RECODIFICAR TODO. Esto multiplica costes.
 
 #### Modelo en Cascada con Realimentación
 
@@ -60,6 +77,8 @@ Es una variante del modelo en cascada que introduce una realimentación entre et
 **Desventaja:** Cada "vuelta atrás" cuesta tiempo y dinero
 
 ![Diagrama: Modelo en Cascada](/images/fases_desarrollo.jpg)
+
+---
 
 ### 4.1.2. Modelo en V
 
@@ -84,10 +103,10 @@ graph TB
     style B fill:#FF9800,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#4CAF50,color:#fff
-    style E fill:#f5e1ff
-    style F fill:#f44336,color:#fff
-    style G fill:#ffe1e1
-    style H fill:#607D8B,color:#fff
+    style E fill:#f44336,color:#fff
+    style F fill:#607D8B,color:#fff
+    style G fill:#3F51B5,color:#fff
+    style H fill:#795548,color:#fff
 ```
 
 **Característica distintiva:** Cada fase de desarrollo tiene una fase de verificación correspondiente.
@@ -104,15 +123,17 @@ graph TB
 - Industria aeroespacial, médica, nuclear
 - Proyectos con altos requisitos de calidad y seguridad
 
-> **📝 Nota del Profesor:** En DAM trabajaremos principalmente con modelos ágiles, pero es importante que conozcáis los modelos clásicos porque muchas empresas (especialmente en sectores regulados) todavía los usan.
+> 📝 **Nota:** En DAM trabajaremos principalmente con modelos ágiles, pero es importante que conozcáis los modelos clásicos porque muchas empresas (especialmente en sectores regulados) todavía los usan.
 
 ![Diagrama: Modelo en V](/images/modelo_v.jpeg)
+
+---
 
 ## 4.2. Modelo de Construcción de Prototipos
 
 Se utiliza a menudo cuando los requisitos no están especificados claramente, ya sea por falta de experiencia previa o por omisión/falta de concreción del usuario/cliente. El proceso implica crear un prototipo durante la fase de análisis, que es probado por el usuario/cliente para refinar los requisitos del software a desarrollar. Este paso se repite las veces necesarias.
 
-> **💡 Analogía:** Es como dibujar varios bocetos de un logo antes de quedarse con el definitivo. Cada prototipo "refina" lo que el cliente realmente quiere.
+> 💡 **Analogía:** Es como dibujar varios bocetos de un logo antes de quedarse con el definitivo. Cada prototipo "refina" lo que el cliente realmente quiere.
 
 ### Tipos de Prototipos
 
@@ -137,8 +158,8 @@ graph LR
     style B fill:#FF9800,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#4CAF50,color:#fff
-    style E fill:#f5e1ff
-    style F fill:#f44336,color:#fff
+    style E fill:#f44336,color:#fff
+    style F fill:#607D8B,color:#fff
 ```
 
 **Ventajas:**
@@ -152,6 +173,8 @@ graph LR
 
 ![Diagrama: Modelo de Prototipos](/images/modelo_prototipos.webp)
 
+---
+
 ## 4.3. Modelos Evolutivos o Incrementales
 
 Son modelos más modernos que los clásicos y tienen en cuenta la naturaleza cambiante y evolutiva del software. La idea es desarrollar una implementación inicial del sistema, exponerla a los comentarios del usuario y refinarla en sucesivas versiones hasta obtener el sistema adecuado. Permiten una rápida realimentación del usuario, ya que las actividades de especificación, desarrollo y pruebas se ejecutan en cada iteración.
@@ -162,14 +185,21 @@ Son modelos más modernos que los clásicos y tienen en cuenta la naturaleza cam
 
 Está basado en el modelo en cascada con realimentación, donde las fases se repiten y refinan, propagando su mejora a las fases siguientes.
 
-```
-Iteración 1: Versión 1.0 (funcionalidad básica)
-    ↓ Se добавляет feedback
-Iteración 2: Versión 1.1 (mejoras)
-    ↓ Se добавляет feedback
-Iteración 3: Versión 2.0 (más funcionalidades)
-    ↓ ...
-Versión Final: Producto completo y refinado
+```mermaid
+graph TD
+    A[Versión 1.0] --> B[Versión 1.1]
+    B --> C[Versión 2.0]
+    C --> D[Versión Final]
+
+    A1[Planificación] --> A2[Análisis]
+    A2 --> A3[Diseño]
+    A3 --> A4[Codificación]
+    A4 --> A5[Pruebas]
+
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
 ```
 
 #### Modelo en Espiral
@@ -205,7 +235,7 @@ Las cuatro fases principales del modelo en espiral son:
 3. **Desarrollo y validación**: Desarrollar y probar el software, incluyendo prototipos e implementación.
 4. **Planificación**: Revisar el proyecto y planificar la próxima iteración.
 
-> **💡 Dato histórico:** El modelo en espiral fue propuesto por Barry Boehm en 1986 como respuesta a las limitaciones del modelo en cascada. Es uno de los primeros modelos en formalizar la gestión de riesgos.
+> 💡 **Dato:** El modelo en espiral fue propuesto por Barry Boehm en 1986 como respuesta a las limitaciones del modelo en cascada. Es uno de los primeros modelos en formalizar la gestión de riesgos.
 
 **Casos de uso:**
 - Proyectos grandes con alta incertidumbre
@@ -213,6 +243,8 @@ Las cuatro fases principales del modelo en espiral son:
 - Innovación y desarrollo de nuevos productos
 
 ![Diagrama: Modelo en Espiral](/images/modelo_espiral.png)
+
+---
 
 ## 4.4. Metodologías Ágiles (Adaptativas)
 
@@ -254,13 +286,15 @@ graph LR
     style B fill:#4CAF50,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#FF9800,color:#fff
-    style E fill:#f0f0f0
-    style F fill:#f0f0f0
-    style G fill:#f0f0f0
-    style H fill:#f0f0f0
+    style E fill:#607D8B,color:#fff
+    style F fill:#607D8B,color:#fff
+    style G fill:#607D8B,color:#fff
+    style H fill:#607D8B,color:#fff
 ```
 
-> **💡 Nota importante:** Los valores ágiles NO dicen que los procesos, la documentación, los contratos y los planes sean inútiles. Dicen que los individuos, el software funcionando, la colaboración y la respuesta al cambio son MÁS VALOROSOS.
+> 💡 **Nota:** Los valores ágiles NO dicen que los procesos, la documentación, los contratos y los planes sean inútiles. Dicen que los individuos, el software funcionando, la colaboración y la respuesta al cambio son MÁS VALOROSOS.
+
+---
 
 ### 4.4.2. Kanban
 
@@ -299,6 +333,8 @@ graph LR
 
 ![Diagrama: Proceso Kanban](/images/modelo_kanban.webp)
 
+---
+
 ### 4.4.3. Scrum
 
 Es un modelo de desarrollo incremental que se ha convertido en el estándar de la industria. Utiliza **iteraciones (sprint)** regulares, que suelen durar entre 2 y 4 semanas. Al principio de cada iteración se establecen sus **objetivos priorizados (sprint backlog)**. Al finalizar cada iteración se obtiene una **entrega parcial utilizable por el cliente**. Existen reuniones diarias para tratar la marcha del *sprint*.
@@ -317,9 +353,9 @@ graph LR
     style B fill:#FF9800,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#4CAF50,color:#fff
-    style E fill:#f5e1ff
-    style F fill:#f44336,color:#fff
-    style G fill:#ffe1e1
+    style E fill:#f44336,color:#fff
+    style F fill:#607D8B,color:#fff
+    style G fill:#3F51B5,color:#fff
 ```
 
 **Roles en Scrum:**
@@ -346,9 +382,11 @@ graph LR
 - **Sprint Backlog**: Tareas del sprint actual
 - **Incremento**: Producto usable al final del sprint
 
-> **📝 Nota del Profesor:** En DAM vamos a practicar Scrum con sprints de 2 semanas. Tendréis roles de Product Owner, Scrum Master y equipo de desarrollo. Es una experiencia muy valiosa para el mercado laboral.
+> 📝 **Nota:** En DAM vamos a practicar Scrum con sprints de 2 semanas. Tendréis roles de Product Owner, Scrum Master y equipo de desarrollo. Es una experiencia muy valiosa para el mercado laboral.
 
 ![Diagrama: Proceso Scrum](/images/modelo_scrum.webp)
+
+---
 
 ### 4.4.4. XP (eXtreme Programming)
 
@@ -357,8 +395,8 @@ Es una metodología ágil que enfatiza la calidad del código y la satisfacción
 - **Simplicidad**: Escribir el código más simple que funcione
 - **Comunicación**: Todos hablan con todos constantemente
 - **Retroalimentación**: Feedback rápido y constante
-- **Valentía o coraje**:勇气承认错误并改正
-- **Respeto o humildad**:尊重团队成员
+- **Valentía o coraje**: Reconocer errores y corregirlos
+- **Respeto o humildad**: Respetar a los miembros del equipo
 
 Sus **características** incluyen:
 
@@ -387,9 +425,9 @@ graph TB
     style B fill:#FF9800,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#4CAF50,color:#fff
-    style E fill:#f5e1ff
-    style F fill:#f44336,color:#fff
-    style G fill:#ffe1e1
+    style E fill:#f44336,color:#fff
+    style F fill:#607D8B,color:#fff
+    style G fill:#3F51B5,color:#fff
 ```
 
 **TDD (Test-Driven Development):**
@@ -397,7 +435,7 @@ graph TB
 2. Escribir código mínimo para pasar el test
 3. Refactorizar para mejorar
 
-> **💡 Dato curioso:** XP fue creado por Kent Beck en 1996 mientras trabajaba en el proyecto Chrysler Comprehensive Compensation System. Beck escribió el libro "Extreme Programming Explained" en 1999.
+> 💡 **Dato:** XP fue creado por Kent Beck en 1996 mientras trabajaba en el proyecto Chrysler Comprehensive Compensation System. Beck escribió el libro "Extreme Programming Explained" en 1999.
 
 **Cuándo usar XP:**
 - Requisitos que cambian frecuentemente
@@ -406,6 +444,8 @@ graph TB
 - Cuando la calidad del código es crítica
 
 ![Diagrama: Proceso XP](/images/modelo_tradicional_agil.png)
+
+---
 
 ### Comparativa de Metodologías
 
@@ -418,3 +458,19 @@ graph TB
 | Documentación | Extensiva | Mínima necesaria | Mínima necesaria | Mínima necesaria |
 | Testing | Al final | Continuo | Continuo | Central (TDD) |
 | Mejor para | Requisitos fijos | Gestión de producto | Flujo continuo | Calidad de código |
+
+---
+
+**Resumen del punto:**
+
+| Modelo | Tipo | Cuándo usarlo |
+|--------|------|---------------|
+| **Cascada** | Clásico | Requisitos fijos, proyectos pequeños |
+| **En V** | Clásico | Sistemas críticos, verificación estricta |
+| **Prototipos** | Evolutivo | Requisitos inciertos, cliente indeciso |
+| **Espiral** | Evolutivo | Proyectos grandes, alta incertidumbre |
+| **Scrum** | Ágil | Gestión de producto, equipos autoorganizados |
+| **Kanban** | Ágil | Flujo continuo, optimización de proceso |
+| **XP** | Ágil | Calidad de código, requisitos cambiantes |
+
+En el siguiente punto veremos los **lenguajes de programación**, que es la herramienta que usaremos para implementar estos modelos.
