@@ -215,7 +215,7 @@ graph TD
 
 | Lenguaje | IDE principal | Alternativas |
 |----------|--------------|--------------|
-| **C#** | Visual Studio | Rider, VS Code |
+| **C#** | JetBrains Rider | Visual Studio Code, Visual Studio |
 | **Java** | IntelliJ IDEA | Eclipse, NetBeans |
 | **Python** | PyCharm | VS Code, Spyder |
 | **C/C++** | CLion | Visual Studio, VS Code |
@@ -253,7 +253,7 @@ graph TD
 | Configuración | Manual | Viene todo integrado |
 | Depuración | Externa | Integrada |
 | Autocompletado | Básico | Avanzado |
-| Ejemplos | VS Code, Vim | Visual Studio, IntelliJ |
+| Ejemplos | VS Code, Vim | Rider, IntelliJ |
 | Mejor para | Scripts, pequeños proyectos | Proyectos grandes |
 
 ---
