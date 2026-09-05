@@ -22,7 +22,7 @@ Tema 01. Desarrollo de Software. 1DAW. Curso 2026-2027
 7. [Herramientas de Apoyo al Desarrollo](./07-herramientas-apoyo.md)
 8. [Perfiles del Desarrollo de Software](./08-perfiles.md)
 9. [Caso de Estudio: El lenguaje C# y .NET](./09-caso-estudio.md)
-10. [Resumen y Conclusiones](./09-resumen.md)
+10. [Resumen y Conclusiones](./10-resumen.md)
 
 ## Resultados de Aprendizaje y Criterios de Evaluación
 
