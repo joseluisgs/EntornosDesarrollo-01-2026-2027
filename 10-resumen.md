@@ -1,24 +1,35 @@
-- [9. Resumen y Conclusiones](#9-resumen-y-conclusiones)
-  - [9.1. Mapa Conceptual de la Unidad](#91-mapa-conceptual-de-la-unidad)
-  - [9.2. Conceptos Clave](#92-conceptos-clave)
+- [10. Resumen y Conclusiones](#10-resumen-y-conclusiones)
+  - [10.1. Mapa Conceptual de la Unidad](#101-mapa-conceptual-de-la-unidad)
+  - [10.2. Conceptos Clave](#102-conceptos-clave)
     - [Software y Hardware](#software-y-hardware)
     - [Ciclo de Vida del Software](#ciclo-de-vida-del-software)
     - [Modelos de Desarrollo](#modelos-de-desarrollo)
     - [Lenguajes de Programación](#lenguajes-de-programación)
     - [Proceso de Traducción](#proceso-de-traducción)
     - [Máquinas Virtuales](#máquinas-virtuales)
-  - [9.3. Herramientas y Perfiles](#93-herramientas-y-perfiles)
+    - [C# y .NET](#c-y-net)
+  - [10.3. Herramientas y Perfiles](#103-herramientas-y-perfiles)
     - [Herramientas CASE (por fases)](#herramientas-case-por-fases)
     - [IDE](#ide)
     - [Perfiles](#perfiles)
-  - [9.4. Checklist de Supervivencia](#94-checklist-de-supervivencia)
+  - [10.4. Checklist de Supervivencia](#104-checklist-de-supervivencia)
 
 
-# 9. Resumen y Conclusiones
+# 10. Resumen y Conclusiones
 
 ---
 
-## 9.1. Mapa Conceptual de la Unidad
+> 💡 **Punto de partida:** Hemos recorrido todo el camino desde qué es el software hasta los perfiles profesionales. Este resumen consolida todo lo aprendido.
+
+Hemos visto la teoría completa del Desarrollo de Software. Este punto consolida todos los conceptos en una sola mirada.
+
+**Objetivos de aprendizaje:**
+
+- Repasar los conceptos fundamentales de la unidad
+- Consolidar el vocabulario técnico
+- Tener una referencia rápida para el examen
+
+## 10.1. Mapa Conceptual de la Unidad
 
 ```mermaid
 graph TD
@@ -29,6 +40,7 @@ graph TD
     UD01 --> PT[Proceso de Traducción]
     UD01 --> HA[Herramientas de Apoyo]
     UD01 --> PE[Perfiles Profesionales]
+    UD01 --> CS[Caso de Estudio: C#/.NET]
 
     SWHW --> SWS[Sistema, Aplicación, Desarrollo]
     SWHW --> HWR[CPU, RAM, Disco, E/S]
@@ -69,9 +81,13 @@ graph TD
     PE --> ANA[Analista]
     PE --> PRO[Programador]
     PE --> QA[QA / Tester]
+
+    CS --> CS1[C#: Alto nivel, mixto, estático]
+    CS --> CS2[.NET: CLR, JIT, BCL]
+    CS --> CS3[Roslyn: Compilador]
 ```
 
-## 9.2. Conceptos Clave
+## 10.2. Conceptos Clave
 
 ### Software y Hardware
 - **Software:** Parte lógica (sistema, aplicación, desarrollo)
@@ -115,7 +131,14 @@ graph TD
 - **Runtime:** Entorno de ejecución (JRE)
 - **Framework:** Estructura de apoyo (Spring, .NET)
 
-## 9.3. Herramientas y Perfiles
+### C# y .NET
+- **C#:** Lenguaje de alto nivel, mixto, estático, fuerte, multiparadigma
+- **.NET:** Plataforma que incluye CLR (máquina virtual) y BCL (biblioteca)
+- **Roslyn:** Compilador de C# escrito en C#
+- **CLR:** Gestiona memoria (GC) y compila JIT a código nativo
+- **Proceso:** .cs → Roslyn → IL/CIL → JIT → Código máquina
+
+## 10.3. Herramientas y Perfiles
 
 ### Herramientas CASE (por fases)
 - **U-CASE:** Planificación y análisis
@@ -132,7 +155,7 @@ graph TD
 - **Programador:** Codificación y pruebas unitarias
 - **QA/Tester:** Validación y verificación de calidad
 
-## 9.4. Checklist de Supervivencia
+## 10.4. Checklist de Supervivencia
 
 Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas preguntas:
 
@@ -144,3 +167,5 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 - [ ] ¿Explico qué es una máquina virtual y para qué sirve?
 - [ ] ¿Identifico las herramientas CASE según las fases del ciclo de vida?
 - [ ] ¿Conozco los roles principales en un equipo de desarrollo?
+- [ ] ¿Clasifico C# según nivel, traducción, tipado y paradigma?
+- [ ] ¿Explico qué es Roslyn y cómo compila C#?
