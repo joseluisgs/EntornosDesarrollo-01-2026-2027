@@ -35,12 +35,12 @@ graph LR
     D --> E[Pruebas]
     E --> F[Mantenimiento]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
-    style F fill:#ffffe1
+    style F fill:#f44336,color:#fff
 ```
 
 **Casos de uso:**
@@ -80,14 +80,14 @@ graph TB
     C -.->|verifica| F
     D -.->|verifica| E
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
-    style F fill:#ffffe1
+    style F fill:#f44336,color:#fff
     style G fill:#ffe1e1
-    style H fill:#e1ffff
+    style H fill:#607D8B,color:#fff
 ```
 
 **Característica distintiva:** Cada fase de desarrollo tiene una fase de verificación correspondiente.
@@ -133,12 +133,12 @@ graph LR
     D -->|Sí| E[Desarrollo Final]
     E --> F[Producto Terminado]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
-    style F fill:#ffffe1
+    style F fill:#f44336,color:#fff
 ```
 
 **Ventajas:**
@@ -192,10 +192,10 @@ graph LR
     A5 -.->|Mejoras| B1
     B5 -.->|Mejoras| C
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
 ```
 
 Las cuatro fases principales del modelo en espiral son:
@@ -250,10 +250,10 @@ graph LR
     C -.->|sobre| G
     D -.->|sobre| H
 
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#ffe1f5
-    style D fill:#fff4e1
+    style A fill:#2196F3,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#FF9800,color:#fff
     style E fill:#f0f0f0
     style F fill:#f0f0f0
     style G fill:#f0f0f0
@@ -272,10 +272,10 @@ graph LR
     B --> C[Testing<br/>En pruebas]
     C --> D[Done<br/>Hecho]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
 ```
 
 **Principios del Kanban:**
@@ -313,12 +313,12 @@ graph LR
     F --> G[Incremento de Producto]
     G --> A
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
-    style F fill:#ffffe1
+    style F fill:#f44336,color:#fff
     style G fill:#ffe1e1
 ```
 
@@ -383,12 +383,12 @@ graph TB
         F --> G[Customer On-site]
     end
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
-    style F fill:#ffffe1
+    style F fill:#f44336,color:#fff
     style G fill:#ffe1e1
 ```
 

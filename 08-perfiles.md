@@ -25,13 +25,13 @@ graph TD
     A --> G[QA/Testeador]
     A --> H[DevOps]
 
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-    style E fill:#ffffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#FF9800,color:#fff
+    style D fill:#9C27B0,color:#fff
+    style E fill:#f44336,color:#fff
     style F fill:#ffe1e1
-    style G fill:#e1ffff
+    style G fill:#607D8B,color:#fff
     style H fill:#f5e1ff
 ```
 

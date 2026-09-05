@@ -51,14 +51,14 @@ graph LR
     G --> H[Mantenimiento]
     H --> I[Retirada]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
     style F fill:#ffe1e1
-    style G fill:#e1ffff
-    style H fill:#ffffe1
+    style G fill:#607D8B,color:#fff
+    style H fill:#f44336,color:#fff
     style I fill:#f0f0f0
 ```
 

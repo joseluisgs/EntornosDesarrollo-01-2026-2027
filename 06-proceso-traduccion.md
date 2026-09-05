@@ -75,14 +75,14 @@ graph LR
         G --> H[Ejecución Directa]
     end
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
     style F fill:#ffe1e1
-    style G fill:#e1ffff
-    style H fill:#ffffe1
+    style G fill:#607D8B,color:#fff
+    style H fill:#f44336,color:#fff
 ```
 
 ![Diagrama: Compilación vs Interpretación](/images/compilado_interpretado.jpeg)
@@ -96,10 +96,10 @@ graph LR
     C --> D[Máquina Virtual]
     D --> E[Ejecución]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
 ```
 
@@ -128,15 +128,15 @@ graph TD
     G --> H[Enlazador]
     H --> I[Código Ejecutable]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
-    style F fill:#ffffe1
+    style F fill:#f44336,color:#fff
     style G fill:#ffe1e1
-    style H fill:#e1ffff
-    style I fill:#d4f0ff
+    style H fill:#607D8B,color:#fff
+    style I fill:#3F51B5,color:#fff
 ```
 
 > **📝 Nota del Profesor:** Entender estas fases os ayudará a comprender los mensajes de error del compilador. Si el error es "unexpected token", es léxico. Si es "syntax error", es sintáctico. Si es "incompatible types", es semántico.
@@ -272,10 +272,10 @@ graph LR
 
     A -->|Interpretación| D[Ejecución Directa]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#e1ffe1
-    style D fill:#ffe1f5
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#4CAF50,color:#fff
+    style D fill:#9C27B0,color:#fff
 ```
 
 > **💡 Dato profesional:** Cuando desarrollas en Java, trabajas con código fuente (.java). El compilador javac genera bytecode (.class). Cuando ejecutas `java MiClase`, la JVM carga el bytecode y lo interpreta/JIT-compila a código máquina nativo.
@@ -323,12 +323,12 @@ graph TB
     D --> E
     E --> F
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
-    style F fill:#ffffe1
+    style F fill:#f44336,color:#fff
 ```
 
 > **📝 Ejemplos de máquinas virtuales:**

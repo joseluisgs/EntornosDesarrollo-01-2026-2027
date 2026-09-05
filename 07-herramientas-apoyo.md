@@ -35,13 +35,13 @@ graph TD
     F --> F1[npm, pip, maven]
     G --> G1[JUnit, pytest, Jest]
 
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-    style E fill:#ffffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#FF9800,color:#fff
+    style D fill:#9C27B0,color:#fff
+    style E fill:#f44336,color:#fff
     style F fill:#ffe1e1
-    style G fill:#e1ffff
+    style G fill:#607D8B,color:#fff
 ```
 
 | Categoría | Herramientas populares | Función |
@@ -89,10 +89,10 @@ graph TD
     D --> D4[Pruebas<br/>Testing]
     D --> D5[Documentación]
 
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
+    style A fill:#2196F3,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#FF9800,color:#fff
+    style D fill:#9C27B0,color:#fff
 ```
 
 | Tipo | Fases | Ejemplos |
@@ -124,10 +124,10 @@ graph LR
     C --> D[Construcción]
     D --> E[Despliegue]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
 ```
 
@@ -166,16 +166,16 @@ graph TD
     A --> I[Control de Versiones Integrado]
     A --> J[Terminal Integrado]
 
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-    style E fill:#ffffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#FF9800,color:#fff
+    style D fill:#9C27B0,color:#fff
+    style E fill:#f44336,color:#fff
     style F fill:#ffe1e1
-    style G fill:#e1ffff
+    style G fill:#607D8B,color:#fff
     style H fill:#f5e1ff
-    style I fill:#f9f9f9
-    style J fill:#e1e1f9
+    style I fill:#455A64,color:#fff
+    style J fill:#5D4037,color:#fff
 ```
 
 **Componentes de un IDE:**

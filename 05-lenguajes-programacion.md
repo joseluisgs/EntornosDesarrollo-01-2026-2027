@@ -72,16 +72,16 @@ graph TB
     A --> I[Subrutinas y Funciones]
     A --> J[Comentarios]
 
-    style A fill:#e1f5ff
-    style B fill:#fff4e1
-    style C fill:#ffe1f5
-    style D fill:#e1ffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#9C27B0,color:#fff
+    style D fill:#4CAF50,color:#fff
     style E fill:#f5e1ff
-    style F fill:#ffffe1
+    style F fill:#f44336,color:#fff
     style G fill:#ffe1e1
-    style H fill:#e1ffff
+    style H fill:#607D8B,color:#fff
     style I fill:#f0f0f0
-    style J fill:#f9f9f9
+    style J fill:#455A64,color:#fff
 ```
 
 **Analogía del código:**
@@ -170,10 +170,10 @@ graph TB
     D --> D4[PHP<br/>Servidor]
     D --> D5[C++<br/>Alto rendimiento]
 
-    style A fill:#e1f5ff
+    style A fill:#2196F3,color:#fff
     style B fill:#ffe1e1
-    style C fill:#ffffe1
-    style D fill:#e1ffe1
+    style C fill:#f44336,color:#fff
+    style D fill:#4CAF50,color:#fff
 ```
 
 > **📝 Dato curioso:** El primer lenguaje de alto nivel fue Fortran (1957), creado por John Backus en IBM. Permitía escribir fórmulas matemáticas de forma casi natural. Fortran todavía se usa hoy en cálculos científicos de alto rendimiento.
@@ -245,10 +245,10 @@ graph LR
     D --> D1[Java, C#, Python]
     D1 --> D2[Bytecode + Máquina Virtual<br/>portable y razonablemente rápido]
 
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
+    style A fill:#2196F3,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#FF9800,color:#fff
+    style D fill:#9C27B0,color:#fff
 ```
 
 ![Diagrama: Clasificación de Lenguajes por Traducción](/images/lenguajes_compialdos_interpretados.jpg)
@@ -347,10 +347,10 @@ graph TB
     D --> D1[Tipado Explícito<br/>int x = 5]
     D --> D2[Tipado Implícito<br/>x = 5 (infiere)]
 
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
+    style A fill:#2196F3,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#FF9800,color:#fff
+    style D fill:#9C27B0,color:#fff
 ```
 
 > **📝 Nota del Profesor:** No existe un "mejor" sistema de tipos. El tipado fuerte y estático (Java, C#) detecta errores antes pero requiere más código. El tipado dinámico (Python, JavaScript) es más rápido de escribir pero puede ocultar errores hasta producción. Elegid según el contexto del proyecto.
@@ -440,13 +440,13 @@ graph TB
     E --> E1[Lógica<br/>Prolog]
     E --> E2[Funcional<br/>Haskell, Lisp]
 
-    style A fill:#e1f5ff
-    style B fill:#e1ffe1
-    style C fill:#fff4e1
-    style D fill:#ffe1f5
-    style E fill:#ffffe1
+    style A fill:#2196F3,color:#fff
+    style B fill:#4CAF50,color:#fff
+    style C fill:#FF9800,color:#fff
+    style D fill:#9C27B0,color:#fff
+    style E fill:#f44336,color:#fff
     style F fill:#ffe1e1
-    style G fill:#e1ffff
+    style G fill:#607D8B,color:#fff
     style H fill:#f0f0f0
 ```
 
@@ -474,10 +474,10 @@ graph LR
     E --> E1[IA, LISP<br/>Lógica]
 
     style A fill:#ffe1e1
-    style B fill:#ffffe1
-    style C fill:#e1ffe1
-    style D fill:#fff4e1
-    style E fill:#ffe1f5
+    style B fill:#f44336,color:#fff
+    style C fill:#4CAF50,color:#fff
+    style D fill:#FF9800,color:#fff
+    style E fill:#9C27B0,color:#fff
 ```
 
 > **💡 Curiosidad:** La mayoría de los lenguajes que aprenderás en DAM son de 3GL (C, Java, Python) y 4GL (SQL). La 5GL está más relacionada con investigación en IA.
