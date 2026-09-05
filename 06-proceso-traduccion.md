@@ -23,7 +23,7 @@
 
 ---
 
-> 💡 **Pregunta gancho:** ¿Alguna vez te has preguntado cómo tu código en Python o Java se convierte en algo que el procesador entiende? ¿Y por qué la misma aplicación puede funcionar en Windows, Linux y Mac? La respuesta está en los procesos de traducción y las máquinas virtuales.
+> 💡 **Punto de partida:** ¿Alguna vez te has preguntado cómo tu código en Python o Java se convierte en algo que el procesador entiende? ¿Y por qué la misma aplicación puede funcionar en Windows, Linux y Mac? La respuesta está en los procesos de traducción y las máquinas virtuales.
 
 En el Punto 05 vimos los tipos de lenguajes y sus mecanismos de traducción. Ahora profundizaremos en **cómo funciona ese proceso** de principio a fin.
 

@@ -3,18 +3,18 @@
   - [3.2. Fases Principales del Desarrollo de una Aplicación Informática](#32-fases-principales-del-desarrollo-de-una-aplicación-informática)
     - [3.2.1. Fase Inicial (Planificación)](#321-fase-inicial-planificación)
     - [3.2.2. Análisis (Etapa de Análisis)](#322-análisis-etapa-de-análisis)
-    - [Especificación de Requisitos](#especificación-de-requisitos)
-    - [Tipos de Requisitos](#tipos-de-requisitos)
+      - [3.2.2.1. Especificación de Requisitos](#3221-especificación-de-requisitos)
+      - [3.2.2.2. Tipos de Requisitos](#3222-tipos-de-requisitos)
     - [3.2.3. Diseño](#323-diseño)
     - [3.2.4. Codificación (Implementación)](#324-codificación-implementación)
-    - [Características deseables del código](#características-deseables-del-código)
+      - [3.2.4.1. Características deseables del código](#3241-características-deseables-del-código)
     - [3.2.5. Pruebas](#325-pruebas)
-    - [Tipos de Pruebas](#tipos-de-pruebas)
+      - [3.2.5.1. Tipos de Pruebas](#3251-tipos-de-pruebas)
     - [3.2.6. Documentación](#326-documentación)
-    - [Tipos de Documentos](#tipos-de-documentos)
+      - [3.2.6.1. Tipos de Documentos](#3261-tipos-de-documentos)
     - [3.2.7. Explotación (Despliegue)](#327-explotación-despliegue)
     - [3.2.8. Mantenimiento](#328-mantenimiento)
-    - [Tipos de Mantenimiento](#tipos-de-mantenimiento)
+      - [3.2.8.1. Tipos de Mantenimiento](#3281-tipos-de-mantenimiento)
     - [3.2.9. Retirada del Software](#329-retirada-del-software)
 
 
@@ -22,7 +22,7 @@
 
 ---
 
-> 💡 **Pregunta gancho:** ¿Alguna vez te has preguntado por qué algunos proyectos de software tienen éxito y otros fracasan estrepitosamente? La diferencia suele estar en si siguen un proceso estructurado o improvisan sobre la marcha.
+> 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué algunos proyectos de software tienen éxito y otros fracasan estrepitosamente? La diferencia suele estar en si siguen un proceso estructurado o improvisan sobre la marcha.
 
 En el Punto 02 vimos qué es el software y el hardware. Ahora veremos cómo se crea el software, cuáles son las fases de un proyecto y por qué es importante seguirlas.
 
@@ -113,7 +113,7 @@ En esta fase, se determina y define claramente las **necesidades del cliente** y
 
 > 📝 **Nota:** "No asumas nada". Si el cliente dice "quiero una tienda online", debes preguntar: ¿qué productos? ¿pago con tarjeta? ¿incluye IVA? ¿qué pasa si no hay stock? ¿qué estadísticas quieres ver?
 
-#### Especificación de Requisitos
+### 3.2.2.1. Especificación de Requisitos
 
 La **especificación de requisitos** debe:
 
@@ -126,7 +126,7 @@ La **especificación de requisitos** debe:
 - Dividir y jerarquizar el modelo.
 - Fijar criterios de validación.
 
-#### Tipos de Requisitos
+### 3.2.2.2. Tipos de Requisitos
 
 - **Requisitos Funcionales**: Definen qué funciones tendrá que realizar la aplicación. Responden a preguntas como qué respuesta dará la aplicación ante todas las entradas o cómo se comportará en situaciones inesperadas. Por ejemplo, en una aplicación de cosmética, podría ser si desea que la lectura de productos se haga mediante códigos de barras, cómo se detallan las facturas, si se controlará el stock o si se operará con tarjetas de crédito.
 
@@ -173,7 +173,7 @@ Las actividades habituales incluyen el diseño arquitectónico, el diseño detal
 
 Esta etapa consiste en transformar o traducir los resultados obtenidos a un determinado lenguaje de programación. Se escribe el código fuente de cada componente, traduciendo los algoritmos definidos en la fase de diseño. Esta tarea la realiza el programador y debe cumplir exhaustivamente con los datos impuestos en el análisis y diseño.
 
-#### Características deseables del código
+### 3.2.4.1. Características deseables del código
 
 1. **Modularidad**: Dividido en trozos pequeños.
 2. **Corrección**: Que haga lo que se le pide.
@@ -198,7 +198,7 @@ El principal objetivo de las **pruebas** es conseguir que el programa funcione i
 
 > 💡 **Consejo:** "Si no has encontrado un bug, es que no has probado lo suficiente."
 
-#### Tipos de Pruebas
+### 3.2.5.1. Tipos de Pruebas
 
 - **Pruebas Unitarias**: Prueban, una a una, las diferentes partes del software y comprueban su funcionamiento por separado.
   
@@ -228,7 +228,7 @@ Los resultados de las pruebas de unidades son **Módulos utilizables**, y de las
 
 La **documentación** es vital para el desarrollo y mantenimiento del software. Todas las etapas en el desarrollo de software deben quedar perfectamente documentadas. Una correcta documentación permitirá la reutilización de parte de los programas en otras aplicaciones, especialmente si se desarrollan con diseño modular.
 
-#### Tipos de Documentos
+### 3.2.6.1. Tipos de Documentos
 
 - **Guía Técnica (o Manual Técnico)**: Dirigida al personal técnico (analistas y programadores). Refleja el diseño, la codificación de los programas y las pruebas realizadas. Su objetivo es facilitar el desarrollo, las correcciones y el mantenimiento futuro.
   
@@ -265,7 +265,7 @@ La **explotación** es la fase en que los usuarios finales conocen la aplicació
 
 La etapa de **mantenimiento** es la más larga de todo el ciclo de vida del software. Por su naturaleza, el software es cambiante y deberá actualizarse y evolucionar con el tiempo, adaptándose a mejoras de hardware y nuevas situaciones. Siempre surgen errores y la necesidad de nuevas versiones. El mantenimiento se define como el proceso de control, mejora y optimización del software.
 
-#### Tipos de Mantenimiento
+### 3.2.8.1. Tipos de Mantenimiento
 
 - **Correctivo**: Para corregir defectos o fallos encontrados en el software.
   

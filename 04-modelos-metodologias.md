@@ -3,21 +3,22 @@
     - [4.1.1. Modelo en Cascada](#411-modelo-en-cascada)
     - [4.1.2. Modelo en V](#412-modelo-en-v)
   - [4.2. Modelo de Construcción de Prototipos](#42-modelo-de-construcción-de-prototipos)
-    - [Tipos de Prototipos](#tipos-de-prototipos)
+    - [4.2.1. Tipos de Prototipos](#421-tipos-de-prototipos)
   - [4.3. Modelos Evolutivos o Incrementales](#43-modelos-evolutivos-o-incrementales)
-    - [Variantes](#variantes)
+    - [4.3.1. Variantes](#431-variantes)
   - [4.4. Metodologías Ágiles (Adaptativas)](#44-metodologías-ágiles-adaptativas)
     - [4.4.1. Manifiesto Ágil](#441-manifiesto-ágil)
     - [4.4.2. Kanban](#442-kanban)
     - [4.4.3. Scrum](#443-scrum)
     - [4.4.4. XP (eXtreme Programming)](#444-xp-extreme-programming)
+  - [4.5. Comparativa de Metodologías](#45-comparativa-de-metodologías)
 
 
 # 4. Modelos y Metodologías de Desarrollo de Software
 
 ---
 
-> 💡 **Pregunta gancho:** ¿Alguna vez te has preguntado por qué有些empresas entregan software a tiempo y otras siempre se retrasan? La diferencia está en el modelo de desarrollo que eligen.
+> 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué algunas empresas entregan software a tiempo y otras siempre se retrasan? La diferencia está en el modelo de desarrollo que eligen.
 
 En el Punto 03 vimos las fases del ciclo de vida. Ahora veremos cómo se organizan estas fases en diferentes modelos y metodologías.
 
@@ -69,7 +70,7 @@ graph LR
 
 > ⚠️ **Advertencia:** Si en la fase de análisis te equivocas y lo descubres en fase de pruebas, tienes que volver atrás Y RECODIFICAR TODO. Esto multiplica costes.
 
-#### Modelo en Cascada con Realimentación
+##### Modelo en Cascada con Realimentación
 
 Es una variante del modelo en cascada que introduce una realimentación entre etapas. Esto permite volver atrás en cualquier momento para corregir, modificar o depurar algún aspecto. Es el modelo perfecto si el proyecto es rígido (pocos cambios, poco evolutivo) y los requisitos están claros, aunque no es el más idóneo si se prevén muchos cambios.
 
@@ -135,7 +136,7 @@ Se utiliza a menudo cuando los requisitos no están especificados claramente, ya
 
 > 💡 **Analogía:** Es como dibujar varios bocetos de un logo antes de quedarse con el definitivo. Cada prototipo "refina" lo que el cliente realmente quiere.
 
-### Tipos de Prototipos
+### 4.2.1. Tipos de Prototipos
 
 - **Prototipos rápidos (Throwaway/Rapid)**: El prototipo puede desarrollarse usando otro lenguaje o herramientas y finalmente se desecha. Su único propósito es validar requisitos.
 
@@ -179,7 +180,7 @@ graph LR
 
 Son modelos más modernos que los clásicos y tienen en cuenta la naturaleza cambiante y evolutiva del software. La idea es desarrollar una implementación inicial del sistema, exponerla a los comentarios del usuario y refinarla en sucesivas versiones hasta obtener el sistema adecuado. Permiten una rápida realimentación del usuario, ya que las actividades de especificación, desarrollo y pruebas se ejecutan en cada iteración.
 
-### Variantes
+### 4.3.1. Variantes
 
 #### Modelo Iterativo Incremental
 
