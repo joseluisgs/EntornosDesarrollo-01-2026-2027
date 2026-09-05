@@ -1,8 +1,8 @@
 - [7. Herramientas de Apoyo al Desarrollo de Software](#7-herramientas-de-apoyo-al-desarrollo-de-software)
   - [7.1. Herramientas de Desarrollo](#71-herramientas-de-desarrollo)
   - [7.2. Herramientas CASE (Computer Aided Software Engineering)](#72-herramientas-case-computer-aided-software-engineering)
-    - [Funcionalidad](#funcionalidad)
-    - [Clasificación según fases](#clasificación-según-fases)
+    - [7.2.1. Funcionalidad](#721-funcionalidad)
+    - [7.2.2. Clasificación según fases](#722-clasificación-según-fases)
   - [7.3. Desarrollo Rápido de Aplicaciones (RAD)](#73-desarrollo-rápido-de-aplicaciones-rad)
   - [7.4. Entornos de Desarrollo Integrado (IDE)](#74-entornos-de-desarrollo-integrado-ide)
 
@@ -11,11 +11,24 @@
 
 ---
 
+> 💡 **Punto de partida:** ¿Alguna vez te has preguntado cómo un programador puede crear una aplicación completa sin escribir todo el código desde cero? ¿O cómo se gestiona el trabajo en equipo cuando 10 personas modifican el mismo proyecto? La respuesta está en las herramientas de apoyo.
+
+En el Punto 06 vimos los procesos de traducción y las máquinas virtuales. Ahora veremos las **herramientas** que facilitan y agilizan nuestro trabajo como desarrolladores.
+
+**Objetivos de aprendizaje:**
+
+- Conocer las herramientas principales del desarrollo de software
+- Entender qué son las herramientas CASE y para qué sirven
+- Diferenciar entre editores simples e IDEs
+- Saber elegir la herramienta adecuada según el contexto
+
+---
+
 ## 7.1. Herramientas de Desarrollo
 
 En la práctica, para llevar a cabo varias de las etapas del desarrollo de software, se utilizan **herramientas informáticas**. Su finalidad principal es automatizar las tareas y ganar fiabilidad y tiempo. Esto permite a los desarrolladores centrarse en los requerimientos del sistema y el análisis, que son las causas principales de los fallos del software. Los tipos de software de desarrollo incluyen editores, compiladores e intérpretes.
 
-> **💡 Analogía:** Las herramientas de desarrollo son como los instrumentos de un mecánico. Puedes cambiar una rueda con una llave inglesa básica, pero con las herramientas adecuadas el trabajo es más rápido, seguro y profesional.
+> 💡 **Analogía:** Las herramientas de desarrollo son como los instrumentos de un mecánico. Puedes cambiar una rueda con una llave inglesa básica, pero con las herramientas adecuadas el trabajo es más rápido, seguro y profesional.
 
 **Categorías de herramientas:**
 
@@ -28,41 +41,43 @@ graph TD
     A --> F[Gestores de Paquetes]
     A --> G[Herramientas de Testing]
 
-    B --> B1[VS Code, Vim, Sublime]
-    C --> C1[gcc, javac, python]
-    D --> D1[gdb, Chrome DevTools]
+    B --> B1[VS Code, Visual Studio, Vim]
+    C --> C1[dotnet, javac, gcc]
+    D --> D1[Visual Studio Debugger, Chrome DevTools]
     E --> E1[Git, SVN]
-    F --> F1[npm, pip, maven]
-    G --> G1[JUnit, pytest, Jest]
+    F --> F1[nuget, npm, maven]
+    G --> G1[NUnit, pytest, Jest]
 
     style A fill:#2196F3,color:#fff
     style B fill:#4CAF50,color:#fff
     style C fill:#FF9800,color:#fff
     style D fill:#9C27B0,color:#fff
     style E fill:#f44336,color:#fff
-    style F fill:#ffe1e1
+    style F fill:#3F51B5,color:#fff
     style G fill:#607D8B,color:#fff
 ```
 
 | Categoría | Herramientas populares | Función |
 |-----------|----------------------|---------|
-| **Editores** | VS Code, Vim, Sublime Text, Atom | Escribir código |
-| **Compiladores** | gcc, clang, javac, mcs | Traducir código |
-| **Intérpretes** | python, node, php | Ejecutar directamente |
-| **Depuradores** | gdb, Chrome DevTools, pdb | Encontrar errores |
+| **Editores** | Visual Studio Code, Visual Studio, Vim | Escribir código |
+| **Compiladores** | dotnet (C#), javac (Java), gcc (C/C++) | Traducir código |
+| **Intérpretes** | dotnet run, node, python | Ejecutar directamente |
+| **Depuradores** | Visual Studio Debugger, Chrome DevTools | Encontrar errores |
 | **Control de versiones** | Git, SVN, Mercurial | Gestionar cambios |
-| **Gestores de paquetes** | npm, pip, maven, gradle | Instalar librerías |
-| **Testing** | JUnit, pytest, Jest | Verificar código |
+| **Gestores de paquetes** | NuGet, npm, maven, gradle | Instalar librerías |
+| **Testing** | NUnit, pytest, Jest | Verificar código |
 
-> **📝 Nota del Profesor:** En DAM trabajaréis intensamente con estas herramientas. Dominar VS Code y Git es casi tan importante como saber programar. Son vuestras armas principales.
+> 📝 **Nota:** En DAM trabajaréis intensamente con estas herramientas. Dominar Visual Studio Code y Git es casi tan importante como saber programar. Son vuestras armas principales.
+
+---
 
 ## 7.2. Herramientas CASE (Computer Aided Software Engineering)
 
 Las **herramientas CASE** son un conjunto de aplicaciones que se utilizan en el desarrollo de software con el objetivo de reducir costes y tiempo del proceso, mejorando la productividad.
 
-> **💡 Significado:** CASE significa "Ingeniería de Software Asistida por Computadora", como CAD (Diseño Asistido por Computadora) pero para software.
+> 💡 **Nota:** CASE significa "Ingeniería de Software Asistida por Computadora", como CAD (Diseño Asistido por Computadora) pero para software.
 
-### Funcionalidad
+### 7.2.1. Funcionalidad
 
 - **Automatización de tareas repetitivas** en análisis, diseño y codificación
 - **Generación automática de código** a partir de modelos
@@ -71,7 +86,9 @@ Las **herramientas CASE** son un conjunto de aplicaciones que se utilizan en el 
 - **Documentación automática** del proyecto
 - **Gestión de la configuración** del software
 
-### Clasificación según fases
+---
+
+### 7.2.2. Clasificación según fases
 
 Las herramientas CASE se clasifican según las fases del ciclo de vida en las que trabajan:
 
@@ -99,7 +116,7 @@ graph TD
 |------|-------|----------|
 | **U-CASE** (Upper) | Planificación, Análisis | StarUML, Enterprise Architect |
 | **M-CASE** (Middle) | Análisis, Diseño | Rational Rose, Visual Paradigm |
-| **L-CASE** (Lower) | Codificación, Pruebas | Eclipse, IDEs con generación de código |
+| **L-CASE** (Lower) | Codificación, Pruebas | Visual Studio, IDEs con generación de código |
 
 **Herramientas CASE gratuitas/libres:**
 - **ArgoUML:** http://argouml.tigris.org/ - Herramienta UML open source
@@ -107,13 +124,15 @@ graph TD
 - **StarUML:** https://staruml.io/ - UML con versión gratuita
 - **PlantUML:** https://plantuml.com/ - UML mediante texto
 
-> **📝 Nota del Profesor:** En ciclos de desarrollo, las herramientas CASE se usan especialmente en las fases de análisis y diseño para crear diagramas UML que documenten el sistema antes de programar.
+> 📝 **Nota:** En ciclos de desarrollo, las herramientas CASE se usan especialmente en las fases de análisis y diseño para crear diagramas UML que documenten el sistema antes de programar.
+
+---
 
 ## 7.3. Desarrollo Rápido de Aplicaciones (RAD)
 
 El **Desarrollo Rápido de Aplicaciones (RAD)** es un proceso que comprende el desarrollo iterativo, la construcción de prototipos y el uso de utilidades CASE. Actualmente se utiliza para referirse al desarrollo rápido de interfaces gráficas de usuario o entornos de desarrollo integrado completos.
 
-> **💡 Origen:** RAD fue desarrollado por James Martin en 1991 como respuesta a la lentitud de los métodos tradicionales.
+> 💡 **Nota:** RAD fue desarrollado por James Martin en 1991 como respuesta a la lentitud de los métodos tradicionales.
 
 **Fases del RAD:**
 
@@ -128,7 +147,7 @@ graph LR
     style B fill:#FF9800,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#4CAF50,color:#fff
-    style E fill:#f5e1ff
+    style E fill:#3F51B5,color:#fff
 ```
 
 **Ventajas del RAD:**
@@ -140,7 +159,7 @@ graph LR
 **Desventajas:**
 - Puede sacrificar calidad por velocidad
 - Requiere usuarios disponibles para feedback
-- No suited para proyectos muy grandes
+- No apto para proyectos muy grandes
 
 **Herramientas RAD:**
 - **Microsoft Power Apps:** Desarrollo low-code
@@ -148,7 +167,9 @@ graph LR
 - **Bubble:** Desarrollo web sin código
 - **Retool:** Interfaces de gestión rápidas
 
-> **📝 Dato profesional:** El movimiento "low-code" y "no-code" son herederos modernos de RAD. Permiten crear aplicaciones sin apenas programar, aunque tienen limitaciones.
+> 📝 **Nota:** El movimiento "low-code" y "no-code" son herederos modernos de RAD. Permiten crear aplicaciones sin apenas programar, aunque tienen limitaciones.
+
+---
 
 ## 7.4. Entornos de Desarrollo Integrado (IDE)
 
@@ -171,11 +192,11 @@ graph TD
     style C fill:#FF9800,color:#fff
     style D fill:#9C27B0,color:#fff
     style E fill:#f44336,color:#fff
-    style F fill:#ffe1e1
+    style F fill:#3F51B5,color:#fff
     style G fill:#607D8B,color:#fff
-    style H fill:#f5e1ff
+    style H fill:#795548,color:#fff
     style I fill:#455A64,color:#fff
-    style J fill:#5D4037,color:#fff
+    style J fill:#009688,color:#fff
 ```
 
 **Componentes de un IDE:**
@@ -194,14 +215,14 @@ graph TD
 
 | Lenguaje | IDE principal | Alternativas |
 |----------|--------------|--------------|
+| **C#** | Visual Studio | Rider, VS Code |
 | **Java** | IntelliJ IDEA | Eclipse, NetBeans |
 | **Python** | PyCharm | VS Code, Spyder |
 | **C/C++** | CLion | Visual Studio, VS Code |
 | **JavaScript** | WebStorm | VS Code, Atom |
-| **C#** | Visual Studio | Rider, VS Code |
-| **General** | VS Code | Sublime, Vim |
+| **General** | Visual Studio Code | Sublime, Vim |
 
-> **📝 Recomendación:** Para DAM, os recomiendo dominar VS Code porque es:
+> 💡 **Consejo:** Para DAM, os recomiendo dominar Visual Studio Code porque es:
 > - Ligero y rápido
 > - Multiplataforma (Windows, Mac, Linux)
 > - Extensible con miles de extensiones
@@ -212,6 +233,7 @@ graph TD
 
 | Extensión | Utilidad |
 |-----------|----------|
+| C# Dev Kit | Soporte completo para C#/.NET |
 | Prettier | Formateo de código |
 | ESLint | Linting JavaScript |
 | Python (Microsoft) | Soporte Python |
@@ -220,7 +242,7 @@ graph TD
 | GitLens | Mejora Git |
 | Material Icon Theme | Iconos atractivos |
 
-> **💡 Dato curioso:** El primer IDE fue "Eclipse" (1999), desarrollado por IBM para Java. Antes, los programadores editaban archivos de texto en terminals y compilaban manualmente.
+> 💡 **Dato:** El primer IDE fue "Eclipse" (1999), desarrollado por IBM para Java. Antes, los programadores editaban archivos de texto en terminals y compilaban manualmente.
 
 **Comparativa: Editor vs IDE**
 
@@ -231,5 +253,20 @@ graph TD
 | Configuración | Manual | Viene todo integrado |
 | Depuración | Externa | Integrada |
 | Autocompletado | Básico | Avanzado |
-| Ejemplos | VS Code, Vim | IntelliJ, Eclipse |
+| Ejemplos | VS Code, Vim | Visual Studio, IntelliJ |
 | Mejor para | Scripts, pequeños proyectos | Proyectos grandes |
+
+---
+
+**Resumen del punto:**
+
+| Concepto | Descripción |
+|----------|-------------|
+| **Herramientas de desarrollo** | Editores, compiladores, depuradores, Git |
+| **CASE** | Automatización del proceso de desarrollo |
+| **RAD** | Desarrollo rápido con prototipos |
+| **IDE** | Todo integrado en una sola aplicación |
+| **VS Code** | Editor principal para DAM (ligero, gratuito) |
+| **Visual Studio** | IDE completo para C# (el más potente) |
+
+En el siguiente punto veremos los **perfiles profesionales** del desarrollo de software: quién hace qué en un equipo de desarrollo.
