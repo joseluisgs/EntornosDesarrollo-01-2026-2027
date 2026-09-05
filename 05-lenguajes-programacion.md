@@ -26,11 +26,26 @@
 
 # 5. Lenguajes de Programación
 
+---
+
+> 💡 **Pregunta gancho:** ¿Alguna vez te has preguntado por qué existen tantos lenguajes de programación? ¿Por qué no usamos todos el mismo? La respuesta está en que cada lenguaje está diseñado para resolver problemas diferentes.
+
+En el Punto 04 vimos los modelos de desarrollo. Ahora veremos la herramienta que usamos para implementar esos modelos: los lenguajes de programación.
+
+**Objetivos de aprendizaje:**
+
+- Definir qué es un lenguaje de programación
+- Clasificar lenguajes por nivel, mecanismo de traducción y sistema de tipos
+- Conocer los principales paradigmas de programación
+- Saber elegir un lenguaje según el contexto
+
+---
+
 ## 5.1. ¿Qué es un Lenguaje de Programación?
 
 Un **lenguaje de programación** es un idioma creado de forma artificial, formado por un conjunto de símbolos y normas que se aplican sobre un alfabeto para obtener un código que el hardware de la computadora pueda entender y ejecutar. Son los instrumentos que tenemos para que el ordenador realice las tareas que necesitamos. Es un lenguaje formal que proporciona un conjunto de instrucciones que permiten a un programador escribir secuencias de comandos, que son interpretadas por una máquina, para producir un comportamiento deseado.
 
-> **💡 Analogía:** Un lenguaje de programación es como un puente entre tu mente (donde tienes ideas) y el ordenador (que solo entiende 0s y 1s). Sin ese puente, no hay comunicación posible.
+> 💡 **Analogía:** Un lenguaje de programación es como un puente entre tu mente (donde tienes ideas) y el ordenador (que solo entiende 0s y 1s). Sin ese puente, no hay comunicación posible.
 
 ### Elementos que componen un lenguaje de programación
 
@@ -49,7 +64,7 @@ def saludar(nombre):
     print(f"Hola, {nombre}!")
 ```
 
-> **📝 Nota del Profesor:** La sintaxis es como la gramática de un idioma. Si dices "Yo hambre tengo" en español, se entiende pero no es语法 correcto. Lo mismo pasa en programación: `if (x > 5` sin cerrar el paréntesis causa error de sintaxis.
+> 📝 **Nota:** La sintaxis es como la gramática de un idioma. Si dices "Yo hambre tengo" en español, se entiende pero no es correcto. Lo mismo pasa en programación: `if (x > 5` sin cerrar el paréntesis causa error de sintaxis.
 
 ### Otros elementos importantes
 
@@ -76,12 +91,12 @@ graph TB
     style B fill:#FF9800,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#4CAF50,color:#fff
-    style E fill:#f5e1ff
-    style F fill:#f44336,color:#fff
-    style G fill:#ffe1e1
-    style H fill:#607D8B,color:#fff
-    style I fill:#f0f0f0
-    style J fill:#455A64,color:#fff
+    style E fill:#f44336,color:#fff
+    style F fill:#607D8B,color:#fff
+    style G fill:#3F51B5,color:#fff
+    style H fill:#795548,color:#fff
+    style I fill:#455A64,color:#fff
+    style J fill:#009688,color:#fff
 ```
 
 **Analogía del código:**
@@ -97,6 +112,8 @@ graph TB
 | Funciones | Recetas de cocina reutilizables |
 
 ![Diagrama: Elementos de un Lenguaje de Programación](/images/componentes_lenguaje.jpg)
+
+---
 
 ## 5.2. Clasificación de Lenguajes de Programación
 
@@ -145,7 +162,7 @@ int main() {
 
 #### Lenguajes de Alto Nivel
 
-Se encuentran más cercanos al lenguaje natural que al lenguaje máquina, y son independientes de la arquitectura del ordenador. Permiten al programador olvidarse del funcionamiento interno de la máquina. Utilizan sentencias y órdenes derivadas del idioma inglés. Necesitan un traductor para ser entendidos por la máquina. Incorporan librerías y funciones predeterminadas, y suelen ofrecer *frameworks*. La mayoría de los lenguajes de programación actuales seengloban en esta categoría. Ejemplos incluyen C++, Java, Python, JavaScript, PHP.
+Se encuentran más cercanos al lenguaje natural que al lenguaje máquina, y son independientes de la arquitectura del ordenador. Permiten al programador olvidarse del funcionamiento interno de la máquina. Utilizan sentencias y órdenes derivadas del idioma inglés. Necesitan un traductor para ser entendidos por la máquina. Incorporan librerías y funciones predeterminadas, y suelen ofrecer *frameworks*. La mayoría de los lenguajes de programación actuales se engloban en esta categoría. Ejemplos incluyen C++, Java, Python, JavaScript, PHP.
 
 **Ejemplo en Python:**
 ```python
@@ -171,14 +188,16 @@ graph TB
     D --> D5[C++<br/>Alto rendimiento]
 
     style A fill:#2196F3,color:#fff
-    style B fill:#ffe1e1
-    style C fill:#f44336,color:#fff
+    style B fill:#f44336,color:#fff
+    style C fill:#FF9800,color:#fff
     style D fill:#4CAF50,color:#fff
 ```
 
-> **📝 Dato curioso:** El primer lenguaje de alto nivel fue Fortran (1957), creado por John Backus en IBM. Permitía escribir fórmulas matemáticas de forma casi natural. Fortran todavía se usa hoy en cálculos científicos de alto rendimiento.
+> 💡 **Dato:** El primer lenguaje de alto nivel fue Fortran (1957), creado por John Backus en IBM. Permitía escribir fórmulas matemáticas de forma casi natural. Fortran todavía se usa hoy en cálculos científicos de alto rendimiento.
 
 ![Diagrama: Clasificación de Lenguajes por Nivel](/images/lenguajes_cercania.png)
+
+---
 
 ### 5.2.2. Según su mecanismo de traducción (Compilados, Interpretados, Mixtos)
 
@@ -198,8 +217,8 @@ Código Fuente (.c) → Compilador → Código Objeto (.o) → Enlazador → Eje
 - Código fuente protegido (no se distribuye)
 
 **Desventajas:**
-- Platforma-dependiente (compilar para Windows ≠ para Linux)
-- Cada修改 requiere recompilar
+- Plataforma-dependiente (compilar para Windows ≠ para Linux)
+- Cada modificación requiere recompilar
 
 #### Lenguajes Interpretados
 
@@ -228,7 +247,7 @@ Combinan características de ambos. El código fuente se compila a un código bi
 Código Fuente (.java) → Compilador → Bytecode (.class) → JVM → Ejecución
 ```
 
-> **💡 Ejemplo real:** Cuando descargas una app de Android, no descargas código Java, sino bytecode (.dex) que la Dalvik/ART VM ejecuta. Esto permite que la misma app funcione en cualquier dispositivo Android.
+> 💡 **Ejemplo real:** Cuando descargas una app de Android, no descargas código Java, sino bytecode (.dex) que la Dalvik/ART VM ejecuta. Esto permite que la misma app funcione en cualquier dispositivo Android.
 
 ```mermaid
 graph LR
@@ -252,6 +271,8 @@ graph LR
 ```
 
 ![Diagrama: Clasificación de Lenguajes por Traducción](/images/lenguajes_compialdos_interpretados.jpg)
+
+---
 
 ### 5.2.3. Según su sistema de tipos (Tipado Fuerte, Tipado Débil)
 
@@ -353,7 +374,9 @@ graph TB
     style D fill:#9C27B0,color:#fff
 ```
 
-> **📝 Nota del Profesor:** No existe un "mejor" sistema de tipos. El tipado fuerte y estático (Java, C#) detecta errores antes pero requiere más código. El tipado dinámico (Python, JavaScript) es más rápido de escribir pero puede ocultar errores hasta producción. Elegid según el contexto del proyecto.
+> 📝 **Nota:** No existe un "mejor" sistema de tipos. El tipado fuerte y estático (Java, C#) detecta errores antes pero requiere más código. El tipado dinámico (Python, JavaScript) es más rápido de escribir pero puede ocultar errores hasta producción. Elegid según el contexto del proyecto.
+
+---
 
 ### 5.2.4. Según la forma en que operan (Paradigmas de Programación)
 
@@ -445,10 +468,12 @@ graph TB
     style C fill:#FF9800,color:#fff
     style D fill:#9C27B0,color:#fff
     style E fill:#f44336,color:#fff
-    style F fill:#ffe1e1
-    style G fill:#607D8B,color:#fff
-    style H fill:#f0f0f0
+    style F fill:#607D8B,color:#fff
+    style G fill:#3F51B5,color:#fff
+    style H fill:#795548,color:#fff
 ```
+
+---
 
 ### 5.2.5. Según Generaciones
 
@@ -473,14 +498,16 @@ graph LR
     D --> D1[SQL, RAD<br/>Base de datos]
     E --> E1[IA, LISP<br/>Lógica]
 
-    style A fill:#ffe1e1
-    style B fill:#f44336,color:#fff
+    style A fill:#f44336,color:#fff
+    style B fill:#FF9800,color:#fff
     style C fill:#4CAF50,color:#fff
-    style D fill:#FF9800,color:#fff
+    style D fill:#2196F3,color:#fff
     style E fill:#9C27B0,color:#fff
 ```
 
-> **💡 Curiosidad:** La mayoría de los lenguajes que aprenderás en DAM son de 3GL (C, Java, Python) y 4GL (SQL). La 5GL está más relacionada con investigación en IA.
+> 💡 **Dato:** La mayoría de los lenguajes que aprenderás en DAM son de 3GL (C, Java, Python) y 4GL (SQL). La 5GL está más relacionada con investigación en IA.
+
+---
 
 ## 5.3. Criterios para la Selección de un Lenguaje de Programación
 
@@ -499,7 +526,9 @@ La elección del lenguaje a utilizar en un proyecto es de extrema importancia. A
 | **Coste** | ¿Licencias, herramientas, formación? |
 | **Imposición del cliente** | ¿El cliente exige algo específico? |
 
-> **📝 Nota del Profesor:** No existe el "mejor" lenguaje. Existe el lenguaje adecuado para cada situación. Un científico de datos prefiere Python por sus librerías de ML. Un desarrollador de videojuegos AAA prefiere C++ por rendimiento. Un startup web elige JavaScript/Node.js por velocidad de desarrollo.
+> 📝 **Nota:** No existe el "mejor" lenguaje. Existe el lenguaje adecuado para cada situación. Un científico de datos prefiere Python por sus librerías de ML. Un desarrollador de videojuegos AAA prefiere C++ por rendimiento. Un startup web elige JavaScript/Node.js por velocidad de desarrollo.
+
+---
 
 ## 5.4. Lenguajes más Utilizados en la Actualidad
 
@@ -529,3 +558,22 @@ Lenguajes como Java, C, C++, PHP y Visual Basic concentran alrededor del 60% del
 | Videojuegos | C++, C#, Lua |
 | DevOps/Scripting | Python, Bash, Go |
 | Inteligencia Artificial | Python, Lisp, Prolog |
+
+---
+
+**Resumen del punto:**
+
+| Concepto | Descripción |
+|----------|-------------|
+| **Bajo nivel** | Máquina, ensamblador (difícil, rápido, no portable) |
+| **Medio nivel** | C (acceso a memoria, más abstracto) |
+| **Alto nivel** | Python, Java, JavaScript (fácil, portable) |
+| **Compilado** | C, C++ (rápido, platforma-dependiente) |
+| **Interpretado** | Python, JavaScript (lento, multiplataforma) |
+| **Mixto** | Java, C# (bytecode + máquina virtual) |
+| **Tipado fuerte** | Python, Java (seguro, detecta errores) |
+| **Tipado débil** | JavaScript, PHP (flexible, propenso a bugs) |
+| **POO** | Java, C#, Python (reutilización, mantenimiento) |
+| **Funcional** | Haskell, JavaScript moderno (funciones puras) |
+
+En el siguiente punto veremos el **proceso de traducción**, es decir, cómo los lenguajes de alto nivel se convierten en código que la máquina puede ejecutar.
