@@ -255,4 +255,4 @@ graph TD
 | **QA** | Garantiza la calidad | 2-5+ años |
 | **DevOps** | Infraestructura y despliegue | 3-7+ años |
 
-En el siguiente punto haremos un **resumen** de toda la unidad, consolidando todos los conceptos vistos.
+En el siguiente punto veremos un **caso de estudio** práctico: el lenguaje C# y la plataforma .NET.
