@@ -1,27 +1,42 @@
 - [8. Perfiles del Desarrollo de Software](#8-perfiles-del-desarrollo-de-software)
-  - [Arquitecto de Software](#arquitecto-de-software)
-  - [Jefe de Proyecto](#jefe-de-proyecto)
-  - [Analista de Sistemas](#analista-de-sistemas)
-  - [Analista Programador](#analista-programador)
-  - [Programador (o Desarrollador)](#programador-o-desarrollador)
-  - [QA (Quality Assurance) / Testeador](#qa-quality-assurance--testeador)
+  - [8.1. Arquitecto de Software](#81-arquitecto-de-software)
+  - [8.2. Jefe de Proyecto](#82-jefe-de-proyecto)
+  - [8.3. Analista de Sistemas](#83-analista-de-sistemas)
+  - [8.4. Analista Programador](#84-analista-programador)
+  - [8.5. Programador (o Desarrollador)](#85-programador-o-desarrollador)
+  - [8.6. QA (Quality Assurance) / Testeador](#86-qa-quality-assurance--testeador)
+  - [8.7. DevOps](#87-devops)
+  - [8.8. Organigrama de un Equipo de Desarrollo](#88-organigrama-de-un-equipo-de-desarrollo)
 
 
 # 8. Perfiles del Desarrollo de Software
 
 ---
 
+> 💡 **Punto de partida:** ¿Alguna vez te has preguntado quién hace qué cuando se crea una app como Instagram o Netflix? ¿Es una sola persona o un equipo? ¿Y qué diferencias hay entre un programador y un arquitecto de software?
+
+En el Punto 07 vimos las herramientas de apoyo. Ahora veremos **quién** usa esas herramientas: los perfiles profesionales del desarrollo de software.
+
+**Objetivos de aprendizaje:**
+
+- Conocer los perfiles principales de un equipo de desarrollo
+- Entender las responsabilidades de cada rol
+- Diferenciar entre analista, programador y arquitecto
+- Conocer el camino profesional desde DAM
+
+---
+
 El desarrollo de software es un proceso que involucra a diferentes profesionales, cada uno con roles y responsabilidades específicas a lo largo del ciclo de vida del software. Estos roles son cruciales para el éxito de un proyecto, combinando conocimientos técnicos, de gestión y de negocio.
 
-> **💡 Analogía:** Un equipo de desarrollo de software es como una orquesta. Hay diferentes instrumentos (roles) que deben tocar juntos bajo la dirección de un director (jefe de proyecto) para crear una sinfonía coherente.
+> 💡 **Analogía:** Un equipo de desarrollo de software es como una orquesta. Hay diferentes instrumentos (roles) que deben tocar juntos bajo la dirección de un director (jefe de proyecto) para crear una sinfonía coherente.
 
 ```mermaid
 graph TD
-    A[Perfiles del Desarrollo de Software] --> B[Arquitecto de Software]
+    A[Perfiles del Desarrollo] --> B[Arquitecto]
     A --> C[Jefe de Proyecto]
-    A --> D[Analista de Sistemas]
+    A --> D[Analista]
     A --> E[Analista Programador]
-    A --> F[Programador/Desarrollador]
+    A --> F[Programador]
     A --> G[QA/Testeador]
     A --> H[DevOps]
 
@@ -30,14 +45,14 @@ graph TD
     style C fill:#FF9800,color:#fff
     style D fill:#9C27B0,color:#fff
     style E fill:#f44336,color:#fff
-    style F fill:#ffe1e1
+    style F fill:#3F51B5,color:#fff
     style G fill:#607D8B,color:#fff
-    style H fill:#f5e1ff
+    style H fill:#795548,color:#fff
 ```
 
 ---
 
-## Arquitecto de Software
+## 8.1. Arquitecto de Software
 
 - Este profesional tiene la responsabilidad de decidir "cómo" se realiza el proyecto y cómo se estructurará.
 - Posee un amplio conocimiento de las tecnologías, los *frameworks* y las librerías disponibles.
@@ -57,13 +72,15 @@ graph TD
 - Capacidad de diseño y abstracción
 - Comunicación con stakeholders técnicos y no técnicos
 
-> **📝 Salida profesional:** En DAM seréis programadores, pero con experiencia podréis crecer hacia roles de arquitectura. El arquitecto es el "veterano" del equipo técnico.
+> 📝 **Nota:** En DAM seréis programadores, pero con experiencia podréis crecer hacia roles de arquitectura. El arquitecto es el "veterano" del equipo técnico.
 
-## Jefe de Proyecto
+---
+
+## 8.2. Jefe de Proyecto
 
 - Es el encargado de dirigir el curso del proyecto.
 - Puede ser un analista con experiencia, un arquitecto o una persona dedicada en exclusividad a este puesto.
-- Debe poseer habilidades para gestionar un equipo y lidar con los tiempos y plazos.
+- Debe poseer habilidades para gestionar un equipo y lidiar con los tiempos y plazos.
 - Mantiene una comunicación continua y fluida con el cliente.
 
 **Responsabilidades principales:**
@@ -80,9 +97,11 @@ graph TD
 - Gestión del tiempo
 - Conocimientos técnicos (para entender al equipo)
 
-> **💡 Dato:** Muchos jefes de proyecto en software provienen de perfiles técnicos (ex-programadores) porque entienden mejor las complejidades del desarrollo.
+> 💡 **Dato:** Muchos jefes de proyecto en software provienen de perfiles técnicos (ex-programadores) porque entienden mejor las complejidades del desarrollo.
 
-## Analista de Sistemas
+---
+
+## 8.3. Analista de Sistemas
 
 - Realiza un estudio exhaustivo del problema a resolver.
 - Efectúa el análisis y el diseño de todo el sistema.
@@ -102,9 +121,11 @@ graph TD
 - Conocimiento de metodologías (UML, BPMN)
 - Experiencia en el dominio del negocio
 
-> **📝 Nota del Profesor:** El analista es el "traductor" entre lo que quiere el cliente (lenguaje de negocio) y lo que necesita el programador (lenguaje técnico). Es crucial para evitar malentendidos.
+> 📝 **Nota:** El analista es el "traductor" entre lo que quiere el cliente (lenguaje de negocio) y lo que necesita el programador (lenguaje técnico). Es crucial para evitar malentendidos.
 
-## Analista Programador
+---
+
+## 8.4. Analista Programador
 
 - Según las fuentes, este rol comparte muchas responsabilidades con el **Analista de Sistemas**, incluyendo la realización de un estudio exhaustivo del problema, la ejecución del análisis y diseño del sistema, y la interacción con el cliente.
 - Este perfil también requiere mucha experiencia y conocimiento tanto en la definición de soluciones como en la capacidad de comprender la implementación técnica.
@@ -122,9 +143,11 @@ graph TD
 - Comunicación con analistas y programadores
 - Conocimiento del negocio
 
-> **💡 Diferencia:** El analista se centra en el "qué" (requisitos), el programador en el "cómo" (implementación). El analista-programador hace ambas cosas.
+> 💡 **Consejo:** El analista se centra en el "qué" (requisitos), el programador en el "cómo" (implementación). El analista-programador hace ambas cosas.
 
-## Programador (o Desarrollador)
+---
+
+## 8.5. Programador (o Desarrollador)
 
 - Conoce en profundidad el lenguaje de programación que se utiliza en el proyecto.
 - Se encarga de codificar las tareas encomendadas por el analista o el analista programador.
@@ -149,9 +172,11 @@ graph TD
 - Control de versiones (Git)
 - Testing básico
 
-> **📝 Salida profesional:** En DAM vuestra primera posición será Programador Junior. Con práctica y experiencia podréis ascender a niveles superiores.
+> 📝 **Nota:** En DAM vuestra primera posición será Programador Junior. Con práctica y experiencia podréis ascender a niveles superiores.
 
-## QA (Quality Assurance) / Testeador
+---
+
+## 8.6. QA (Quality Assurance) / Testeador
 
 - Aunque las fuentes no lo mencionan explícitamente como un "rol" con título específico en la lista de perfiles, la fase de **Pruebas** es fundamental y su objetivo principal es "conseguir que el programa funcione incorrectamente para descubrir y corregir defectos".
 - Este rol se enfoca en someter el programa al máximo número de situaciones diferentes, realizando pruebas unitarias, de integración, funcionales, estructurales y *Beta Test*.
@@ -172,9 +197,11 @@ graph TD
 - Comunicación con desarrolladores
 - Conocimiento técnico del sistema
 
-> **💡 Dato:** El testing es una carrera en sí misma. Hay QA manual, automatización de pruebas, testing de rendimiento, security testing, etc.
+> 💡 **Dato:** El testing es una carrera en sí misma. Hay QA manual, automatización de pruebas, testing de rendimiento, security testing, etc.
 
-## DevOps (Perfil moderno adicional)
+---
+
+## 8.7. DevOps
 
 Aunque no aparece en el contenido original, DevOps es un perfil esencial en equipos modernos:
 
@@ -192,24 +219,40 @@ Aunque no aparece en el contenido original, DevOps es un perfil esencial en equi
 - Pipelines CI/CD (Jenkins, GitHub Actions)
 - Infrastructure as Code
 
-## Organigrama típico de un equipo de desarrollo
+---
 
-```
-                    ┌─────────────────┐
-                    │   Product Owner │
-                    └────────┬────────┘
-                             │
-                    ┌────────▼────────┐
-                    │  Scrum Master   │
-                    │  (Jefe Proyecto)│
-                    └────────┬────────┘
-                             │
-        ┌────────────────────┼────────────────────┐
-        │                    │                    │
-┌───────▼───────┐    ┌───────▼───────┐    ┌───────▼───────┐
-│   Arquitecto  │    │   Desarrolladores    │      QA       │
-│  (Tech Lead)  │    │   (Junior/Senior)    │   (Tester)    │
-└───────────────┘    └────────────────────┘    └─────────────┘
+## 8.8. Organigrama de un Equipo de Desarrollo
+
+```mermaid
+graph TD
+    A[Product Owner] --> B[Scrum Master / Jefe Proyecto]
+    B --> C[Arquitecto / Tech Lead]
+    B --> D[Desarrolladores<br/>Junior/Senior]
+    B --> E[QA / Tester]
+    B --> F[DevOps]
+
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#4CAF50,color:#fff
+    style D fill:#9C27B0,color:#fff
+    style E fill:#607D8B,color:#fff
+    style F fill:#795548,color:#fff
 ```
 
-> **📝 Nota del Profesor:** En empresas pequeñas o startups, una persona puede acumular varios roles (programador + QA + DevOps). En empresas grandes, cada rol está especializado. En DAM vais a aprender los fundamentos de todos estos roles.
+> 📝 **Nota:** En empresas pequeñas o startups, una persona puede acumular varios roles (programador + QA + DevOps). En empresas grandes, cada rol está especializado. En DAM vais a aprender los fundamentos de todos estos roles.
+
+---
+
+**Resumen del punto:**
+
+| Perfil | Función principal | Experiencia |
+|--------|-------------------|-------------|
+| **Arquitecto** | Diseña la solución técnica | 5-10+ años |
+| **Jefe de Proyecto** | Dirige y planifica | 5+ años |
+| **Analista** | Define qué hacer (requisitos) | 3-5+ años |
+| **Analista Programador** | Analiza + programa | 3-7+ años |
+| **Programador** | Escribe el código | 0-10+ años |
+| **QA** | Garantiza la calidad | 2-5+ años |
+| **DevOps** | Infraestructura y despliegue | 3-7+ años |
+
+En el siguiente punto haremos un **resumen** de toda la unidad, consolidando todos los conceptos vistos.
