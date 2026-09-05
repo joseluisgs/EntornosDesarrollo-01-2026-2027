@@ -20,11 +20,26 @@
 
 # 3. El Ciclo de Vida del Desarrollo de Software (Fases)
 
+---
+
+> 💡 **Pregunta gancho:** ¿Alguna vez te has preguntado por qué algunos proyectos de software tienen éxito y otros fracasan estrepitosamente? La diferencia suele estar en si siguen un proceso estructurado o improvisan sobre la marcha.
+
+En el Punto 02 vimos qué es el software y el hardware. Ahora veremos cómo se crea el software, cuáles son las fases de un proyecto y por qué es importante seguirlas.
+
+**Objetivos de aprendizaje:**
+
+- Definir qué es el ciclo de vida del software
+- Identificar y describir las fases principales del desarrollo
+- Comprender la importancia de cada fase
+- Reconocer los tipos de mantenimiento de software
+
+---
+
 ## 3.1. Concepto de Ciclo de Vida del Software
 
 La serie de pasos a seguir para desarrollar un programa es lo que se conoce como **Ciclo de Vida del Software**. Cada etapa del ciclo de vida del software se explicará con más detalle, y el desarrollo de software es un proceso que conlleva una serie de pasos genéricos. Es un proceso que puede parecer muy complejo y que exige una gran coordinación y disciplina del grupo de trabajo que lo desarrolle.
 
-> **💡 Analogía vital:** El ciclo de vida del software es como el ciclo de vida de una persona: nace (se concibe la idea), crece (se desarrolla), se reproduce (se mantienen y evoluciona), y eventualmente muere (se retira). Cada etapa tiene sus propias necesidades y cuidados.
+> 💡 **Analogía:** El ciclo de vida del software es como el ciclo de vida de una persona: nace (se concibe la idea), crece (se desarrolla), se reproduce (se mantiene y evoluciona), y eventualmente muere (se retira). Cada etapa tiene sus propias necesidades y cuidados.
 
 ### ¿Por qué seguir un ciclo de vida?
 
@@ -34,7 +49,9 @@ Sin un ciclo de vida estructurado, los proyectos de software suelen fracasar. Se
 - **Los errores en fases tempranas cuestan 10-100x más** si se descubren tarde
 - **El mantenimiento representa el 60-80% del coste total** del software
 
-> **📝 Nota del Profesor:** En vuestras prácticas de DAM vais a trabajar el ciclo de vida completo. Aunque sean proyectos pequeños, es fundamental que entendáis qué fase estáis trabajando en cada momento. Cuando entregáis código sin haberlo analizado antes, estáis "construyendo sin planos".
+> 📝 **Nota:** En vuestras prácticas de DAM vais a trabajar el ciclo de vida completo. Aunque sean proyectos pequeños, es fundamental que entendáis qué fase estáis trabajando en cada momento. Cuando entregáis código sin haberlo analizado antes, estáis "construyendo sin planos".
+
+---
 
 ## 3.2. Fases Principales del Desarrollo de una Aplicación Informática
 
@@ -55,16 +72,18 @@ graph LR
     style B fill:#FF9800,color:#fff
     style C fill:#9C27B0,color:#fff
     style D fill:#4CAF50,color:#fff
-    style E fill:#f5e1ff
-    style F fill:#ffe1e1
-    style G fill:#607D8B,color:#fff
-    style H fill:#f44336,color:#fff
-    style I fill:#f0f0f0
+    style E fill:#f44336,color:#fff
+    style F fill:#607D8B,color:#fff
+    style G fill:#3F51B5,color:#fff
+    style H fill:#FF5722,color:#fff
+    style I fill:#795548,color:#fff
 ```
 
-> **⚠️ Importante:** Las fases NO son necesariamente secuenciales en todos los modelos. En metodologías ágiles, por ejemplo, todas las fases se repiten en cada iteración (sprint).
+> ⚠️ **Advertencia:** Las fases NO son necesariamente secuenciales en todos los modelos. En metodologías ágiles, por ejemplo, todas las fases se repiten en cada iteración (sprint).
 
 ![Diagrama: Fases del Desarrollo de Software](/images/fases_desarrollo.jpg)
+
+---
 
 ### 3.2.1. Fase Inicial (Planificación)
 
@@ -82,7 +101,9 @@ En esta fase se establecen los **objetivos** del proyecto, se define su **alcanc
 - Estudio de viabilidad
 - Estimación de costes y plazos
 
-> **💡 Ejemplo real:** Antes de desarrollar Instagram, los fundadores analisaron: "¿La gente quiere compartir fotos con filtros?" "Sí, pero necesitamos servidores cheapos y una app ligera". Sin este análisis, habrían invertido millones en un producto que nadie quería.
+> 💡 **Ejemplo real:** Antes de desarrollar Instagram, los fundadores analisaron: "¿La gente quiere compartir fotos con filtros?" "Sí, pero necesitamos servidores baratos y una app ligera". Sin este análisis, habrían invertido millones en un producto que nadie quería.
+
+---
 
 ### 3.2.2. Análisis (Etapa de Análisis)
 
@@ -90,7 +111,7 @@ Esta es la primera fase y la de mayor importancia en el desarrollo del proyecto.
 
 En esta fase, se determina y define claramente las **necesidades del cliente** y se especifican los **requisitos** que debe cumplir el software a desarrollar. Lo fundamental es una buena comunicación entre el analista y el cliente para que la aplicación desarrollada cumpla con sus expectativas, es decir, necesitamos saber el "**qué**" hace nuestro software.
 
-> **📝 Regla de oro:** "No asumas nada". Si el cliente dice "quiero una tienda online",，你需要 preguntar: ¿qué productos? ¿pago con tarjeta? ¿incluye IVA? ¿qué pasa si no hay stock? ¿qué estadísticas quieres ver?
+> 📝 **Nota:** "No asumas nada". Si el cliente dice "quiero una tienda online", debes preguntar: ¿qué productos? ¿pago con tarjeta? ¿incluye IVA? ¿qué pasa si no hay stock? ¿qué estadísticas quieres ver?
 
 #### Especificación de Requisitos
 
@@ -128,7 +149,9 @@ La **especificación de requisitos** debe:
 
 La culminación de esta fase es el documento de **Especificación de Requisitos del Software (ERS)**, que actúa como un contrato entre el cliente y el desarrollador.
 
-> **⚠️ Error común:** No confundir requisitos funcionales (qué hace el sistema) con requisitos de diseño (cómo lo hace). Ejemplo: "El sistema guardará los datos en una base de datos PostgreSQL" es un DETALLE DE IMPLEMENTACIÓN, no un requisito funcional.
+> ⚠️ **Advertencia:** No confundir requisitos funcionales (qué hace el sistema) con requisitos de diseño (cómo lo hace). Ejemplo: "El sistema guardará los datos en una base de datos PostgreSQL" es un DETALLE DE IMPLEMENTACIÓN, no un requisito funcional.
+
+---
 
 ### 3.2.3. Diseño
 
@@ -142,7 +165,9 @@ Las actividades habituales incluyen el diseño arquitectónico, el diseño detal
 - Maquetas de interfaces de usuario
 - Especificación de APIs
 
-> **💡 Analogía:** Si la fase de análisis responde "construiré una casa de 3 habitaciones con jardín", la fase de diseño responde "la cocina estará aquí, el salón tendrá 30m², usaremos ladrillo caravista, el fontanero entrará por aquí...".
+> 💡 **Analogía:** Si la fase de análisis responde "construiré una casa de 3 habitaciones con jardín", la fase de diseño responde "la cocina estará aquí, el salón tendrá 30m², usaremos ladrillo caravista, el fontanero entrará por aquí...".
+
+---
 
 ### 3.2.4. Codificación (Implementación)
 
@@ -158,18 +183,20 @@ Esta etapa consiste en transformar o traducir los resultados obtenidos a un dete
 
 Durante esta fase, el código pasa por diferentes estados (código fuente, objeto, ejecutable). El resultado de esta fase es el **Código fuente**.
 
-> **📝 Nota del Profesor:** Programar no es solo "escribir código". Un buen programador:
+> 📝 **Nota:** Programar no es solo "escribir código". Un buen programador:
 > - Lee código ajeno más que escribe código propio
 > - Sigue convenciones y estándares
 > - Comenta el "por qué", no el "qué" (el código ya dice qué hace)
 > - Usa control de versiones (Git)
 > - Pide revisiones de código (code review)
 
+---
+
 ### 3.2.5. Pruebas
 
 El principal objetivo de las **pruebas** es conseguir que el programa funcione incorrectamente para descubrir y corregir defectos. El programa debe ser sometido al máximo número de situaciones diferentes. Las pruebas son imprescindible para asegurar la validación y verificación del software construido.
 
-> **💡 Frase celebre:** "Si no has encontrado un bug, es que no has probado lo suficiente."
+> 💡 **Consejo:** "Si no has encontrado un bug, es que no has probado lo suficiente."
 
 #### Tipos de Pruebas
 
@@ -193,7 +220,9 @@ El principal objetivo de las **pruebas** es conseguir que el programa funcione i
 
 Los resultados de las pruebas de unidades son **Módulos utilizables**, y de las pruebas de integración, un **Sistema utilizable**. Las pruebas del sistema culminan con un **Sistema aceptado**.
 
-> **📝 Nota del Profesor:** En DAM trabajaréis con frameworks de testing como JUnit (Java), pytest (Python) o Jest (JavaScript). Unit testing NO es opcional, es parte del trabajo profesional.
+> 📝 **Nota:** En DAM trabajaréis con frameworks de testing como JUnit (Java), pytest (Python) o Jest (JavaScript). Unit testing NO es opcional, es parte del trabajo profesional.
+
+---
 
 ### 3.2.6. Documentación
 
@@ -215,7 +244,9 @@ La **documentación** es vital para el desarrollo y mantenimiento del software. 
 
 El resultado final es la **Documentación técnica y de usuario**.
 
-> **⚠️ Frase celebre:** "Sin documentación, el código es tan útil como un contrato en un idioma que no entiendes."
+> ⚠️ **Advertencia:** "Sin documentación, el código es tan útil como un contrato en un idioma que no entiendes."
+
+---
 
 ### 3.2.7. Explotación (Despliegue)
 
@@ -226,7 +257,9 @@ La **explotación** es la fase en que los usuarios finales conocen la aplicació
 - **Release**: Nueva versión puesta a disposición de usuarios
 - **Entorno de producción**: Donde los usuarios reales usan el sistema
 
-> **💡 Dato profesional:** Hoy en día, con metodologías DevOps, el despliegue puede ser automático (CI/CD). Aplicaciones como Netflix despliegan cientos de veces al día sin intervención humana.
+> 💡 **Dato:** Hoy en día, con metodologías DevOps, el despliegue puede ser automático (CI/CD). Aplicaciones como Netflix despliegan cientos de veces al día sin intervención humana.
+
+---
 
 ### 3.2.8. Mantenimiento
 
@@ -252,7 +285,9 @@ La etapa de **mantenimiento** es la más larga de todo el ciclo de vida del soft
 
 Los resultados del mantenimiento son **Informes de errores y control de cambios**.
 
-> **📝 Dato importante:** Cuando heredéis código de otros desarrolladores (en empresas o en GitHub),很可能 el 80% de votre trabajo será mantenimiento. Por eso es crucial que el código esté bien documentado y sea mantenible.
+> 📝 **Nota:** Cuando heredéis código de otros desarrolladores (en empresas o en GitHub), el 80% de vuestro trabajo será mantenimiento. Por eso es crucial que el código esté bien documentado y sea mantenible.
+
+---
 
 ### 3.2.9. Retirada del Software
 
@@ -268,3 +303,21 @@ Esta fase ocurre cuando el software ha llegado al **final de su vida útil** y y
 - Windows XP: Soporte terminado en 2014, pero muchas empresas lo usaron hasta 2019
 - Flash Player: Adobe lo discontinuó en 2020 por razones de seguridad
 - MySpace: En su momento fue la red social más grande; ahora está casi abandonada
+
+---
+
+**Resumen del punto:**
+
+| Fase | Objetivo | Resultado |
+|------|----------|-----------|
+| **Planificación** | Definir objetivos y viabilidad | Estudio de viabilidad |
+| **Análisis** | Conocer las necesidades del cliente | ERS (Especificación de Requisitos) |
+| **Diseño** | Definir cómo se hará | Arquitectura y especificación |
+| **Codificación** | Escribir el código | Código fuente |
+| **Pruebas** | Encontrar errores | Sistema aceptado |
+| **Documentación** | Explicar cómo funciona | Manuales |
+| **Explotación** | Poner en producción | Aplicación funcionando |
+| **Mantenimiento** | Evolucionar y corregir | Nuevas versiones |
+| **Retirada** | Final de vida útil | Fin del ciclo |
+
+En el siguiente punto veremos los **modelos y metodologías de desarrollo**, es decir, cómo se organizan estas fases en diferentes enfoques de trabajo.
