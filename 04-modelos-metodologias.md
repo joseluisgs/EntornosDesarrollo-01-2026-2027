@@ -16,8 +16,6 @@
 
 # 4. Modelos y Metodologías de Desarrollo de Software
 
----
-
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué algunas empresas entregan software a tiempo y otras siempre se retrasan? La diferencia está en el modelo de desarrollo que eligen.
 
 En el Punto 03 vimos las fases del ciclo de vida. Ahora veremos cómo se organizan estas fases en diferentes modelos y metodologías.
@@ -34,8 +32,6 @@ En el Punto 03 vimos las fases del ciclo de vida. Ahora veremos cómo se organiz
 Siempre se debe aplicar un modelo de ciclo de vida al desarrollo de cualquier proyecto software. Estos modelos son la serie de pasos a seguir para desarrollar un programa.
 
 > 💡 **Analogía:** Elegir un modelo de desarrollo es como elegir el método de construcción de una casa. No es lo mismo construir una cabaña en el bosque (modelo simple, requisitos claros) que un rascacielos en el centro de una ciudad (modelo complejo, muchos cambios durante la construcción).
-
----
 
 ## 4.1. Modelos Clásicos (Predictivos)
 
@@ -78,8 +74,6 @@ Es una variante del modelo en cascada que introduce una realimentación entre et
 **Desventaja:** Cada "vuelta atrás" cuesta tiempo y dinero
 
 ![Diagrama: Modelo en Cascada](/images/fases_desarrollo.jpg)
-
----
 
 ### 4.1.2. Modelo en V
 
@@ -128,8 +122,6 @@ graph TB
 
 ![Diagrama: Modelo en V](/images/modelo_v.jpeg)
 
----
-
 ## 4.2. Modelo de Construcción de Prototipos
 
 Se utiliza a menudo cuando los requisitos no están especificados claramente, ya sea por falta de experiencia previa o por omisión/falta de concreción del usuario/cliente. El proceso implica crear un prototipo durante la fase de análisis, que es probado por el usuario/cliente para refinar los requisitos del software a desarrollar. Este paso se repite las veces necesarias.
@@ -173,8 +165,6 @@ graph LR
 - Prototipos "desechables" pueden contener código que alguien decide reutilizar (mala idea)
 
 ![Diagrama: Modelo de Prototipos](/images/modelo_prototipos.webp)
-
----
 
 ## 4.3. Modelos Evolutivos o Incrementales
 
@@ -245,8 +235,6 @@ Las cuatro fases principales del modelo en espiral son:
 
 ![Diagrama: Modelo en Espiral](/images/modelo_espiral.png)
 
----
-
 ## 4.4. Metodologías Ágiles (Adaptativas)
 
 Las **metodologías ágiles** son un conjunto de metodologías de desarrollo de software basadas en el desarrollo iterativo e incremental. Los requisitos y soluciones evolucionan con el tiempo según la necesidad del proyecto. Promueven el trabajo en equipo, la colaboración con el cliente y la adaptación al cambio. Los equipos se autoorganizan y son multidisciplinares, inmersos en un proceso compartido de toma de decisiones a corto plazo.
@@ -295,8 +283,6 @@ graph LR
 
 > 💡 **Nota:** Los valores ágiles NO dicen que los procesos, la documentación, los contratos y los planes sean inútiles. Dicen que los individuos, el software funcionando, la colaboración y la respuesta al cambio son MÁS VALOROSOS.
 
----
-
 ### 4.4.2. Kanban
 
 También conocido como "sistema de tarjetas", fue desarrollado inicialmente por Toyota para la industria de fabricación de productos. Controla por demanda la fabricación de los productos necesarios en la cantidad y tiempo justos. Está enfocado a entregar el máximo valor para los clientes, utilizando los recursos justos. Se basa en el *Lean manufacturing*.
@@ -333,8 +319,6 @@ graph LR
 | - Notificaciones | | | |
 
 ![Diagrama: Proceso Kanban](/images/modelo_kanban.webp)
-
----
 
 ### 4.4.3. Scrum
 
@@ -386,8 +370,6 @@ graph LR
 > 📝 **Nota:** En DAM vamos a practicar Scrum con sprints de 2 semanas. Tendréis roles de Product Owner, Scrum Master y equipo de desarrollo. Es una experiencia muy valiosa para el mercado laboral.
 
 ![Diagrama: Proceso Scrum](/images/modelo_scrum.webp)
-
----
 
 ### 4.4.4. XP (eXtreme Programming)
 

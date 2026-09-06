@@ -20,8 +20,6 @@
 
 # 9. Caso de Estudio: El Lenguaje C# y la Plataforma .NET
 
----
-
 > 💡 **Punto de partida:** Hemos visto teoría sobre lenguajes, compilación, máquinas virtuales... pero, ¿cómo funciona todo esto en la práctica? Vamos a aplicar todo lo aprendido a un lenguaje real: C#.
 
 En los puntos anteriores vimos los conceptos teóricos. Ahora veremos cómo se aplican a un lenguaje real que usarás en DAM.
@@ -32,8 +30,6 @@ En los puntos anteriores vimos los conceptos teóricos. Ahora veremos cómo se a
 - Clasificar C# según todas las dimensiones vistas
 - Entender el proceso de compilación con Roslyn
 - Comprender el papel de la CLR y el JIT
-
----
 
 ## 9.1. Introducción a C# y .NET
 
@@ -83,8 +79,6 @@ graph TD
 | 2024 | C# 13 | params collections, lock statement |
 | 2025 | C# 14 | Extension functions, field keyword |
 
----
-
 ## 9.2. Clasificación de C# según lo visto en la unidad
 
 ### 9.2.1. Según nivel de abstracción
@@ -111,8 +105,6 @@ ADD AX, 3
 ```
 
 > 📝 **Nota:** En C# no necesitas saber cómo funciona el procesador por dentro. El compilador y la CLR se encargan de traducir tu código a algo que la máquina entienda.
-
----
 
 ### 9.2.2. Según mecanismo de traducción
 
@@ -149,8 +141,6 @@ ret
 
 > 💡 **Dato:** El código intermedio (IL) es independiente de la máquina. Por eso un archivo .dll de C# puede ejecutarse en Windows, Linux o Mac (si tiene la CLR correspondiente).
 
----
-
 ### 9.2.3. Según sistema de tipos
 
 C# es **estático y fuerte**.
@@ -178,8 +168,6 @@ var nombre = "Ana";   // infiere string
 | **Java** | Estático, fuerte | `int x = 5;` |
 | **Python** | Dinámico, fuerte | `x = 5` (puede cambiar a string) |
 | **JavaScript** | Dinámico, débil | `x = 5; x = "hola";` (funciona) |
-
----
 
 ### 9.2.4. Según paradigma
 
@@ -227,13 +215,9 @@ miBoton.Click += (sender, e) =>
 };
 ```
 
----
-
 ### 9.2.5. Según generación
 
 C# es de **tercera generación (3GL)**. Utiliza sentencias similares al inglés, es independiente de la máquina y permite el uso de estructuras de alto nivel como clases, bucles y funciones.
-
----
 
 ## 9.3. El proceso de compilación en C# (Roslyn)
 
@@ -321,8 +305,6 @@ El `.dll` contiene:
 - **Metadata**: Tipos, métodos, referencias
 - **Ensamblados referenciados**: Qué librerías usa
 
----
-
 ### 9.3.3. Enlazador y generación de ensamblados
 
 Cuando compilas, Roslyn genera un **ensamblado** (`.dll` o `.exe`). Este ensamblado contiene:
@@ -340,8 +322,6 @@ Cuando compilas, Roslyn genera un **ensamblado** (`.dll` o `.exe`). Este ensambl
 ```
 
 > 📝 **Nota:** A diferencia de C/C++ donde necesitas un enlazador externo, en C# el enlazador está integrado en la CLR. Ella resuelve las referencias entre ensamblados en tiempo de ejecución.
-
----
 
 ## 9.4. La máquina virtual: CLR y JIT
 
@@ -362,8 +342,6 @@ string nombre = "Ana";  // Reserva memoria
 ```
 
 > 💡 **Analogía:** La CLR es como un traductor automático que llevas en el bolsillo. Tú hablas en "C#" y ella traduce al "procesador" en tiempo real.
-
----
 
 ### 9.4.2. JIT (Just-In-Time Compilation)
 
@@ -393,8 +371,6 @@ graph LR
 
 El JIT guarda el código nativo en caché. La segunda vez que ejecutas el mismo método, ya tiene el código máquina listo sin necesidad de recompilar.
 
----
-
 ### 9.4.3. Comparación con Java
 
 | Característica | C# (.NET/CLR) | Java (JVM) |
@@ -408,8 +384,6 @@ El JIT guarda el código nativo en caché. La segunda vez que ejecutas el mismo 
 | **Rendimiento** | Muy alto | Alto |
 
 > 💡 **Dato:** Históricamente C# era solo Windows. Desde .NET Core (2016), C# puede ejecutarse en Linux, Mac, iOS, Android, etc. Hoy en día es tan multiplataforma como Java.
-
----
 
 ## 9.5. .NET Framework vs .NET (Core)
 
@@ -434,8 +408,6 @@ graph LR
 | **CLI** | NuGet Package Manager | dotnet CLI |
 
 > 📝 **Nota:** En DAM usaremos **.NET 10** (la versión más reciente). Es multiplataforma, rápido y tiene todas las características modernas de C#.
-
----
 
 ## 9.6. Resumen
 

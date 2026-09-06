@@ -11,8 +11,6 @@
 
 # 8. Perfiles del Desarrollo de Software
 
----
-
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado quién hace qué cuando se crea una app como Instagram o Netflix? ¿Es una sola persona o un equipo? ¿Y qué diferencias hay entre un programador y un arquitecto de software?
 
 En el Punto 07 vimos las herramientas de apoyo. Ahora veremos **quién** usa esas herramientas: los perfiles profesionales del desarrollo de software.
@@ -50,8 +48,6 @@ graph TD
     style H fill:#795548,color:#fff
 ```
 
----
-
 ## 8.1. Arquitecto de Software
 
 - Este profesional tiene la responsabilidad de decidir "cómo" se realiza el proyecto y cómo se estructurará.
@@ -73,8 +69,6 @@ graph TD
 - Comunicación con stakeholders técnicos y no técnicos
 
 > 📝 **Nota:** En DAM seréis programadores, pero con experiencia podréis crecer hacia roles de arquitectura. El arquitecto es el "veterano" del equipo técnico.
-
----
 
 ## 8.2. Jefe de Proyecto
 
@@ -99,8 +93,6 @@ graph TD
 
 > 💡 **Dato:** Muchos jefes de proyecto en software provienen de perfiles técnicos (ex-programadores) porque entienden mejor las complejidades del desarrollo.
 
----
-
 ## 8.3. Analista de Sistemas
 
 - Realiza un estudio exhaustivo del problema a resolver.
@@ -123,8 +115,6 @@ graph TD
 
 > 📝 **Nota:** El analista es el "traductor" entre lo que quiere el cliente (lenguaje de negocio) y lo que necesita el programador (lenguaje técnico). Es crucial para evitar malentendidos.
 
----
-
 ## 8.4. Analista Programador
 
 - Según las fuentes, este rol comparte muchas responsabilidades con el **Analista de Sistemas**, incluyendo la realización de un estudio exhaustivo del problema, la ejecución del análisis y diseño del sistema, y la interacción con el cliente.
@@ -144,8 +134,6 @@ graph TD
 - Conocimiento del negocio
 
 > 💡 **Consejo:** El analista se centra en el "qué" (requisitos), el programador en el "cómo" (implementación). El analista-programador hace ambas cosas.
-
----
 
 ## 8.5. Programador (o Desarrollador)
 
@@ -174,8 +162,6 @@ graph TD
 
 > 📝 **Nota:** En DAM vuestra primera posición será Programador Junior. Con práctica y experiencia podréis ascender a niveles superiores.
 
----
-
 ## 8.6. QA (Quality Assurance) / Testeador
 
 - Aunque las fuentes no lo mencionan explícitamente como un "rol" con título específico en la lista de perfiles, la fase de **Pruebas** es fundamental y su objetivo principal es "conseguir que el programa funcione incorrectamente para descubrir y corregir defectos".
@@ -199,8 +185,6 @@ graph TD
 
 > 💡 **Dato:** El testing es una carrera en sí misma. Hay QA manual, automatización de pruebas, testing de rendimiento, security testing, etc.
 
----
-
 ## 8.7. DevOps
 
 Aunque no aparece en el contenido original, DevOps es un perfil esencial en equipos modernos:
@@ -218,8 +202,6 @@ Aunque no aparece en el contenido original, DevOps es un perfil esencial en equi
 - Cloud (AWS, Azure, GCP)
 - Pipelines CI/CD (Jenkins, GitHub Actions)
 - Infrastructure as Code
-
----
 
 ## 8.8. Organigrama de un Equipo de Desarrollo
 

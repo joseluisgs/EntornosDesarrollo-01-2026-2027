@@ -9,8 +9,6 @@
 
 # 7. Herramientas de Apoyo al Desarrollo de Software
 
----
-
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado cómo un programador puede crear una aplicación completa sin escribir todo el código desde cero? ¿O cómo se gestiona el trabajo en equipo cuando 10 personas modifican el mismo proyecto? La respuesta está en las herramientas de apoyo.
 
 En el Punto 06 vimos los procesos de traducción y las máquinas virtuales. Ahora veremos las **herramientas** que facilitan y agilizan nuestro trabajo como desarrolladores.
@@ -21,8 +19,6 @@ En el Punto 06 vimos los procesos de traducción y las máquinas virtuales. Ahor
 - Entender qué son las herramientas CASE y para qué sirven
 - Diferenciar entre editores simples e IDEs
 - Saber elegir la herramienta adecuada según el contexto
-
----
 
 ## 7.1. Herramientas de Desarrollo
 
@@ -69,8 +65,6 @@ graph TD
 
 > 📝 **Nota:** En DAM trabajaréis intensamente con estas herramientas. Dominar Visual Studio Code y Git es casi tan importante como saber programar. Son vuestras armas principales.
 
----
-
 ## 7.2. Herramientas CASE (Computer Aided Software Engineering)
 
 Las **herramientas CASE** son un conjunto de aplicaciones que se utilizan en el desarrollo de software con el objetivo de reducir costes y tiempo del proceso, mejorando la productividad.
@@ -85,8 +79,6 @@ Las **herramientas CASE** son un conjunto de aplicaciones que se utilizan en el 
 - **Validación de requisitos** y consistencia
 - **Documentación automática** del proyecto
 - **Gestión de la configuración** del software
-
----
 
 ### 7.2.2. Clasificación según fases
 
@@ -125,8 +117,6 @@ graph TD
 - **PlantUML:** https://plantuml.com/ - UML mediante texto
 
 > 📝 **Nota:** En ciclos de desarrollo, las herramientas CASE se usan especialmente en las fases de análisis y diseño para crear diagramas UML que documenten el sistema antes de programar.
-
----
 
 ## 7.3. Desarrollo Rápido de Aplicaciones (RAD)
 
@@ -168,8 +158,6 @@ graph LR
 - **Retool:** Interfaces de gestión rápidas
 
 > 📝 **Nota:** El movimiento "low-code" y "no-code" son herederos modernos de RAD. Permiten crear aplicaciones sin apenas programar, aunque tienen limitaciones.
-
----
 
 ## 7.4. Entornos de Desarrollo Integrado (IDE)
 

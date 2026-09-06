@@ -18,8 +18,6 @@
 
 # 2. Conceptos Fundamentales: Software y Hardware
 
----
-
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué tu móvil funciona, mientras que un ladrillo del mismo tamaño no hace nada? La diferencia está en el software.
 
 En el Punto 01 vimos qué es el desarrollo de software y sus fases. Ahora veremos qué es exactamente el software, qué es el hardware, y cómo se relacionan para que un ordenador funcione.
@@ -30,8 +28,6 @@ En el Punto 01 vimos qué es el desarrollo de software y sus fases. Ahora veremo
 - Identificar los componentes principales del sistema informático
 - Comprender la relación entre software y hardware
 - Reconocer los tipos de software según su función
-
----
 
 ## 2.1. ¿Qué es el Software?
 
@@ -89,8 +85,6 @@ Es un software genérico válido para cualquier cliente potencial y resuelve mú
 
 > 📝 **Nota:** En DAM vais a crear tanto software a medida (prácticas y proyectos) como a integrar soluciones estándar (usando APIs, conectando con bases de datos existentes, etc.). Ambos enfoques son valiosos en la industria.
 
----
-
 ## 2.2. ¿Qué es el Hardware?
 
 El **hardware** es el conjunto de dispositivos físicos que conforman un ordenador. Los componentes principales del sistema informático incluyen:
@@ -143,8 +137,6 @@ graph TB
 ```
 
 > 💡 **Reflexión:** Abre tu móvil. ¿Cuántos componentes de hardware identificas? (pantalla, batería, cámara, altavoz...) ¿Y cuántos de software? (sistema operativo, apps, fotos, contactos...)
-
----
 
 ## 2.3. Relación Hardware-Software
 

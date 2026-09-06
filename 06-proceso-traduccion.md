@@ -21,8 +21,6 @@
 
 # 6. Proceso de Traducción, Máquinas Virtuales y Entornos de Ejecución
 
----
-
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado cómo tu código en Python o Java se convierte en algo que el procesador entiende? ¿Y por qué la misma aplicación puede funcionar en Windows, Linux y Mac? La respuesta está en los procesos de traducción y las máquinas virtuales.
 
 En el Punto 05 vimos los tipos de lenguajes y sus mecanismos de traducción. Ahora profundizaremos en **cómo funciona ese proceso** de principio a fin.
@@ -35,8 +33,6 @@ En el Punto 05 vimos los tipos de lenguajes y sus mecanismos de traducción. Aho
 - Comprender qué es una máquina virtual y por qué existe
 - Conocer los entornos de ejecución y frameworks más comunes
 
----
-
 ## 6.1. Proceso de Traducción: Compilación e Interpretación
 
 Para que el ordenador entienda algo escrito en un lenguaje de programación, debe pasar por un proceso de traducción de código. La traducción de un programa escrito en un lenguaje de programación a un lenguaje de máquina se realiza mediante un **traductor**, que puede ser un **compilador** o un **intérprete**.
@@ -44,8 +40,6 @@ Para que el ordenador entienda algo escrito en un lenguaje de programación, deb
 > 💡 **Analogía:** Imagina que tienes un libro en japonés y quieres leerlo. Tienes dos opciones:
 > - **Compilar:** Traducir TODO el libro al español antes de leerlo (trabajo largo antes, lectura rápida después)
 > - **Interpretar:** Leerlo con un traductor que te va traduciendo frase por frase mientras lees (más lento pero adaptable)
-
----
 
 ### 6.1.1. Diferenciación entre Traducción, Compilación e Interpretación
 
@@ -130,8 +124,6 @@ graph LR
 
 > 💡 **Ejemplo real:** TypeScript se usa porque ofrece tipos estáticos y más seguridad, pero los navegadores solo entienden JavaScript. El transpilador `tsc` o `Babel` resuelve esa brecha convirtiendo `.ts` a `.js`.
 
----
-
 ### 6.1.2. Fases de un Traductor (Compilador/Intérprete)
 
 Un **traductor** es un programa que convierte el código escrito por un programador (código fuente) en un lenguaje que la máquina puede entender directamente (código máquina o código objeto). Este proceso no es una simple traducción palabra por palabra, sino que se lleva a cabo en varias fases bien definidas.
@@ -161,8 +153,6 @@ graph TD
 
 ![Diagrama: Fases de un Compilador](/images/fases_compilador.png)
 
----
-
 #### 1. Análisis Léxico (Scanner)
 
 Es la primera fase del proceso. El **analizador léxico** lee el código fuente carácter a carácter y lo agrupa en unidades lógicas llamadas **tokens**. Un token representa una unidad léxica, como una palabra clave (`if`, `while`), un identificador (`variableX`), un operador (`+`, `=`), o un literal (`"hola mundo"`, `123`). También se encarga de eliminar comentarios y espacios en blanco.
@@ -178,8 +168,6 @@ Es la primera fase del proceso. El **analizador léxico** lee el código fuente 
 - `;` (token de delimitador - SEMICOLON)
 
 > 💡 **Analogía:** El análisis léxico es como un niño aprendiendo a leer que primero identifica letras, luego sílabas y finalmente palabras completas. El scanner hace lo mismo: caracteres → palabras → tokens.
-
----
 
 #### 2. Análisis Sintáctico (Parser)
 
@@ -202,8 +190,6 @@ graph TD
 - Palabra clave mal escrita: `whille (true) { ... }`
 
 > 📝 **Nota:** Cuando el compilador dice "Syntax error at line 10", está diciendo que los tokens no se pueden organizar en una estructura válida según las reglas del lenguaje.
-
----
 
 #### 3. Análisis Semántico
 
@@ -241,8 +227,6 @@ Si el código supera esta fase, se garantiza que es válido y tiene un significa
 
 > 💡 **Consejo:** Un programa puede tener sintaxis correcta pero semántica incorrecta. "El gato come la televisión" es gramaticalmente correcto pero no tiene sentido.
 
----
-
 #### 4. Generación de Código Intermedio
 
 Antes de producir el código máquina final, muchos compiladores generan un **código intermedio**. Este es un lenguaje de bajo nivel, parecido al ensamblador, pero independiente de la arquitectura de la máquina de destino. Esta fase simplifica el diseño del compilador, ya que las optimizaciones pueden realizarse sobre este código genérico en lugar de sobre múltiples arquitecturas de máquina.
@@ -256,8 +240,6 @@ x = t2
 ```
 
 > 📝 **Nota:** Java usa el "bytecode" como código intermedio. Es como un ensamblador universal que todas las JVMs pueden entender.
-
----
 
 #### 5. Optimización de Código
 
@@ -274,13 +256,9 @@ Esta fase es opcional pero crucial para el rendimiento. El **optimizador** mejor
 
 > 💡 **Dato:** El compilador de C (gcc) con optimización `-O3` puede hacer que tu código sea 10-100 veces más rápido que sin optimizar, pero el código resultante es casi imposible de entender para humanos.
 
----
-
 #### 6. Generación de Código Objeto
 
 En esta fase, el código intermedio (ya optimizado) se convierte en **código máquina** de la arquitectura específica (por ejemplo, x86, ARM). El resultado es un archivo binario que contiene instrucciones que la CPU puede ejecutar directamente. Sin embargo, este código aún no es un programa completo, ya que las referencias a funciones o datos de otras partes del programa o de librerías externas están representadas por etiquetas simbólicas.
-
----
 
 #### 7. Enlazador (Linker) y Cargador (Loader)
 
@@ -289,8 +267,6 @@ En esta fase, el código intermedio (ya optimizado) se convierte en **código m�
 > 💡 **Analogía:** El enlazador es como un editor de un libro que combina los capítulos escritos por diferentes autores (módulos) con el índice y las referencias cruzadas para crear un libro completo y coherente.
 
 - **Cargador (Loader):** Aunque no es parte del compilador, es la fase final que se encarga de cargar el archivo ejecutable en la memoria RAM y prepara su ejecución cuando el usuario lo inicia.
-
----
 
 ## 6.2. Códigos Fuente, Objeto y Ejecutable
 
@@ -320,8 +296,6 @@ graph LR
 
 > 💡 **Dato:** Cuando desarrollas en Java, trabajas con código fuente (.java). El compilador javac genera bytecode (.class). Cuando ejecutas `java MiClase`, la JVM carga el bytecode y lo interpreta/JIT-compila a código máquina nativo.
 
----
-
 ## 6.3. Máquinas Virtuales y Entornos de Ejecución
 
 ### 6.3.1. Concepto de Máquina Virtual
@@ -329,8 +303,6 @@ graph LR
 Una **máquina virtual (MV)** es un tipo especial de software cuya misión es separar el funcionamiento del ordenador de los componentes hardware instalados. Actúa como una capa de software de bajo nivel, haciendo de puente entre el bytecode de la aplicación y los dispositivos físicos del sistema. Esto garantiza la **portabilidad** de las aplicaciones, permitiendo desarrollarlas y ejecutarlas sobre cualquier equipo, independientemente de sus características hardware.
 
 > 💡 **Analogía:** La máquina virtual es como un traductor universal que permite que tu programa hable "java" con el hardware que solo entiende "máquina".
-
----
 
 ### Funciones principales de una máquina virtual
 
@@ -380,8 +352,6 @@ graph TB
 
 ![img05](/images/lenguajes_traduccion.gif)
 
----
-
 ### 6.3.2. Entornos de Ejecución (Runtime Environments)
 
 Un **entorno de ejecución** es un servicio de máquina virtual que sirve como base software para la ejecución de programas. Puede pertenecer al sistema operativo o instalarse como software independiente. Es un conjunto de utilidades que permiten la ejecución de programas. Se encarga de configurar la memoria principal, enlazar los archivos del programa con bibliotecas existentes y subprogramas creados, y depurar programas (comprobar errores semánticos).
@@ -399,15 +369,11 @@ El Entorno de Ejecución está formado por la máquina virtual y los **API's** (
 
 > 📝 **Nota:** Cuando instaláis Python, estáis instalando el intérprete + la biblioteca estándar + el runtime. Sin esto, no podríais ejecutar programas .py.
 
----
-
 ### 6.3.3. Frameworks
 
 Un **framework** (plataforma, entorno, marco de trabajo de desarrollo rápido de aplicaciones) es una estructura de ayuda para el programador, en base a la cual se pueden desarrollar proyectos sin partir desde cero. Es una plataforma software que define programas de soporte, bibliotecas, lenguajes interpretados, etc., ayudando a desarrollar y unir los diferentes módulos de un proyecto.
 
 > 💡 **Analogía:** Un framework es como un kit de construcción de muebles IKEA. No tienes que diseñar las piezas desde cero, sigues las instrucciones del kit y lo montas.
-
----
 
 ### Ventajas de utilizar un framework
 

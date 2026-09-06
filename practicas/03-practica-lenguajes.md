@@ -3,7 +3,7 @@
 
 **Enunciado de la Práctica:**
 
-El objetivo de esta práctica es realizar un análisis exhaustivo de los **20 lenguajes de programación más demandados** según el **[Índice TIOBE para septiembre de 2025](https://www.tiobe.com/tiobe-index/)**.
+El objetivo de esta práctica es realizar un análisis exhaustivo de los **20 lenguajes de programación más demandados** según el **[Índice TIOBE para septiembre de 2026](https://www.tiobe.com/tiobe-index/)**.
 
 Para cada uno de los 20 lenguajes identificados en dicho índice (cuando esté disponible), el alumnado deberá investigar y completar la siguiente tabla. Las clasificaciones y definiciones de los distintos tipos de lenguajes, paradigmas y sistemas de tipado deberán aplicarse basándose en los contenidos estudiados en el tema "Desarrollo de Software".
 

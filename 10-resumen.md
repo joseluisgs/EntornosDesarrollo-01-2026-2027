@@ -17,8 +17,6 @@
 
 # 10. Resumen y Conclusiones
 
----
-
 > 💡 **Punto de partida:** Hemos recorrido todo el camino desde qué es el software hasta los perfiles profesionales. Este resumen consolida todo lo aprendido.
 
 Hemos visto la teoría completa del Desarrollo de Software. Este punto consolida todos los conceptos en una sola mirada.

@@ -5,8 +5,6 @@
 
 # 1. Introducción al Desarrollo de Software
 
----
-
 En este punto aprenderás qué es el desarrollo de software, cuáles son las fases de un proyecto y por qué es tan importante seguir un proceso estructurado. Comprenderás que programar es solo una parte del proceso completo.
 
 **Objetivos de aprendizaje:**
@@ -15,8 +13,6 @@ En este punto aprenderás qué es el desarrollo de software, cuáles son las fas
 - Identificar las fases principales del ciclo de vida del desarrollo
 - Comprender por qué no se pueden "saltar" pasos en un proyecto
 - Reconocer la importancia del mantenimiento en el ciclo de vida
-
----
 
 ## 1.1. ¿Qué es el Desarrollo de Software?
 
@@ -46,8 +42,6 @@ graph LR
 ```
 
 💡 **Dato curioso:** El término "bug" (bicho) para referirse a un error de software proviene de 1947, cuando la científica Grace Hopper encontró una polilla real atascada en un relé de la computadora Harvard Mark II.
-
----
 
 ## 1.2. La Importancia del Proceso de Desarrollo
 

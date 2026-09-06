@@ -27,8 +27,6 @@
 
 # 5. Lenguajes de Programación
 
----
-
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué existen tantos lenguajes de programación? ¿Por qué no usamos todos el mismo? La respuesta está en que cada lenguaje está diseñado para resolver problemas diferentes.
 
 En el Punto 04 vimos los modelos de desarrollo. Ahora veremos la herramienta que usamos para implementar esos modelos: los lenguajes de programación.
@@ -39,8 +37,6 @@ En el Punto 04 vimos los modelos de desarrollo. Ahora veremos la herramienta que
 - Clasificar lenguajes por nivel, mecanismo de traducción y sistema de tipos
 - Conocer los principales paradigmas de programación
 - Saber elegir un lenguaje según el contexto
-
----
 
 ## 5.1. ¿Qué es un Lenguaje de Programación?
 
@@ -115,8 +111,6 @@ graph TB
 | Funciones | Recetas de cocina reutilizables |
 
 ![Diagrama: Elementos de un Lenguaje de Programación](/images/componentes_lenguaje.jpg)
-
----
 
 ## 5.2. Clasificación de Lenguajes de Programación
 
@@ -213,8 +207,6 @@ graph TB
 
 ![Diagrama: Clasificación de Lenguajes por Nivel](/images/lenguajes_cercania.png)
 
----
-
 ### 5.2.2. Según su mecanismo de traducción (Compilados, Interpretados, Mixtos)
 
 La obtención de código binario ejecutable se realiza mediante compilación o interpretación.
@@ -293,8 +285,6 @@ graph LR
 
 ![Diagrama: Clasificación de Lenguajes por Traducción](/images/lenguajes_compialdos_interpretados.jpg)
 
----
-
 ### 5.2.2.4. Lenguajes Transpilados
 
 Un **transpilador** (o transcompiler) es un tipo de compilador que traduce código de un lenguaje de programación a otro lenguaje de programación de **similar nivel de abstracción**. A diferencia de un compilador tradicional (que va de alto a bajo nivel), la transpilación va de un lenguaje de alto nivel a otro de alto nivel.
@@ -347,8 +337,6 @@ graph LR
     style B fill:#FF9800,color:#fff
     style C fill:#4CAF50,color:#fff
 ```
-
----
 
 ### 5.2.3. Según su sistema de tipos (Tipado Fuerte, Tipado Débil)
 
@@ -465,8 +453,6 @@ graph TB
 
 > 📝 **Nota:** No existe un "mejor" sistema de tipos. El tipado fuerte y estático (Java, C#) detecta errores antes pero requiere más código. El tipado dinámico (Python, JavaScript) es más rápido de escribir pero puede ocultar errores hasta producción. Elegid según el contexto del proyecto.
 
----
-
 ### 5.2.4. Según la forma en que operan (Paradigmas de Programación)
 
 Un **paradigma de programación** es un modelo fundamental para el diseño y la implementación de programas, que determina la estructura y el enfoque del código. La mayoría de los lenguajes de programación modernos, como **Java**, **Kotlin** y **C#**, son multiparadigma, lo que significa que combinan características de varios de ellos para ofrecer mayor flexibilidad y poder a los desarrolladores.
@@ -578,8 +564,6 @@ graph TB
     style H fill:#795548,color:#fff
 ```
 
----
-
 ### 5.2.5. Según Generaciones
 
 La evolución de los lenguajes de programación se puede dividir en 5 etapas o generaciones:
@@ -612,8 +596,6 @@ graph LR
 
 > 💡 **Dato:** La mayoría de los lenguajes que aprenderás en DAM son de 3GL (C, Java, Python) y 4GL (SQL). La 5GL está más relacionada con investigación en IA.
 
----
-
 ## 5.3. Criterios para la Selección de un Lenguaje de Programación
 
 La elección del lenguaje a utilizar en un proyecto es de extrema importancia. Algunos criterios para su selección son:
@@ -632,8 +614,6 @@ La elección del lenguaje a utilizar en un proyecto es de extrema importancia. A
 | **Imposición del cliente** | ¿El cliente exige algo específico? |
 
 > 📝 **Nota:** No existe el "mejor" lenguaje. Existe el lenguaje adecuado para cada situación. Un científico de datos prefiere Python por sus librerías de ML. Un desarrollador de videojuegos AAA prefiere C++ por rendimiento. Un startup web elige JavaScript/Node.js por velocidad de desarrollo.
-
----
 
 ## 5.4. Lenguajes más Utilizados en la Actualidad
 
