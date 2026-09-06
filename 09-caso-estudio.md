@@ -253,6 +253,18 @@ Roslyn realiza las tres fases del análisis que vimos en el Punto 06:
 
 ### 9.3.2. Fases de compilación en C#
 
+Primero, conozcamos los términos que usaremos:
+
+| Término | Significado | Analogía |
+|---------|-------------|----------|
+| **Roslyn** | El compilador de C# (escrito en C#) | El traductor que convierte tu español a otro idioma |
+| **IL / CIL** | Código Intermedio / Common Intermediate Language. Instrucciones abstractas que no dependen de ninguna máquina concreta | Un "español neutro" que todos entienden |
+| **Ensamblado** | Archivo `.dll` o `.exe` que contiene IL + metadata + referencias | Un "paquete" listo para enviar |
+| **CLR** | Common Language Runtime. La máquina virtual de .NET que ejecuta el código | El "intérprete" que entiende IL y lo ejecuta |
+| **JIT** | Just-In-Time Compiler. Convierte IL a código máquina nativo en tiempo de ejecución | El "traductor final" que habla directamente con el procesador |
+| **Metadata** | Información sobre tipos, métodos, propiedades del código | El "índice" del libro |
+| **GC** | Garbage Collector. Gestiona la memoria automáticamente | El "limpiador" que libera memoria que ya no se usa |
+
 ```mermaid
 graph TD
     A[Código Fuente .cs] --> B[Roslyn - Compilador]
@@ -275,6 +287,20 @@ graph TD
     style H fill:#795548,color:#fff
     style I fill:#009688,color:#fff
 ```
+
+**Cada fase de Roslyn:**
+
+| Fase | Qué hace | Qué se logra | Ejemplo de error |
+|------|----------|--------------|------------------|
+| **Análisis Léxico** | Divide el código en tokens (palabras, símbolos) | Unificar espacios, comentarios y detectar caracteres inválidos | `int x = ;` → "token inesperado" |
+| **Análisis Sintáctico** | Verifica que los tokens sigan las reglas gramaticales | Un árbol de sintaxis abstracto (AST) correcto | `if (x > {` → "error de sintaxis" |
+| **Análisis Semántico** | Comprueba que el código tenga sentido lógico | Detectar tipos incompatibles, variables no declaradas | `int x = "hola";` → "no se puede convertir string a int" |
+| **Código IL/CIL** | Genera instrucciones intermedias independientes de la máquina | Un archivo que puede ejecutarse en cualquier plataforma con CLR | — |
+| **Ensamblado** | Empaqueta IL + metadata + referencias en un `.dll` o `.exe` | Un módulo listo para ser cargado por la CLR | — |
+| **CLR carga** | Lee el ensamblado y verifica seguridad | El código está en memoria y listo para ejecutarse | "TypeLoadException" si falta una librería |
+| **JIT compila** | Convierte IL a código máquina nativo para el hardware concreto | Código optimizado para tu procesador específico | — |
+
+> 💡 **Ejemplo real:** Cuando escribes `Console.WriteLine("Hola")`, Roslyn analiza léxico (detecta `Console`, `.`, `WriteLine`, `(`, `"Hola"`, `)`), luego verifica sintaxis (¿está bien formado?), luego semántica (¿existe `WriteLine` en `Console`? ¿acepta un string?), y finalmente genera IL que la CLR ejecutará.
 
 **Ejemplo práctico:**
 
