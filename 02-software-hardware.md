@@ -90,7 +90,8 @@ Es un software genérico válido para cualquier cliente potencial y resuelve mú
 El **hardware** es el conjunto de dispositivos físicos que conforman un ordenador. Los componentes principales del sistema informático incluyen:
 
 - **CPU (Unidad Central de Procesamiento)**: También llamada UCP (en inglés), procesador o microprocesador. Lee y ejecuta las instrucciones almacenadas en la memoria RAM, así como los datos necesarios.
-- **Memoria RAM**: Almacena de forma temporal el código binario de los archivos ejecutables y los archivos de datos necesarios para la ejecución del programa.
+- **Memoria RAM**: Almacena de forma temporal el código binario de los archivos ejecutables y los archivos de datos necesarios para la ejecución del programa. Es volátil: cuando apagas el ordenador, se borra todo lo que hay en ella.
+- **Memoria ROM**: Almacena de forma permanente las instrucciones básicas para iniciar el ordenador (BIOS/UEFI). Es de solo lectura: no se puede modificar ni borrar durante el uso normal del equipo.
 - **Disco Duro**: Almacena de forma permanente los archivos ejecutables y los archivos de datos. Se considera un periférico de Entrada/Salida (E/S).
 - **Periféricos de Entrada/Salida (E/S)**: Recogen nuevos datos desde la entrada, muestran los resultados, leen o guardan datos en disco, etc.
 
@@ -100,6 +101,7 @@ El **hardware** es el conjunto de dispositivos físicos que conforman un ordenad
 |------------|-------------------|---------|
 | CPU | Chef | Ejecuta las tareas, procesa la información |
 | RAM | Encimera de trabajo | Espacio temporal para trabajar |
+| ROM | Receta de la casa | Instrucciones permanentes que el chef necesita para arrancar |
 | Disco duro | Nevera/armario | Almacenamiento permanente |
 | Periféricos E/S | Ventanilla de pedidos (entrada) y platos servidos (salida) | Comunicación con el usuario |
 

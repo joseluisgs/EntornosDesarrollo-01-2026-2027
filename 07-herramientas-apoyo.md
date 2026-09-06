@@ -5,6 +5,8 @@
     - [7.2.2. Clasificación según fases](#722-clasificación-según-fases)
   - [7.3. Desarrollo Rápido de Aplicaciones (RAD)](#73-desarrollo-rápido-de-aplicaciones-rad)
   - [7.4. Entornos de Desarrollo Integrado (IDE)](#74-entornos-de-desarrollo-integrado-ide)
+  - [7.5. Control de Versiones: Git](#75-control-de-versiones-git)
+  - [7.6. Contenedores: Docker](#76-contenedores-docker)
 
 
 # 7. Herramientas de Apoyo al Desarrollo de Software
@@ -246,6 +248,64 @@ graph TD
 
 ---
 
+## 7.5. Control de Versiones: Git
+
+**Git** es la herramienta de control de versiones más utilizada en el mundo. Permite registrar los cambios realizados en archivos a lo largo del tiempo, de modo que puedas recuperar versiones anteriores y trabajar en equipo sin pisarte los unos a los otros.
+
+> 💡 **Analogía:** Git es como el "Historial" de Google Docs, pero mucho más potente. Cada "guardado" (commit) es una fotografía de tu proyecto en ese momento. Si algo se rompe, puedes volver a la foto anterior.
+
+**Conceptos básicos de Git:**
+
+| Concepto | Descripción |
+|----------|-------------|
+| **Repositorio (repo)** | Carpeta que Git está vigilando. Contiene todo el historial de cambios |
+| **Commit** | Una "foto" del proyecto en un momento dado. Cada commit tiene un mensaje que describe qué cambió |
+| **Rama (branch)** | Una línea de desarrollo paralela. Puedes crear ramas para experimentar sin afectar al código principal |
+| **Merge** | Unir dos ramas en una. Git intenta fusionar los cambios automáticamente |
+| **Push/Pull** | Subir (push) o bajar (pull) cambios a/from un repositorio remoto (GitHub, GitLab) |
+
+**Comandos básicos:**
+
+```bash
+git init                    # Crear un repositorio nuevo
+git add .                   # Preparar todos los cambios
+git commit -m "mensaje"     # Guardar una foto del proyecto
+git push                    # Subir a GitHub/GitLab
+git pull                    # Bajar cambios del repositorio
+git log --oneline           # Ver historial de commits
+git branch feature/nombre   # Crear una rama
+git checkout feature/nombre # Cambiar a esa rama
+git merge feature/nombre    # Fusionar la rama con la actual
+```
+
+> 📝 **Nota:** En DAM vais a usar Git en todos los proyectos. Es una habilidad fundamental en cualquier empresa de software. GitHub y GitLab son las plataformas más populares para alojar repositorios remotos.
+
+## 7.6. Contenedores: Docker
+
+**Docker** es una plataforma que permite empaquetar una aplicación junto con todas sus dependencias (librerías, configuraciones, bases de datos) en un "contenedor" que se ejecuta de forma idéntica en cualquier ordenador.
+
+> 💡 **Analogía:** Docker es como una "caja de embalar" para software. Metes tu aplicación con todo lo que necesita dentro de la caja, y esa caja funciona igual en tu portátil, en el servidor de la empresa o en la nube. El problema clásico "en mi ordenador funciona" desaparece.
+
+**Conceptos clave:**
+
+| Concepto | Descripción |
+|----------|-------------|
+| **Contenedor** | Instancia aislada de una aplicación con todo su entorno |
+| **Imagen** | Plantilla de solo lectura que define el contenedor (como un "molde") |
+| **Dockerfile** | Archivo de texto con instrucciones para crear la imagen |
+| **Docker Hub** | Repositorio público de imágenes (como GitHub pero para contenedores) |
+
+**¿Por qué Docker en desarrollo?**
+
+- **Reproducibilidad**: Todo el equipo trabaja con el mismo entorno
+- **Aislamiento**: Cada servicio (app, base de datos, caché) corre en su propio contenedor
+- **Portabilidad**: Funciona igual en Windows, Linux y Mac
+- **Rapidez**: Los contenedores arrancan en segundos, no en minutos como una máquina virtual
+
+> 📝 **Nota:** Docker no reemplaza a las máquinas virtuales, pero para desarrollo y despliegue de aplicaciones web es mucho más ligero y rápido. En proyectos .NET, es habitual usar Docker para levantar la base de datos (SQL Server, PostgreSQL) sin instalarla en tu ordenador.
+
+---
+
 **Resumen del punto:**
 
 | Concepto | Descripción |
@@ -256,5 +316,7 @@ graph TD
 | **IDE** | Todo integrado en una sola aplicación |
 | **VS Code** | Editor principal para DAM (ligero, gratuito) |
 | **Visual Studio** | IDE completo para C# (el más potente) |
+| **Git** | Control de versiones esencial en cualquier proyecto |
+| **Docker** | Contenedores para entornos reproducibles y portables |
 
 En el siguiente punto veremos los **perfiles profesionales** del desarrollo de software: quién hace qué en un equipo de desarrollo.

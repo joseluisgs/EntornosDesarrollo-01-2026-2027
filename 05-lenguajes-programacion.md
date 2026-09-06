@@ -352,13 +352,13 @@ Esta dimensión se refiere a la flexibilidad con la que un lenguaje maneja las c
   - **Ejemplos**: C#, Java, Python, Ruby.
 
   ```csharp
-  // C# (tipado fuerte) - No permite concatenar string + int directamente
-  string resultado = "5" + 3;  // Error de compilación: Cannot implicitly convert type 'int' to 'string'
+  // C# (tipado fuerte) - No permite asignar un string a un int
+  int resultado = "hola";  // Error de compilación: Cannot implicitly convert type 'string' to 'int'
   ```
 
   ```python
   # Python (tipado fuerte)
-  resultado = "5" + 3  # TypeError: can only concatenate str to str
+  resultado = 5 + "3"  # TypeError: unsupported operand type(s) for +: 'int' and 'str'
   ```
 
 - **Lenguajes de Tipado Débil**: Permiten conversiones de tipo automáticas. El lenguaje puede intentar convertir un tipo de dato a otro sin que el programador lo solicite explícitamente. Esta flexibilidad puede llevar a errores que son difíciles de detectar.

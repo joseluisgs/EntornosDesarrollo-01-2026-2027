@@ -1,54 +1,47 @@
+- [Práctica 3: Análisis de Lenguajes de Programación según TIOBE](#práctica-3-análisis-de-lenguajes-de-programación-según-tiobe)
 
-### **Práctica de Investigación: Análisis de Lenguajes de Programación según el Índice TIOBE**
 
-**Enunciado de la Práctica:**
+# Práctica 3: Análisis de Lenguajes de Programación según TIOBE
 
-El objetivo de esta práctica es realizar un análisis exhaustivo de los **20 lenguajes de programación más demandados** según el **[Índice TIOBE para septiembre de 2026](https://www.tiobe.com/tiobe-index/)**.
-
-Para cada uno de los 20 lenguajes identificados en dicho índice (cuando esté disponible), el alumnado deberá investigar y completar la siguiente tabla. Las clasificaciones y definiciones de los distintos tipos de lenguajes, paradigmas y sistemas de tipado deberán aplicarse basándose en los contenidos estudiados en el tema "Desarrollo de Software".
-
-**Instrucciones para el Alumnado:**
-
-1.  Busca y consulta el "TIOBE Index for September 2025".
-2.  Identifica los 20 lenguajes de programación más demandados según ese índice.
-3.  Para cada uno de los 20 lenguajes, completa la tabla a continuación con la información solicitada.
-4.  Asegúrate de aplicar correctamente los conceptos de:
-    *   **Mecanismo de Traducción**: Si es compilado, interpretado o mixto/virtual.
-    *   **Paradigma Principal/Paradigmas de Programación**: Los modelos fundamentales de diseño y estructura del código que soporta el lenguaje (Imperativa/Estructurada, Procedimental, Orientada a Objetos, Declarativa, Lógica, Funcional, de Eventos, Reactiva, Multiparadigma).
-    *   **Sistema de Tipado (Rigidez)**: Si es fuerte o débil.
-    *   **Sistema de Tipado (Verificación)**: Si es estático o dinámico.
-    *   **Inferencia de Tipos**: Si el compilador o intérprete infiere el tipo de la variable a partir del valor asignado, sin que el programador tenga que declararlo explícitamente.
-    *   **Nivel de Abstracción**: Si es de bajo, medio o alto nivel.
-    *   **Uso principal**: Indica el uso más común del lenguaje (por ejemplo, desarrollo web, aplicaciones móviles, sistemas embebidos, etc.).
+**Objetivo:** Realizar un análisis exhaustivo de los 20 lenguajes de programación más demandados según el Índice TIOBE.
 
 ---
 
-### **Tabla de Análisis de Lenguajes de Programación (Plantilla para Rellenar)**
+**Instrucciones para el Alumnado:**
 
-| Lenguaje | Mecanismo de Traducción (Compilado, Interpretado, Mixto/Virtual) | Paradigma Principal/Paradigmas (Ej: POO, Imperativa, Funcional, Multiparadigma) | Sistema de Tipado (Rigidez: Fuerte/Débil) | Sistema de Tipado (Verificación: Estático/Dinámico) | Inferencia de Tipos (Sí/No) | Nivel de Abstracción (Bajo, Medio, Alto Nivel) | Uso principal (Ej: aplicaciones web, móviles, IA, etc.) |
-| :------- | :--------------------------------------------------------------- | :------------------------------------------------------------------------------ | :---------------------------------------- | :-------------------------------------------------- | :-------------------------- | :--------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
-|          |                                                                  |                                                                                 |                                           |                                                     |                             |                                                |                                                                                                      |
+1. Busca y consulta el "TIOBE Index for September 2025".
+2. Identifica los 20 lenguajes de programación más demandados según ese índice.
+3. Para cada uno de los 20 lenguajes, completa la tabla a continuación con la información solicitada.
+4. Asegúrate de aplicar correctamente los conceptos de:
+   - **Mecanismo de Traducción**: Si es compilado, interpretado o mixto/virtual.
+   - **Paradigma Principal**: Imperativa, POO, Funcional, Multiparadigma, etc.
+   - **Sistema de Tipado (Rigidez)**: Si es fuerte o débil.
+   - **Sistema de Tipado (Verificación)**: Si es estático o dinámico.
+   - **Inferencia de Tipos**: Si el compilador o intérprete infiere el tipo de la variable.
 
+**Tabla para completar:**
 
+| # | Lenguaje | Mecanismo Traducción | Paradigma Principal | Tipado (Rigidez) | Tipado (Verificación) | Inferencia Tipos | Nivel Abstracción | Ejemplo Uso |
+|---|----------|---------------------|--------------------|--------------------|----------------------|------------------|-------------------|-------------|
+| 1 | | | | | | | | |
+| 2 | | | | | | | | |
+| 3 | | | | | | | | |
+| 4 | | | | | | | | |
+| 5 | | | | | | | | |
+| 6 | | | | | | | | |
+| 7 | | | | | | | | |
+| 8 | | | | | | | | |
+| 9 | | | | | | | | |
+| 10 | | | | | | | | |
+| 11 | | | | | | | | |
+| 12 | | | | | | | | |
+| 13 | | | | | | | | |
+| 14 | | | | | | | | |
+| 15 | | | | | | | | |
+| 16 | | | | | | | | |
+| 17 | | | | | | | | |
+| 18 | | | | | | | | |
+| 19 | | | | | | | | |
+| 20 | | | | | | | | |
 
-**Formato de Entrega:**
-*   Todas las afirmaciones, tanto en la tabla como en las respuestas, deben estar respaldadas por citas al material de estudio [i] correspondiente.
+**Formato de entrega:** Informe en formato digital (PDF o Markdown) con la tabla completada y una reflexión final sobre los tendencias observadas.

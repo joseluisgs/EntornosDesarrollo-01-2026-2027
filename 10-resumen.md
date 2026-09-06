@@ -54,7 +54,7 @@ graph TD
 
     MM --> CLA[Clásicos: Cascada, V]
     MM --> PRO[Prototipos]
-    MM --> EVO[Evotulivos: Espiral]
+    MM --> EVO[Evolutivos: Espiral]
     MM --> AGI[Ágiles: Scrum, Kanban, XP]
 
     LP --> NIV[Nivel: Bajo, Medio, Alto]

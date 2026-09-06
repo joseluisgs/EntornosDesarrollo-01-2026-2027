@@ -5,6 +5,8 @@
 
 # 1. Introducción al Desarrollo de Software
 
+> 💡 **Punto de partida:** ¿Crees que para crear una app como Instagram solo hace falta escribir código? La respuesta es no. Programar es solo una pieza del puzle. ¿Qué más hace falta?
+
 En este punto aprenderás qué es el desarrollo de software, cuáles son las fases de un proyecto y por qué es tan importante seguir un proceso estructurado. Comprenderás que programar es solo una parte del proceso completo.
 
 **Objetivos de aprendizaje:**

@@ -210,8 +210,8 @@ graph LR
         A4 --> A5[Pruebas]
     end
 
-    A5 -.->|Mejoras| B1
-    B5 -.->|Mejoras| C
+    A5 -.->|Mejoras| B
+    C -.->|Mejoras| D
 
     style A fill:#2196F3,color:#fff
     style B fill:#FF9800,color:#fff

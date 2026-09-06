@@ -1,16 +1,15 @@
+- [Práctica 1: Test de Conocimientos](#práctica-1-test-de-conocimientos)
+  - [Bloque 1: Software y Hardware (Preguntas 1-8)](#bloque-1-software-y-hardware-preguntas-1-8)
+  - [Bloque 2: Ciclo de Vida del Software (Preguntas 9-16)](#bloque-2-ciclo-de-vida-del-software-preguntas-9-16)
+  - [Bloque 3: Modelos y Metodologías (Preguntas 17-26)](#bloque-3-modelos-y-metodologías-preguntas-17-26)
+  - [Bloque 4: Lenguajes de Programación (Preguntas 27-36)](#bloque-4-lenguajes-de-programación-preguntas-27-36)
+  - [Bloque 5: Proceso de Traducción y Máquinas Virtuales (Preguntas 37-44)](#bloque-5-proceso-de-traducción-y-máquinas-virtuales-preguntas-37-44)
+  - [Bloque 6: Herramientas y Perfiles (Preguntas 45-50)](#bloque-6-herramientas-y-perfiles-preguntas-45-50)
 
 
-**Cuestionario: Introducción al Desarrollo de Software**
+# Práctica 1: Test de Conocimientos
 
 **Instrucciones:** Lee atentamente cada pregunta y selecciona la opción que consideres correcta.
-
-- [Bloque 1: Software y Hardware (Preguntas 1-8)](#bloque-1-software-y-hardware-preguntas-1-8)
-- [Bloque 2: Ciclo de Vida del Software (Preguntas 9-16)](#bloque-2-ciclo-de-vida-del-software-preguntas-9-16)
-- [Bloque 3: Modelos y Metodologías (Preguntas 17-26)](#bloque-3-modelos-y-metodologías-preguntas-17-26)
-- [Bloque 4: Lenguajes de Programación (Preguntas 27-36)](#bloque-4-lenguajes-de-programación-preguntas-27-36)
-- [Bloque 5: Proceso de Traducción y Máquinas Virtuales (Preguntas 37-44)](#bloque-5-proceso-de-traducción-y-máquinas-virtuales-preguntas-37-44)
-- [Bloque 6: Herramientas, Perfiles y C# (Preguntas 45-50)](#bloque-6-herramientas-perfiles-y-c-preguntas-45-50)
-
 
 ---
 
@@ -298,19 +297,19 @@
 
 ---
 
-### Bloque 6: Herramientas, Perfiles y C# (Preguntas 45-50)
+### Bloque 6: Herramientas y Perfiles (Preguntas 45-50)
 
-45. **¿Qué tipo de herramientas CASE ofrecen ayuda principalmente en las fases de planificación y análisis de requisitos del ciclo de vida del software?**
-    a) L-CASE (Lower CASE).
-    b) M-CASE (Middle CASE).
-    c) U-CASE (Upper CASE).
-    d) Herramientas de depuración de código.
+45. **¿Qué herramienta de control de versiones es la más utilizada en la industria del software?**
+    a) SVN.
+    b) Mercurial.
+    c) Git.
+    d) CVS.
 
-46. **¿Cuál es la función principal de un IDE (Entorno de Desarrollo Integrado)?**
-    a) Solo editar código.
-    b) Agrupar editor, compilador, depurador y otras herramientas en una sola aplicación.
-    c) Ejecutar programas sin compilar.
-    d) Gestionar bases de datos.
+46. **¿Qué es Docker y cuál es su principal ventaja en desarrollo?**
+    a) Un compilador de C#.
+    b) Un editor de código.
+    c) Un sistema de contenedores que empaqueta la aplicación con sus dependencias.
+    d) Un sistema de control de versiones.
 
 47. **¿Quién es el responsable de dirigir el curso del proyecto y gestionar al equipo?**
     a) Analista.
@@ -318,20 +317,20 @@
     c) Jefe de Proyecto.
     d) QA Tester.
 
-48. **C# es un lenguaje:**
-    a) Interpretado y de tipado débil.
-    b) Compilado a máquina nativa y de tipado débil.
-    c) Mixto (compilado a IL + JIT) y de tipado estático fuerte.
-    d) Transpilado a JavaScript.
-
-49. **¿Cuál es la diferencia entre un Analista y un Programador?**
-    a) El Analista programa, el Analista solo analiza.
+48. **¿Qué diferencia hay entre un Analista y un Programador?**
+    a) El Analista programa, el Programador solo analiza.
     b) El Analista se centra en el "qué" (requisitos), el Programador en el "cómo" (implementación).
     c) No hay diferencia.
     d) El Programador gestiona el proyecto.
 
-50. **En la tabla de clasificación de C#, ¿cuál es su paradigma?**
-    a) Solo imperativo.
-    b) Solo orientado a objetos.
-    c) Multiparadigma (imperativo, POO, funcional, eventos).
-    d) Solo funcional.
+49. **¿Cuál es la función del perfil QA (Quality Assurance)?**
+    a) Escribir código de la aplicación.
+    b) Diseñar la base de datos.
+    c) Garantizar la calidad del software mediante pruebas.
+    d) Gestionar el servidor de producción.
+
+50. **¿Qué diferencia hay entre UX y UI?**
+    a) UX es la apariencia visual, UI es la experiencia del usuario.
+    b) UX es la experiencia del usuario, UI es la interfaz visual.
+    c) Son lo mismo.
+    d) UX es solo para móviles, UI para web.

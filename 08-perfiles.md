@@ -6,7 +6,8 @@
   - [8.5. Programador (o Desarrollador)](#85-programador-o-desarrollador)
   - [8.6. QA (Quality Assurance) / Testeador](#86-qa-quality-assurance--testeador)
   - [8.7. DevOps](#87-devops)
-  - [8.8. Organigrama de un Equipo de Desarrollo](#88-organigrama-de-un-equipo-de-desarrollo)
+  - [8.9. Diseñador UX/UI](#89-diseñador-uxui)
+  - [8.10. Organigrama de un Equipo de Desarrollo](#810-organigrama-de-un-equipo-de-desarrollo)
 
 
 # 8. Perfiles del Desarrollo de Software
@@ -205,6 +206,32 @@ Aunque no aparece en el contenido original, DevOps es un perfil esencial en equi
 
 ## 8.8. Organigrama de un Equipo de Desarrollo
 
+## 8.9. Diseñador UX/UI
+
+Aunque no es un perfil estrictamente de programación, el diseñador UX/UI es fundamental en proyectos web y móviles:
+
+**UX (User Experience):** Se centra en la experiencia del usuario. Cómo se siente el usuario al usar la aplicación, si encuentra lo que busca, si el flujo es lógico.
+
+**UI (User Interface):** Se centra en la apariencia visual. Colores, tipografías, botones, espaciados, iconografía.
+
+**Responsabilidades principales:**
+- Investigar necesidades del usuario (entrevistas, encuestas)
+- Crear wireframes (bocetos de baja fidelidad)
+- Diseñar prototipos interactivos (Figma, Adobe XD)
+- Definir el sistema de diseño (componentes reutilizables)
+- Realizar testing de usabilidad
+
+**Skills necesarios:**
+- Herramientas de diseño (Figma, Sketch, Adobe XD)
+- Conocimiento de principios de usabilidad
+- Prototipado interactivo
+- Comunicación con desarrolladores
+- Conocimiento básico de HTML/CSS
+
+> 💡 **Dato:** En DAW, muchos programadores terminan haciendo tareas de UI porque entienden las restricciones técnicas. Un diseñador que conoceHTML/CSS y un programador que entiende de UX forman un equipo imparable.
+
+## 8.10. Organigrama de un Equipo de Desarrollo
+
 ```mermaid
 graph TD
     A[Product Owner] --> B[Scrum Master / Jefe Proyecto]
@@ -212,6 +239,7 @@ graph TD
     B --> D[Desarrolladores<br/>Junior/Senior]
     B --> E[QA / Tester]
     B --> F[DevOps]
+    B --> G[Diseñador UX/UI]
 
     style A fill:#2196F3,color:#fff
     style B fill:#FF9800,color:#fff
@@ -219,6 +247,7 @@ graph TD
     style D fill:#9C27B0,color:#fff
     style E fill:#607D8B,color:#fff
     style F fill:#795548,color:#fff
+    style G fill:#E91E63,color:#fff
 ```
 
 > 📝 **Nota:** En empresas pequeñas o startups, una persona puede acumular varios roles (programador + QA + DevOps). En empresas grandes, cada rol está especializado. En DAM vais a aprender los fundamentos de todos estos roles.
@@ -236,5 +265,6 @@ graph TD
 | **Programador** | Escribe el código | 0-10+ años |
 | **QA** | Garantiza la calidad | 2-5+ años |
 | **DevOps** | Infraestructura y despliegue | 3-7+ años |
+| **Diseñador UX/UI** | Experiencia y apariencia del usuario | 2-7+ años |
 
 En el siguiente punto veremos un **caso de estudio** práctico: el lenguaje C# y la plataforma .NET.
