@@ -117,6 +117,19 @@ graph LR
 
 ![Diagrama: Lenguaje Mixto](/images/lenguaje_mixto.png)
 
+- **Transpilación**: Proceso que traduce código de un lenguaje de alto nivel a otro lenguaje de alto nivel de similar nivel de abstracción. Un ejemplo es TypeScript → JavaScript.
+
+```mermaid
+graph LR
+    A[Código TypeScript] -->|Transpilador tsc| B[Código JavaScript]
+    B -->|Navegador/Node.js| C[Ejecución]
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#4CAF50,color:#fff
+```
+
+> 💡 **Ejemplo real:** TypeScript se usa porque ofrece tipos estáticos y más seguridad, pero los navegadores solo entienden JavaScript. El transpilador `tsc` o `Babel` resuelve esa brecha convirtiendo `.ts` a `.js`.
+
 ---
 
 ### 6.1.2. Fases de un Traductor (Compilador/Intérprete)

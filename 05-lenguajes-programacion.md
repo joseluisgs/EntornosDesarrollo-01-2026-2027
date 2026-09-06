@@ -11,6 +11,7 @@
       - [5.2.2.1. Lenguajes Compilados](#5221-lenguajes-compilados)
       - [5.2.2.2. Lenguajes Interpretados](#5222-lenguajes-interpretados)
       - [5.2.2.3. Lenguajes Mixtos o Virtuales](#5223-lenguajes-mixtos-o-virtuales)
+      - [5.2.2.4. Lenguajes Transpilados](#5224-lenguajes-transpilados)
     - [5.2.3. Según su sistema de tipos (Tipado Fuerte, Tipado Débil)](#523-según-su-sistema-de-tipos-tipado-fuerte-tipado-débil)
       - [5.2.3.1. Rigidez: Tipado Fuerte vs. Tipado Débil](#5231-rigidez-tipado-fuerte-vs-tipado-débil)
       - [5.2.3.2. Momento de Verificación: Tipado Estático vs. Tipado Dinámico](#5232-momento-de-verificación-tipado-estático-vs-tipado-dinámico)
@@ -269,23 +270,83 @@ graph LR
     A[Mecanismo de Traducción] --> B[Compilados]
     A --> C[Interpretados]
     A --> D[Mixtos/Virtuales]
+    A --> E[Transpilados]
 
     B --> B1[C, C++, Rust]
     B1 --> B2[Ejecutable nativo<br/>muy rápido]
 
-    C --> C1[Python, JavaScript, PHP]
+    C --> C1[Python, PHP]
     C1 --> C2[Ejecución línea a línea<br/>más lento]
 
     D --> D1[Java, C#, Python]
     D1 --> D2[Bytecode + Máquina Virtual<br/>portable y razonablemente rápido]
 
+    E --> E1[TypeScript → JavaScript]
+    E1 --> E2[Código de nivel similar<br/>para otra plataforma]
+
     style A fill:#2196F3,color:#fff
     style B fill:#4CAF50,color:#fff
     style C fill:#FF9800,color:#fff
     style D fill:#9C27B0,color:#fff
+    style E fill:#f44336,color:#fff
 ```
 
 ![Diagrama: Clasificación de Lenguajes por Traducción](/images/lenguajes_compialdos_interpretados.jpg)
+
+---
+
+### 5.2.2.4. Lenguajes Transpilados
+
+Un **transpilador** (o transcompiler) es un tipo de compilador que traduce código de un lenguaje de programación a otro lenguaje de programación de **similar nivel de abstracción**. A diferencia de un compilador tradicional (que va de alto a bajo nivel), la transpilación va de un lenguaje de alto nivel a otro de alto nivel.
+
+> 💡 **Analogía:** Un compilador traduciría un libro de español a japonés (alto → bajo nivel). Un transpilador traduciría un libro de español a portugués (alto → alto nivel, pero con reglas distintas).
+
+**Ejemplo más famoso: TypeScript → JavaScript**
+
+```typescript
+// Código fuente en TypeScript (tipado, moderno)
+function saludar(nombre: string): string {
+    return `Hola, ${nombre}`;
+}
+
+const resultado: string = saludar("Mundo");
+console.log(resultado);
+```
+
+```javascript
+// Resultado de la transpilación a JavaScript (sin tipos)
+function saludar(nombre) {
+    return `Hola, ${nombre}`;
+}
+const resultado = saludar("Mundo");
+console.log(resultado);
+```
+
+**Proceso:**
+```
+Código Fuente (.ts) → Transpilador (tsc) → JavaScript (.js) → Navegador/Node.js
+```
+
+**Otros ejemplos de transpiladores:**
+| Desde | Hasta | Herramienta |
+|-------|-------|-------------|
+| TypeScript | JavaScript | tsc, Babel |
+| CoffeeScript | JavaScript | coffee |
+| Sass/Less | CSS | sass, less |
+| Kotlin | JavaScript | kotlin-js |
+| ClojureScript | JavaScript | cljs |
+
+> 📝 **Nota:** La transpilación es muy común en desarrollo web. TypeScript se usa porque es más seguro y mantenible, pero los navegadores solo entienden JavaScript. El transpilador resuelve esa brecha.
+
+```mermaid
+graph LR
+    A[Código TypeScript] -->|Transpilador tsc| B[Código JavaScript]
+    B -->|Navegador| C[Ejecución]
+
+    style A fill:#2196F3,color:#fff
+    style B fill:#FF9800,color:#fff
+    style C fill:#4CAF50,color:#fff
+```
 
 ---
 
