@@ -4,13 +4,6 @@ Tema 01. Desarrollo de Software. 1DAW. Curso 2026-2027
 
 ![imagen](https://raw.githubusercontent.com/joseluisgs/EntornosDesarrollo-00-2022-2023/master/images/entornos.png)
 
-## Contenido en YouTube
-
-- [Resumen]()
-- [Análisis de Lenguajes]()
-- [El Lenguaje C#]()
-- [Lista de Reproducción](https://www.youtube.com/playlist?list=PLIaRVRNDWeMA)
-
 ## Contenidos
 
 1. [Introducción al Desarrollo de Software](./01-introduccion.md)
@@ -23,6 +16,13 @@ Tema 01. Desarrollo de Software. 1DAW. Curso 2026-2027
 8. [Perfiles del Desarrollo de Software](./08-perfiles.md)
 9. [Caso de Estudio: El lenguaje C# y .NET](./09-caso-estudio.md)
 10. [Resumen y Conclusiones](./10-resumen.md)
+
+## Contenido en YouTube
+
+- [Resumen]()
+- [Análisis de Lenguajes]()
+- [El Lenguaje C#]()
+- [Lista de Reproducción](https://www.youtube.com/playlist?list=PLIaRVRNDWeMA)
 
 ## Resultados de Aprendizaje y Criterios de Evaluación
 
