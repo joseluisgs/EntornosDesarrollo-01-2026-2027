@@ -16,6 +16,11 @@
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado quién hace qué cuando se crea una app como Instagram o Netflix? ¿Es una sola persona o un equipo? ¿Y qué diferencias hay entre un programador y un arquitecto de software?
 
+> 💡 **¿Por qué me importa?**
+> Porque el desarrollo de software es un trabajo en equipo. No vas a trabajar solo: necesitarás hablar con analistas, diseñadores, testers y clientes. Entender qué hace cada perfil te hará un mejor compañero de equipo y te ayudará a decidir hacia dónde dirigir tu carrera.
+> 
+> 🔗 **Conexión con otros temas:** Cada perfil ejecuta las fases del Tema 03 según la metodología del Tema 04. Usan las herramientas del Tema 07 y escriben código en los lenguajes del Tema 05.
+
 En el Punto 07 vimos las herramientas de apoyo. Ahora veremos **quién** usa esas herramientas: los perfiles profesionales del desarrollo de software.
 
 **Objetivos de aprendizaje:**

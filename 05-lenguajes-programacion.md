@@ -29,6 +29,11 @@
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué existen tantos lenguajes de programación? ¿Por qué no usamos todos el mismo? La respuesta está en que cada lenguaje está diseñado para resolver problemas diferentes.
 
+> 💡 **¿Por qué me importa?**
+> Porque elegir el lenguaje adecuado es como elegir la herramienta correcta: no se usa un martillo para tornillos. C# es perfecto para apps empresariales y web, Python para datos y scripts, JavaScript para la web. Entender las diferencias te hará un mejor desarrollador.
+> 
+> 🔗 **Conexión con otros temas:** El Tema 04 explicó por qué hay tantos modelos de desarrollo: porque los proyectos son distintos. Lo mismo pasa con los lenguajes. El Tema 06 verás cómo se traducen a código máquina. El Tema 09 profundizará en C#/.NET como caso de estudio.
+
 En el Punto 04 vimos los modelos de desarrollo. Ahora veremos la herramienta que usamos para implementar esos modelos: los lenguajes de programación.
 
 **Objetivos de aprendizaje:**

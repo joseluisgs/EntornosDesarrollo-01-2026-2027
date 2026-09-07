@@ -13,6 +13,11 @@
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado cómo un programador puede crear una aplicación completa sin escribir todo el código desde cero? ¿O cómo se gestiona el trabajo en equipo cuando 10 personas modifican el mismo proyecto? La respuesta está en las herramientas de apoyo.
 
+> 💡 **¿Por qué me importa?**
+> Porque sin las herramientas adecuadas, desarrollar es como construir una casa con las manos. Un IDE como Rider te ahorra horas, Git te salva de errores catastróficos, y Docker evita el "funciona en mi máquina". Son tus herramientas de trabajo diario.
+> 
+> 🔗 **Conexión con otros temas:** Las herramientas apoyan TODAS las fases del Tema 03. Se usan según la metodología del Tema 04 (Git para Scrum, por ejemplo). Son gestionadas por los perfiles del Tema 08.
+
 En el Punto 06 vimos los procesos de traducción y las máquinas virtuales. Ahora veremos las **herramientas** que facilitan y agilizan nuestro trabajo como desarrolladores.
 
 **Objetivos de aprendizaje:**

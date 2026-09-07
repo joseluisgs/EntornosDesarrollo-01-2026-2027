@@ -16,6 +16,7 @@
   - [10.5. Glosario de Términos](#105-glosario-de-términos)
   - [10.6. Ejercicios de Repaso](#106-ejercicios-de-repaso)
   - [10.7. ¿Qué viene después?](#107-qué-viene-después)
+  - [10.8. Mapa de Conexiones entre Temas](#108-mapa-de-conexiones-entre-temas)
 
 
 # 10. Resumen y Conclusiones
@@ -210,6 +211,31 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 4. **Traducción**: Explica el proceso completo de compilación de C# desde que escribes `Console.WriteLine("Hola")` hasta que ves el resultado en pantalla.
 
 5. **Herramientas**: Nombra 3 herramientas que usarías para desarrollar una app web en C# y explica para qué sirve cada una.
+
+## 10.8. Mapa de Conexiones entre Temas
+
+```mermaid
+graph LR
+    T01[Introducción] --> T02[Software y Hardware]
+    T02 --> T03[Ciclo de Vida]
+    T03 --> T04[Modelos y Metodologías]
+    T04 --> T05[Lenguajes de Programación]
+    T05 --> T06[Proceso de Traducción]
+    T06 --> T07[Herramientas de Apoyo]
+    T07 --> T08[Perfiles Profesionales]
+    T08 --> T09[Caso Estudio: C#]
+    T09 --> T10[Resumen]
+
+    T03 -.->|define fases| T08
+    T04 -.->|organiza| T03
+    T05 -.->|se traduce| T06
+    T06 -.->|se ejecuta con| T02
+    T07 -.->|apoya| T04
+    T08 -.->|usa| T07
+    T09 -.->|aplica todo| T01
+```
+
+> 📝 **Nota:** Todos los temas están interconectados. No son temas sueltos: son piezas de un mismo puzzle. El Desarrollo de Software es un todo donde cada concepto alimenta a los demás.
 
 ## 10.7. ¿Qué viene después?
 

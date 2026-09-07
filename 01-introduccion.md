@@ -7,6 +7,11 @@
 
 > 💡 **Punto de partida:** ¿Crees que para crear una app como Instagram solo hace falta escribir código? La respuesta es no. Programar es solo una pieza del puzle. ¿Qué más hace falta?
 
+> 💡 **¿Por qué me importa?**
+> Porque vas a dedicar tu vida profesional a crear software. No basta con saber programar: necesitas entender todo el proceso (análisis, diseño, pruebas, mantenimiento) para ser un desarrollador completo y no solo un "escritor de código".
+> 
+> 🔗 **Conexión con otros temas:** En el Tema 03 verás las fases del ciclo de vida en detalle. En el Tema 04 aprenderás los modelos de desarrollo que organizan esas fases. En el Tema 08 conocerás los perfiles profesionales que ejecutan cada fase.
+
 En este punto aprenderás qué es el desarrollo de software, cuáles son las fases de un proyecto y por qué es tan importante seguir un proceso estructurado. Comprenderás que programar es solo una parte del proceso completo.
 
 **Objetivos de aprendizaje:**

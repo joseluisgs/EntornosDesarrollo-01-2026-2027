@@ -24,6 +24,11 @@
 
 En el Punto 02 vimos qué es el software y el hardware. Ahora veremos cómo se crea el software, cuáles son las fases de un proyecto y por qué es importante seguirlas.
 
+> 💡 **¿Por qué me importa?**
+> Porque todo software que creas seguirá estas fases, aunque sea de forma invisible. Si no entiendes el ciclo de vida, no sabrás qué hacer después de escribir el código (que es solo 1 de las 9 fases). Un desarrollo sin método es un caos garantizado.
+> 
+> 🔗 **Conexión con otros temas:** Este tema es el centro de todo lo que verás en la unidad: los modelos del Tema 04 organizan estas fases, los lenguajes del Tema 05 se usan en la fase de codificación, las herramientas del Tema 07 apoyan todas las fases, y los perfiles del Tema 08 ejecutan cada una.
+
 **Objetivos de aprendizaje:**
 
 - Definir qué es el ciclo de vida del software
@@ -298,6 +303,103 @@ Esta fase ocurre cuando el software ha llegado al **final de su vida útil** y y
 - Windows XP: Soporte terminado en 2014, pero muchas empresas lo usaron hasta 2019
 - Flash Player: Adobe lo discontinuó en 2020 por razones de seguridad
 - MySpace: En su momento fue la red social más grande; ahora está casi abandonada
+
+## Mini-Proyecto: Calculadora de Calificaciones
+
+Para ver cómo el ciclo de vida se aplica en la práctica, vamos a seguir las 9 fases con un proyecto sencillo: una app de consola en C# que calcule la media de un alumno.
+
+### Fase 1 — Planificación
+
+- **Objetivo:** Crear una app que calcule la media de 3 notas y muestre si el alumno aprueba.
+- **Viabilidad:** Se puede hacer en C# de consola. Un solo programador, 1 día.
+- **Coste estimado:** 0 € (proyecto de aprendizaje).
+
+### Fase 2 — Análisis
+
+- **Requisitos funcionales:** El usuario introduce 3 notas. El sistema calcula la media. El sistema muestra el resultado y si aprueba (≥5) o suspende (<5).
+- **Requisitos no funcionales:** Respuesta instantánea, mensaje claro en español.
+- **ERS simplificado:**
+  - Entrada: 3 números decimales (notas)
+  - Salida: Media numérica + texto "Aprobado" o "Suspenso"
+
+### Fase 3 — Diseño
+
+```csharp
+// Diseño de la estructura
+class Program {
+    static void Main() {
+        double nota1 = PedirNota("Primera nota");
+        double nota2 = PedirNota("Segunda nota");
+        double nota3 = PedirNota("Tercera nota");
+        double media = CalcularMedia(nota1, nota2, nota3);
+        MostrarResultado(media);
+    }
+}
+```
+
+### Fase 4 — Codificación
+
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        Console.Write("Primera nota: ");
+        double nota1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Segunda nota: ");
+        double nota2 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Tercera nota: ");
+        double nota3 = Convert.ToDouble(Console.ReadLine());
+
+        double media = (nota1 + nota2 + nota3) / 3;
+        Console.WriteLine($"Media: {media:F1}");
+
+        if (media >= 5)
+            Console.WriteLine("Aprobado");
+        else
+            Console.WriteLine("Suspenso");
+    }
+}
+```
+
+### Fase 5 — Pruebas
+
+| Prueba | Entrada | Salida esperada | Resultado |
+|--------|---------|-----------------|-----------|
+| Notas aprobadas | 7, 8, 6 | Media: 7.0, Aprobado | ✅ |
+| Notas suspensas | 3, 4, 2 | Media: 3.0, Suspenso | ✅ |
+| Nota límite | 5, 5, 5 | Media: 5.0, Aprobado | ✅ |
+| Decimales | 6.5, 7.3, 8.1 | Media: 7.3, Aprobado | ✅ |
+
+### Fase 6 — Documentación
+
+```markdown
+# Calculadora de Calificaciones
+## Uso
+1. Ejecutar el programa
+2. Introducir 3 notas (decimales separados por coma)
+3. Ver la media y si se aprueba
+```
+
+### Fase 7 — Explotación
+
+```bash
+dotnet run
+```
+
+El programa se ejecuta en la consola. Funciona en cualquier sistema operativo con .NET instalado.
+
+### Fase 8 — Mantenimiento
+
+- **Evolutivo:** Añadir más de 3 notas (introducir notas hasta que el usuario escriba "fin").
+- **Perfectivo:** Mostrar también la nota más alta y la más baja.
+- **Correctivo:** Si el usuario introduce una letra en vez de un número, el programa falla. Hay que añadir validación.
+
+### Fase 9 — Retirada
+
+Cuando el alumno ya no la necesite (o la mejore con una app web), se retira esta versión de consola.
+
+> 📝 **Nota:** Este proyecto parece simple, pero tiene todas las fases. En proyectos reales, cada fase es más compleja, pero el proceso es el mismo. Lo que hacéis aquí con 20 líneas de código, en una empresa se hace con 20.000 y un equipo de 10 personas.
 
 ---
 

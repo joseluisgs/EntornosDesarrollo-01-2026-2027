@@ -20,6 +20,11 @@
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué tu móvil funciona, mientras que un ladrillo del mismo tamaño no hace nada? La diferencia está en el software.
 
+> 💡 **¿Por qué me importa?**
+> Para desarrollar software necesitas entender en qué lo ejecutas. Tu código C# se ejecuta en una CPU, se almacena en disco y usa memoria RAM. Si no entiendes el hardware, no entenderás por qué una aplicación va lenta o se queda sin memoria.
+> 
+> 🔗 **Conexión con otros temas:** El Tema 06 explicará cómo tu código C# se traduce a código máquina que la CPU ejecuta. El Tema 09 mostrará cómo .NET CLR gestiona la memoria RAM con el Garbage Collector. El Tema 07 presentará las herramientas (IDEs, Docker) que gestionan estos recursos.
+
 En el Punto 01 vimos qué es el desarrollo de software y sus fases. Ahora veremos qué es exactamente el software, qué es el hardware, y cómo se relacionan para que un ordenador funcione.
 
 **Objetivos de aprendizaje:**

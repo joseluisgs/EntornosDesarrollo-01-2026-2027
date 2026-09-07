@@ -22,6 +22,11 @@
 
 > 💡 **Punto de partida:** Hemos visto teoría sobre lenguajes, compilación, máquinas virtuales... pero, ¿cómo funciona todo esto en la práctica? Vamos a aplicar todo lo aprendido a un lenguaje real: C#.
 
+> 💡 **¿Por qué me importa?**
+> Porque C# y .NET son la tecnología que usaréis en este ciclo. Aquí convergen TODOS los conceptos anteriores: C# es un lenguaje (Tema 05) que se compila (Tema 06) usando herramientas (Tema 07) en un equipo con roles (Tema 08) siguiendo un modelo de desarrollo (Tema 04).
+> 
+> 🔗 **Conexión con todos los temas anteriores:** C# es el hilo conductor de toda la unidad: lenguaje de alto nivel (Tema 05), compilado a código intermedio (Tema 06), ejecutado por CLR/JIT (Tema 02), desarrollado con IDEs como Rider (Tema 07), en equipos que usan Scrum (Tema 04), siguiendo el ciclo de vida (Tema 03).
+
 En los puntos anteriores vimos los conceptos teóricos. Ahora veremos cómo se aplican a un lenguaje real que usarás en DAM.
 
 **Objetivos de aprendizaje:**

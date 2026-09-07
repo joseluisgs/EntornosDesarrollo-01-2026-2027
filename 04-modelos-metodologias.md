@@ -18,6 +18,11 @@
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué algunas empresas entregan software a tiempo y otras siempre se retrasan? La diferencia está en el modelo de desarrollo que eligen.
 
+> 💡 **¿Por qué me importa?**
+> Porque la diferencia entre un proyecto exitoso y un fracaso no es el código: es la organización. Si no eliges bien el modelo de desarrollo, tu proyecto se retrasará, costará más de lo previsto o directamente fracasará.
+> 
+> 🔗 **Conexión con otros temas:** El Tema 03 explicó las fases del ciclo de vida. Este tema enseña CÓMO organizar esas fases. El Tema 07 presentará las herramientas que apoyan estas metodologías (Git, Docker). El Tema 08 mostrará los roles que ejecutan cada metodología.
+
 En el Punto 03 vimos las fases del ciclo de vida. Ahora veremos cómo se organizan estas fases en diferentes modelos y metodologías.
 
 **Objetivos de aprendizaje:**
@@ -331,6 +336,8 @@ graph LR
 | Documentar endpoints | | | |
 
 **WIP Limits**: Cada columna tiene un límite máximo de tareas. Ejemplo: si WIP de "En progreso" es 3, no se puede empezar una cuarta tarea hasta que una termine. Esto evita el multitasking y mejora la calidad.
+
+> 💡 **Ejemplo real con C#:** En proyectos C#, Scrum es la metodología más usada. Un sprint de 2 semanas podría incluir: Sprint Planning (definir qué funcionalidad C# se desarrolla), Daily Standup (¿qué hice ayer con C#? ¿qué haré hoy?), Sprint Review (demostrar la funcionalidad C# al cliente) y Retrospective (mejorar el proceso).
 
 ![Diagrama: Proceso Kanban](/images/modelo_kanban.webp)
 
