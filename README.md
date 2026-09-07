@@ -19,9 +19,9 @@ Tema 01. Desarrollo de Software. 1DAW. Curso 2026-2027
 
 ## Contenido en YouTube
 
-- [Resumen]()
-- [Análisis de Lenguajes]()
-- [El Lenguaje C#]()
+- [Resumen](https://youtu.be/1adhUS7xS6k)
+- [Análisis de Lenguajes](https://youtu.be/mNJhKuermjo)
+- [El Lenguaje C# y .NET](https://youtu.be/4Zm3UyXn3Y8)
 - [Lista de Reproducción](https://www.youtube.com/playlist?list=PLIaRVRNDWeMA)
 
 ## Resultados de Aprendizaje y Criterios de Evaluación
