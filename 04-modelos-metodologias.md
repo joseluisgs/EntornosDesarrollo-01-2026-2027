@@ -73,6 +73,8 @@ Es una variante del modelo en cascada que introduce una realimentación entre et
 **Ventaja:** Permite correcciones sin empezar desde cero
 **Desventaja:** Cada "vuelta atrás" cuesta tiempo y dinero
 
+La realimentación permite volver a una fase anterior cuando se detecta un error. Por ejemplo, si en pruebas se descubre un problema de diseño, se vuelve a la fase de diseño sin reiniciar todo el proyecto.
+
 ![Diagrama: Modelo en Cascada](/images/fases_desarrollo.jpg)
 
 ### 4.1.2. Modelo en V
@@ -103,6 +105,8 @@ graph TB
     style G fill:#3F51B5,color:#fff
     style H fill:#795548,color:#fff
 ```
+
+**Clave del Modelo en V**: Cada fase de desarrollo tiene una fase de verificación paralela. El diseño de pruebas empieza en la fase de análisis, no al final. Así se detectan errores antes.
 
 **Característica distintiva:** Cada fase de desarrollo tiene una fase de verificación correspondiente.
 
@@ -318,6 +322,16 @@ graph LR
 | - Filtros búsqueda | - Panel admin | - Checkout | - Base datos |
 | - Notificaciones | | | |
 
+**Ejemplo de tablero Kanban para un proyecto DAW:**
+
+| Por hacer | En progreso | En revisión | Hecho |
+|-----------|-------------|-------------|-------|
+| Diseñar BD usuarios | Implementar login | Refactorizar carrito | CRUD productos |
+| Crear API pedidos | Maqueta perfil | Tests integración | Sistema de registration |
+| Documentar endpoints | | | |
+
+**WIP Limits**: Cada columna tiene un límite máximo de tareas. Ejemplo: si WIP de "En progreso" es 3, no se puede empezar una cuarta tarea hasta que una termine. Esto evita el multitasking y mejora la calidad.
+
 ![Diagrama: Proceso Kanban](/images/modelo_kanban.webp)
 
 ### 4.4.3. Scrum
@@ -367,6 +381,12 @@ graph LR
 - **Sprint Backlog**: Tareas del sprint actual
 - **Incremento**: Producto usable al final del sprint
 
+#### Métricas ágiles: Velocity y Story Points
+
+- **Story Points**: Unidad de medida del esfuerzo de una tarea. No son horas, sino una estimación relativa (1, 2, 3, 5, 8, 13...). Una tarea de 3 puntos es más compleja que una de 1, pero no necesariamente el triple.
+- **Velocity**: Número medio de story points que el equipo completa en un sprint. Se calcula con los últimos 3-5 sprints. Ejemplo: si el equipo completa 20, 25, 23 puntos, la velocity media es ~23.
+- **Uso**: Si la velocity es 23 y hay 92 puntos pendientes, se necesitan ~4 sprints para terminar.
+
 > 📝 **Nota:** En DAM vamos a practicar Scrum con sprints de 2 semanas. Tendréis roles de Product Owner, Scrum Master y equipo de desarrollo. Es una experiencia muy valiosa para el mercado laboral.
 
 ![Diagrama: Proceso Scrum](/images/modelo_scrum.webp)
@@ -388,6 +408,9 @@ Sus **características** incluyen:
 - **Pruebas y refactorización**: Tests primero (TDD)
 - **Integración continua**: Subir código varias veces al día
 - **Programación por parejas (Pair Programming)**: Dos personas en un ordenador
+
+**Cómo funciona en la práctica**: Un programador escribe código (el "driver"), el otro revisa en tiempo real (el "navigator"). Se alternan cada 15-30 minutos. El navigator piensa en estrategia, detecta errores y sugiere mejoras.
+
 - **El cliente se integra en el equipo de desarrollo**: El cliente está presente
 - **Propiedad del código compartida**: Cualquiera puede modificar cualquier código
 - **Estándares de codificación**: Todos escriben igual
@@ -418,6 +441,12 @@ graph TB
 2. Escribir código mínimo para pasar el test
 3. Refactorizar para mejorar
 
+**Ejemplo de TDD en C#:**
+1. **Escribir test** que falle: `Assert.AreEqual(6, Sumar(2, 4))` — la función Sumar no existe, falla.
+2. **Implementar** lo mínimo: `static int Sumar(int a, int b) => a + b;` — el test pasa.
+3. **Refactorizar**: si el código funciona, mejorarlo (renombrar, extraer método, etc.).
+4. **Repetir**: nuevo test para otro caso, y así sucesivamente.
+
 > 💡 **Dato:** XP fue creado por Kent Beck en 1996 mientras trabajaba en el proyecto Chrysler Comprehensive Compensation System. Beck escribió el libro "Extreme Programming Explained" en 1999.
 
 **Cuándo usar XP:**
@@ -441,6 +470,15 @@ graph TB
 | Documentación | Extensiva | Mínima necesaria | Mínima necesaria | Mínima necesaria |
 | Testing | Al final | Continuo | Continuo | Central (TDD) |
 | Mejor para | Requisitos fijos | Gestión de producto | Flujo continuo | Calidad de código |
+
+| Característica | Scrum | Kanban |
+|----------------|-------|--------|
+| **Ciclo** | Sprints fijos (2-4 sem) | Flujo continuo |
+| **Roles** | PO, SM, Team | No roles asignados |
+| **Planificación** | Al inicio de cada sprint | Continua |
+| **Cambios** | No en sprint activo | Cuando haya capacidad |
+| **Métricas** | Velocity, burndown | Lead time, WIP |
+| **Mejor para** | Proyectos con objetivos claros | Mantenimiento, soporte |
 
 ---
 

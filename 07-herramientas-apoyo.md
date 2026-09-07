@@ -118,6 +118,8 @@ graph TD
 - **StarUML:** https://staruml.io/ - UML con versión gratuita
 - **PlantUML:** https://plantuml.com/ - UML mediante texto
 
+Herramientas modernas: PlantUML (diagramas UML desde texto), Draw.io/diagrams.net (diagramas arrastrando), Mermaid (diagramas en Markdown).
+
 > 📝 **Nota:** En ciclos de desarrollo, las herramientas CASE se usan especialmente en las fases de análisis y diseño para crear diagramas UML que documenten el sistema antes de programar.
 
 ## 7.3. Desarrollo Rápido de Aplicaciones (RAD)
@@ -246,6 +248,10 @@ graph TD
 | Ejemplos | VS Code, Vim | Rider, IntelliJ |
 | Mejor para | Scripts, pequeños proyectos | Proyectos grandes |
 
+**¿Cuándo usar cada uno?**
+- **Editor (VS Code)**: Scripts, proyectos pequeños, rápido para abrir y editar archivos sueltos, cuando trabajas con múltiples lenguajes.
+- **IDE (Rider, Visual Studio)**: Proyectos grandes de C#/Java, cuando necesitas depuración avanzada, refactorización automática, y herramientas integradas.
+
 ---
 
 ## 7.5. Control de Versiones: Git
@@ -278,6 +284,28 @@ git checkout feature/nombre # Cambiar a esa rama
 git merge feature/nombre    # Fusionar la rama con la actual
 ```
 
+**Convención de mensajes de commit:**
+```
+[tipo] Descripción corta
+
+Tipos: feat (nueva función), fix (corrección), docs (documentación),
+refactor (reestructurar), test (añadir test), chore (mantenimiento)
+
+Ejemplos:
+[feat] Añadir carrito de compras
+[fix] Corregir login con emails mayúsculas
+[docs] Actualizar guía de instalación
+[test] Añadir tests para servicio de pagos
+```
+
+Esta convención facilita la generación automática de changelogs y la búsqueda en el historial.
+
+#### Estrategias de ramas
+
+- **Git Flow**: Usa ramas dedicadas: `main` (producción), `develop` (desarrollo), `feature/*` (nuevas funcionalidades), `release/*` (preparar release), `hotfix/*` (correcciones urgentes). Ideal para proyectos con ciclos de release definidos.
+- **Trunk-Based Development**: Solo se usa `main` (o `trunk`). Las ramas de feature son cortas (1-2 días). Se integra frecuentemente. Ideal para equipos ágiles con CI/CD.
+- **GitHub Flow**: Simplificado: `main` + ramas de feature con pull requests. Ideal para proyectos con despliegue continuo.
+
 > 📝 **Nota:** En DAM vais a usar Git en todos los proyectos. Es una habilidad fundamental en cualquier empresa de software. GitHub y GitLab son las plataformas más populares para alojar repositorios remotos.
 
 ## 7.6. Contenedores: Docker
@@ -303,6 +331,40 @@ git merge feature/nombre    # Fusionar la rama con la actual
 - **Rapidez**: Los contenedores arrancan en segundos, no en minutos como una máquina virtual
 
 > 📝 **Nota:** Docker no reemplaza a las máquinas virtuales, pero para desarrollo y despliegue de aplicaciones web es mucho más ligero y rápido. En proyectos .NET, es habitual usar Docker para levantar la base de datos (SQL Server, PostgreSQL) sin instalarla en tu ordenador.
+
+**Ejemplo de Dockerfile para app C#:**
+```dockerfile
+FROM mcr.microsoft.com/dotnet/sdk:10.0
+WORKDIR /app
+COPY . .
+RUN dotnet publish -c Release -o out
+FROM mcr.microsoft.com/dotnet/aspnet:10.0
+WORKDIR /app
+COPY --from=0 /app/out .
+ENTRYPOINT ["dotnet", "MiApp.dll"]
+```
+
+Este Dockerfile: (1) usa la imagen de SDK para compilar, (2) compila la app en modo Release, (3) usa una imagen ligera solo con el runtime para ejecutar, (4) copia el ejecutable compilado, (5) define el punto de entrada.
+
+**docker-compose.yml para app + base de datos:**
+```yaml
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "5000:80"
+    depends_on:
+      - db
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
+```
+
+Con `docker-compose up` levantas la app y la base de datos simultáneamente. Cada servicio corre en su propio contenedor aislado.
 
 ---
 

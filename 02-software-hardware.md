@@ -45,6 +45,8 @@ Es el software base que debe estar instalado y configurado en el ordenador para 
 - Controladores de tu tarjeta gráfica NVIDIA/AMD
 - Drivers de tu impresora HP o Canon
 
+> 💡 **Ejemplo real:** ¿Alguna vez has actualizado Windows y tu impresora ha dejado de funcionar? Eso es un problema de driver: el sistema operativo cambió y el controlador necesita actualizarse para entender las nuevas órdenes. Por eso los fabricantes publican drivers periódicamente.
+
 #### Software de Aplicación
 Es un conjunto de programas que tienen una finalidad más o menos concreta. Ejemplos incluyen suites ofimáticas, navegadores, editores de imagen, procesadores de textos, hojas de cálculo, reproductores de música o videojuegos.
 
@@ -91,9 +93,12 @@ El **hardware** es el conjunto de dispositivos físicos que conforman un ordenad
 
 - **CPU (Unidad Central de Procesamiento)**: También llamada UCP (en inglés), procesador o microprocesador. Lee y ejecuta las instrucciones almacenadas en la memoria RAM, así como los datos necesarios.
 - **Memoria RAM**: Almacena de forma temporal el código binario de los archivos ejecutables y los archivos de datos necesarios para la ejecución del programa. Es volátil: cuando apagas el ordenador, se borra todo lo que hay en ella.
-- **Memoria ROM**: Almacena de forma permanente las instrucciones básicas para iniciar el ordenador (BIOS/UEFI). Es de solo lectura: no se puede modificar ni borrar durante el uso normal del equipo.
+- **Memoria ROM**: Almacena de forma permanente las instrucciones básicas para iniciar el ordenador. Contiene el **firmware** (BIOS o UEFI): un programa grabado en la placa madre que se ejecuta al encender el equipo y comprueba que todo el hardware funcione antes de cargar el sistema operativo. Es de solo lectura: no se puede modificar ni borrar durante el uso normal del equipo.
 - **Disco Duro**: Almacena de forma permanente los archivos ejecutables y los archivos de datos. Se considera un periférico de Entrada/Salida (E/S).
-- **Periféricos de Entrada/Salida (E/S)**: Recogen nuevos datos desde la entrada, muestran los resultados, leen o guardan datos en disco, etc.
+- **Periféricos de Entrada/Salida (E/S)**: Dispositivos que permiten la comunicación entre el usuario y el ordenador.
+  - **Entrada**: teclado, ratón, micrófono, cámara, escáner, pantalla táctil
+  - **Salida**: pantalla, altavoces, impresora, auriculares
+  - **Entrada/Salida**: pendrive, disco externo, tarjeta de red, pantalla táctil
 
 ### La metáfora de la cocina
 

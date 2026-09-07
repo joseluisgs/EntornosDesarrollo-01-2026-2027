@@ -5,9 +5,11 @@
   - [8.4. Analista Programador](#84-analista-programador)
   - [8.5. Programador (o Desarrollador)](#85-programador-o-desarrollador)
   - [8.6. QA (Quality Assurance) / Testeador](#86-qa-quality-assurance--testeador)
-  - [8.7. DevOps](#87-devops)
-  - [8.9. Diseñador UX/UI](#89-diseñador-uxui)
-  - [8.10. Organigrama de un Equipo de Desarrollo](#810-organigrama-de-un-equipo-de-desarrollo)
+  - [8.7. Full-Stack Developer](#87-full-stack-developer)
+  - [8.8. DevOps](#88-devops)
+  - [8.9. Scrum Master](#89-scrum-master)
+  - [8.10. Diseñador UX/UI](#810-diseñador-uxui)
+  - [8.11. Organigrama de un Equipo de Desarrollo](#811-organigrama-de-un-equipo-de-desarrollo)
 
 
 # 8. Perfiles del Desarrollo de Software
@@ -161,7 +163,17 @@ graph TD
 - Control de versiones (Git)
 - Testing básico
 
-> 📝 **Nota:** En DAM vuestra primera posición será Programador Junior. Con práctica y experiencia podréis ascender a niveles superiores.
+**Carrera profesional típica desde DAM:**
+```mermaid
+graph LR
+    A[Junior<br/>0-2 años] --> B[Mid-level<br/>2-5 años]
+    B --> C[Senior<br/>5-10 años]
+    C --> D[Lead / Tech Lead<br/>8+ años]
+    D --> E[Architect<br/>10+ años]
+    D --> F[Engineering Manager<br/>10+ años]
+```
+
+> 💡 **Consejo:** En DAM empezaréis como Junior. No os preocupéis por el nivel: con experiencia y práctica, el crecimiento es natural. Lo importante es nunca dejar de aprender.
 
 ## 8.6. QA (Quality Assurance) / Testeador
 
@@ -186,7 +198,19 @@ graph TD
 
 > 💡 **Dato:** El testing es una carrera en sí misma. Hay QA manual, automatización de pruebas, testing de rendimiento, security testing, etc.
 
-## 8.7. DevOps
+## 8.7. Full-Stack Developer
+
+Un **Full-Stack Developer** es capaz de trabajar tanto en el **front-end** (lo que ve el usuario: interfaces web, maquetas, interacción) como en el **back-end** (la lógica del servidor, bases de datos, APIs).
+
+**Front-end**: HTML, CSS, JavaScript, frameworks como React, Angular o Vue.
+**Back-end**: Lenguajes como C#, Java, Python o Node.js, bases de datos, APIs REST.
+
+**Ventaja**: Puede desarrollar una aplicación completa de forma autónoma.
+**Desventaja**: Es difícil ser experto en ambos ámbitos. Muchos full-stack son más fuertes en uno que en otro.
+
+> 💡 **Dato:** En empresas pequeñas o startups, se buscan perfiles full-stack porque pueden hacer más con menos gente. En empresas grandes, suelen preferir especialistas (front o back).
+
+## 8.8. DevOps
 
 Aunque no aparece en el contenido original, DevOps es un perfil esencial en equipos modernos:
 
@@ -204,9 +228,20 @@ Aunque no aparece en el contenido original, DevOps es un perfil esencial en equi
 - Pipelines CI/CD (Jenkins, GitHub Actions)
 - Infrastructure as Code
 
-## 8.8. Organigrama de un Equipo de Desarrollo
+## 8.9. Scrum Master
 
-## 8.9. Diseñador UX/UI
+El **Scrum Master** es el responsable de facilitar el proceso Scrum y eliminar obstáculos que impidan al equipo avanzar.
+
+**Responsabilidades:**
+- Facilitar los eventos de Scrum (daily, planning, review, retrospective)
+- Proteger al equipo de distracciones externas
+- Ayudar al Product Owner a gestionar el backlog
+- Promover la mejora continua
+- Eliminar impedimentos técnicos o organizativos
+
+**NO es:** un jefe de proyecto. No asigna tareas ni toma decisiones técnicas. Es un facilitador y coach del equipo.
+
+## 8.10. Diseñador UX/UI
 
 Aunque no es un perfil estrictamente de programación, el diseñador UX/UI es fundamental en proyectos web y móviles:
 
@@ -230,7 +265,7 @@ Aunque no es un perfil estrictamente de programación, el diseñador UX/UI es fu
 
 > 💡 **Dato:** En DAW, muchos programadores terminan haciendo tareas de UI porque entienden las restricciones técnicas. Un diseñador que conoceHTML/CSS y un programador que entiende de UX forman un equipo imparable.
 
-## 8.10. Organigrama de un Equipo de Desarrollo
+## 8.11. Organigrama de un Equipo de Desarrollo
 
 ```mermaid
 graph TD

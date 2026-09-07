@@ -90,6 +90,14 @@ graph LR
 
 ![Diagrama: Compilación vs Interpretación](/images/compilado_interpretado.jpeg)
 
+| Característica | Compilación | Interpretación | Mixto |
+|----------------|-------------|----------------|-------|
+| **Traducción** | Todo de una vez | Línea a línea | Código intermedio + JIT |
+| **Velocidad** | Rápida | Lenta | Media-buena |
+| **Portabilidad** | Baja (por SO) | Alta | Alta |
+| **Ejemplos** | C, C++, Go | Python, Ruby | Java, C# |
+| **Ejecutable** | Sí (.exe) | No | No (.dll + MV) |
+
 - **Mixto**: Algunos lenguajes utilizan ambos métodos, compilando a un código intermedio (bytecode) que luego es interpretado por una máquina virtual. Un ejemplo es Java y C#.
 
 ```mermaid
@@ -123,6 +131,8 @@ graph LR
 ```
 
 > 💡 **Ejemplo real:** TypeScript se usa porque ofrece tipos estáticos y más seguridad, pero los navegadores solo entienden JavaScript. El transpilador `tsc` o `Babel` resuelve esa brecha convirtiendo `.ts` a `.js`.
+
+Otro ejemplo: React usa JSX (una mezcla de JavaScript y HTML) que se transpila a JavaScript puro con Babel. Los desarrolladores escriben JSX porque es más legible, y Babel lo convierte en llamadas a `React.createElement()` que el navegador entiende.
 
 ### 6.1.2. Fases de un Traductor (Compilador/Intérprete)
 
@@ -171,7 +181,9 @@ Es la primera fase del proceso. El **analizador léxico** lee el código fuente 
 
 #### 2. Análisis Sintáctico (Parser)
 
-Una vez que los tokens han sido identificados, el **analizador sintáctico** toma esta secuencia y comprueba que la estructura del programa sea gramaticalmente correcta. Este proceso genera una representación jerárquica del código, conocida como **Árbol Sintáctico (o Árbol de Análisis)**. Si la secuencia de tokens no cumple con las reglas gramaticales del lenguaje, se genera un error de sintaxis.
+Una vez que los tokens han sido identificados, el **analizador sintáctico** toma esta secuencia y comprueba que la estructura del programa sea gramaticalmente correcta. Este proceso genera una representación jerárquica del código, conocida como **Árbol Sintáctico (o Árbol de Análisis)**, también llamado AST (Abstract Syntax Tree). Si la secuencia de tokens no cumple con las reglas gramaticales del lenguaje, se genera un error de sintaxis.
+
+Un AST es una estructura de datos en forma de árbol que representa la estructura gramatical del código. Por ejemplo, `x = 5 + 3` se convierte en un árbol donde la raíz es `=`, con hijo izquierdo `x` e hijo derecho una operación `+` con hijos `5` y `3`. El compilador trabaja con el AST, no con el código original.
 
 **Ejemplo:** Para la expresión `a + 5`, el analizador sintáctico crearía un árbol donde el nodo superior es el operador `+`, con `a` y `5` como sus hijos.
 
@@ -254,6 +266,8 @@ Esta fase es opcional pero crucial para el rendimiento. El **optimizador** mejor
 | **Loop unrolling** | `for(i=0;i<4;i++)` | `a[0];a[1];a[2];a[3];` |
 | **Inlining** | Llamada a función | Código inline |
 
+Ejemplo real: si escribes `const int x = 5 + 3;`, el compilador detecta que es una constante y reemplaza directamente `x` por `8` en el código generado, sin calcularlo en tiempo de ejecución. Esto se llama propagación de constantes.
+
 > 💡 **Dato:** El compilador de C (gcc) con optimización `-O3` puede hacer que tu código sea 10-100 veces más rápido que sin optimizar, pero el código resultante es casi imposible de entender para humanos.
 
 #### 6. Generación de Código Objeto
@@ -265,6 +279,8 @@ En esta fase, el código intermedio (ya optimizado) se convierte en **código m�
 - **Enlazador (Linker):** Es el programa que toma uno o más archivos de código objeto y los combina con las **librerías** y rutinas necesarias (como las funciones para entrada y salida) para crear un único **archivo ejecutable** completo. El enlazador resuelve las referencias simbólicas, asignando direcciones de memoria reales. En lenguajes como C, esto incluye las instrucciones del preprocesador (ej. `#include`), que se encargan de incluir el contenido de otros archivos antes de la compilación.
 
 > 💡 **Analogía:** El enlazador es como un editor de un libro que combina los capítulos escritos por diferentes autores (módulos) con el índice y las referencias cruzadas para crear un libro completo y coherente.
+
+Ejemplo práctico: cuando escribes `Console.WriteLine("Hola")` en C#, tu código no contiene la implementación de `WriteLine`. El linker resuelve esta referencia conectando tu código con la librería `System.Console.dll` que sí contiene esa función. Sin el linker, cada programa tendría que incluir todo el código de todas las librerías.
 
 - **Cargador (Loader):** Aunque no es parte del compilador, es la fase final que se encarga de cargar el archivo ejecutable en la memoria RAM y prepara su ejecución cuando el usuario lo inicia.
 
@@ -312,6 +328,8 @@ Una **máquina virtual (MV)** es un tipo especial de software cuya misión es se
 - **Verificación:** Comprobar bytecode antes de ejecutar
 
 Los **lenguajes mixtos o virtuales** (como Java o Python) compilan el código fuente a un código intermedio llamado **bytecode** (en Java), que luego es interpretado por la máquina virtual.
+
+Sin máquinas virtuales, tendrías que compilar tu aplicación por separado para Windows, Linux y Mac. Con una MV, compilas una sola vez a código intermedio y el mismo ejecutable funciona en cualquier sistema operativo que tenga la MV instalada. Es como el traductor universal: tú hablas una vez y él traduce a cualquier idioma.
 
 ```mermaid
 graph TB
@@ -363,7 +381,7 @@ El Entorno de Ejecución está formado por la máquina virtual y los **API's** (
 | Entorno | Lenguaje | Propósito |
 |---------|----------|-----------|
 | **JRE** (Java Runtime Environment) | Java | Ejecutar aplicaciones Java |
-| **.NET Runtime** | C# | Ejecutar aplicaciones .NET |
+| **.NET 8/9/10 Runtime** | C# | Ejecutar aplicaciones .NET modernas |
 | **Node.js** | JavaScript | Ejecutar JS en servidor |
 | **Python Runtime** | Python | Ejecutar scripts Python |
 

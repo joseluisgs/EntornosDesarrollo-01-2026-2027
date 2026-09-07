@@ -139,6 +139,10 @@ La **especificación de requisitos** debe:
 
 La culminación de esta fase es el documento de **Especificación de Requisitos del Software (ERS)**, que actúa como un contrato entre el cliente y el desarrollador.
 
+> 📝 **Nota:** Los requisitos de información detallan qué datos entran y salen del sistema. Ejemplo: "El sistema recibirá: DNI, nombre, dirección. El sistema generará: factura con fecha, productos, subtotal, IVA y total."
+
+> 📝 **Nota:** En DAM, vais a crear ERS simplificados en prácticas. Un ERS real puede tener 50+ páginas para proyectos grandes. La clave es que sea claro, completo y sin ambigüedades.
+
 > ⚠️ **Advertencia:** No confundir requisitos funcionales (qué hace el sistema) con requisitos de diseño (cómo lo hace). Ejemplo: "El sistema guardará los datos en una base de datos PostgreSQL" es un DETALLE DE IMPLEMENTACIÓN, no un requisito funcional.
 
 ### 3.2.3. Diseño
@@ -180,6 +184,12 @@ Durante esta fase, el código pasa por diferentes estados (código fuente, objet
 
 El principal objetivo de las **pruebas** es conseguir que el programa funcione incorrectamente para descubrir y corregir defectos. El programa debe ser sometido al máximo número de situaciones diferentes. Las pruebas son imprescindible para asegurar la validación y verificación del software construido.
 
+> 💡 **Concepto clave — Verificación vs Validación:**
+> - **Verificación**: ¿Hacemos el producto bien? Comprueba que el código cumple con las especificaciones técnicas.
+> - **Validación**: ¿Hacemos el producto correcto? Comprueba que el software satisface las necesidades reales del usuario.
+>
+> Ejemplo: Un cajero automático verifica que el código funcione (verificación), pero si el usuario no sabe usarlo porque el diseño es confuso, no está validado.
+
 > 💡 **Consejo:** "Si no has encontrado un bug, es que no has probado lo suficiente."
 
 ### 3.2.5.1. Tipos de Pruebas
@@ -201,6 +211,8 @@ El principal objetivo de las **pruebas** es conseguir que el programa funcione i
   *Ejemplo:* ¿Cuántos usuarios simultáneos aguanta el servidor antes de caer?
 
 - **Beta Test**: La prueba final que se realiza sobre el entorno de producción, en el entorno real del cliente y bajo un funcionamiento normal de su empresa.
+
+> 💡 **Ejemplo real:** Netflix prueba nuevas funciones con un 1% de usuarios antes de lanzarlas globalmente. Si detectan problemas, corrigen y prueban con otro 1%. Esto minimiza el riesgo de un fallo masivo.
 
 Los resultados de las pruebas de unidades son **Módulos utilizables**, y de las pruebas de integración, un **Sistema utilizable**. Las pruebas del sistema culminan con un **Sistema aceptado**.
 
@@ -260,6 +272,13 @@ La etapa de **mantenimiento** es la más larga de todo el ciclo de vida del soft
 - **Adaptativo**: Para ajustar el software a nuevos entornos, tendencias del mercado o componentes hardware.
   
   *Ejemplo:* "Hacer la app compatible con iOS 17".
+
+| Tipo | Pregunta clave | Ejemplo | Cuándo ocurre |
+|------|---------------|---------|---------------|
+| **Correctivo** | ¿Qué está roto? | Botón login no funciona en Firefox | Cuando hay un bug |
+| **Perfectivo** | ¿Qué puede mejorar? | Formulario con errores en tiempo real | Cuando el usuario pide mejoras |
+| **Evolutivo** | ¿Qué falta? | Añadir pago con PayPal | Cuando hay nuevos requisitos |
+| **Adaptativo** | ¿Dónde necesita funcionar? | Compatible con iOS 17 | Cuando cambia el entorno |
 
 Los resultados del mantenimiento son **Informes de errores y control de cambios**.
 

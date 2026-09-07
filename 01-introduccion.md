@@ -41,6 +41,9 @@ graph LR
     E --> F[Pruebas]
     F --> G[Despliegue]
     G --> H[Mantenimiento]
+    F -.->|Errores detectados| E
+    F -.->|Requisitos cambian| C
+    H -.->|Nuevas funcionalidades| B
 ```
 
 💡 **Dato curioso:** El término "bug" (bicho) para referirse a un error de software proviene de 1947, cuando la científica Grace Hopper encontró una polilla real atascada en un relé de la computadora Harvard Mark II.
@@ -62,6 +65,23 @@ Imagina que quieres construir una casa. ¿Empezarías a colocar ladrillos sin te
 | Sin documentación | Nadie sabe cómo funciona el sistema |
 
 > ⚠️ **Advertencia:** Muchos estudiantes creen que "programar" es lo más importante. ¡En realidad, programar es solo UNA fase! Un programador que no sabe analizar requisitos o diseñar estructuras de datos creará código inútil aunque funcione técnicamente.
+
+### Programar no es lo mismo que desarrollar
+
+| Concepto | Qué es | Ejemplo |
+|----------|--------|---------|
+| **Programar** | Escribir código que hace algo específico | Crear una función que sume dos números |
+| **Desarrollar software** | Todo el proceso: analizar, diseñar, codificar, probar, mantener | Crear una app de pedidos como Glovo desde cero |
+
+> 💡 **Analogía:** Programar es como saber cocinar un plato. Desarrollar software es como montar un restaurante: necesitas recetas (código), pero también local (infraestructura), personal (equipo), permisos (documentación) y una estrategia de negocio (planificación).
+
+### ¿Qué es un proyecto vs un programa vs un script?
+
+| Término | Definición | Ejemplo |
+|---------|------------|---------|
+| **Script** | Programa pequeño y rápido para automatizar una tarea simple | Un script Python que renombra archivos |
+| **Programa** | Conjunto de instrucciones que realizan una tarea concreta | Un calculadora de Windows |
+| **Proyecto de software** | Esfuerzo organizado con planificación, equipo y fases definidas para crear un sistema completo | Desarrollar una plataforma e-commerce |
 
 ### La regla del 80/20
 En desarrollo de software se cumple una regla no escrita: el **80% del tiempo** de un proyecto se dedica a **mantenimiento y evolución**, mientras que solo el **20%** corresponde al desarrollo inicial. Por eso es crucial hacer las cosas bien desde el principio.

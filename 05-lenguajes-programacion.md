@@ -146,6 +146,8 @@ Son lenguajes totalmente dependientes de la máquina, lo que significa que un pr
 
 Este término no es universalmente aceptado, pero se refiere a lenguajes que se encuentran en un punto medio. Pueden acceder a los registros del sistema y trabajar con direcciones de memoria (características de bajo nivel), y a la vez realizar operaciones de alto nivel. Un ejemplo es C.
 
+C permite acceso directo a memoria con punteros (como los lenguajes de bajo nivel) pero también tiene estructuras de control, funciones y bibliotecas estándar (como los de alto nivel). Por eso se clasifica como medio nivel.
+
 **Ejemplo en C:**
 ```c
 #include <stdio.h>
@@ -256,6 +258,8 @@ Código Fuente (.java) → Compilador → Bytecode (.class) → JVM → Ejecuci�
 ```
 
 > 💡 **Ejemplo real:** Cuando descargas una app de Android, no descargas código Java, sino bytecode (.dex) que la Dalvik/ART VM ejecuta. Esto permite que la misma app funcione en cualquier dispositivo Android.
+
+La ventaja de compilar a código intermedio (IL en C#, bytecode en Java) es la portabilidad: el mismo archivo .dll puede ejecutarse en Windows, Linux o Mac siempre que haya una máquina virtual instalada. No necesitas recompilar para cada sistema operativo.
 
 ```mermaid
 graph LR
@@ -415,6 +419,8 @@ Esta dimensión se refiere a la forma en que el programador indica el tipo de un
   - **Ejemplo en Kotlin**: `val numero = 10` (infiere Int)
   - **Ejemplo en TypeScript**: `let numero = 10` (infiere number)
 
+**¿Cuándo usar var vs tipo explícito?** Usa `var` cuando el tipo es evidente: `var nombre = "Ana"` (es obvio que es string). Usa tipo explícito cuando no lo es: `List<Persona> personas = ObtenerPersonas()` (sin el tipo no se sabe qué devuelve).
+
 ### 5.2.3.4. Lenguajes sin Tipado (Tipado Nulo)
 
 En algunos lenguajes de muy bajo nivel, como el **lenguaje de ensamblador**, no existe un sistema de tipos formal. Todas las variables se manejan como una simple secuencia de bits, y es responsabilidad total del programador interpretar los datos.
@@ -504,6 +510,8 @@ Un **paradigma de programación** es un modelo fundamental para el diseño y la 
 - **Programación Declarativa**: Los programas describen el **resultado deseado**, no el proceso paso a paso para lograrlo. Suelen ser lenguajes interpretados.
 
   - **Lógica**: Utiliza reglas y afirmaciones de lógica formal para que la computadora deduzca la respuesta a una consulta. Se usa mucho en inteligencia artificial. Ejemplo: Prolog.
+
+    En Prolog, declaras hechos y reglas: `padre(juan, maria).` (Juan es padre de Maria). Luego preguntas: `?- padre(juan, X).` (¿Quién es hijo de Juan?). El motor lógico deduce la respuesta.
   - **Funcional**: Se enfoca en el uso de **funciones matemáticas** que no cambian el estado ni los datos externos. Esto resulta en un código modular y estructurado, aunque puede volverse complejo. C# (con LINQ y expresiones lambda) y Java (con Streams) han incorporado características importantes de este paradigma. Kotlin está diseñado con el paradigma funcional en mente desde el principio. Ejemplos: C#, Lisp, Haskell, Scala, JavaScript (moderno).
 
   ```csharp
@@ -564,6 +572,14 @@ graph TB
     style H fill:#795548,color:#fff
 ```
 
+| Paradigma | Idea central | Lenguajes | Ejemplo de uso |
+|-----------|-------------|-----------|----------------|
+| Imperativo | Secuencia de pasos | C, Pascal | Scripts, sistemas |
+| POO | Objetos con datos y métodos | Java, C#, C++ | Apps empresariales |
+| Funcional | Funciones puras, sin estado | Haskell, F#, Lisp | Procesamiento de datos |
+| Declarativo | Describes qué, no cómo | SQL, HTML | Bases de datos, web |
+| Multiparadigma | Combina varios | C#, Python, JavaScript | La mayoría de proyectos modernos |
+
 ### 5.2.5. Según Generaciones
 
 La evolución de los lenguajes de programación se puede dividir en 5 etapas o generaciones:
@@ -572,7 +588,7 @@ La evolución de los lenguajes de programación se puede dividir en 5 etapas o g
 - **Segunda Generación (2GL)**: Creación de los primeros lenguajes ensambladores. Mnemónicos como MOV, ADD.
 - **Tercera Generación (3GL)**: Creación de los primeros lenguajes de alto nivel (C, Pascal, Cobol). Más cercanos al inglés.
 - **Cuarta Generación (4GL)**: Lenguajes capaces de generar código por sí solos (RAD), con los cuales se pueden realizar aplicaciones sin ser experto. Aquí se incluyen los lenguajes orientados a objetos, permitiendo la reutilización de código. Suelen tener acceso a bases de datos, capacidades gráficas y generación de código automática. Ejemplos: SQL, MATLAB, ABAP.
-- **Quinta Generación (5GL)**: Lenguajes orientados a la inteligencia artificial (LISP, Prolog, Python con IA). Se centran en resolver problemas mediante restricciones y lógica.
+- **Quinta Generación (5GL)**: Lenguajes orientados a la inteligencia artificial (LISP, Prolog). Se centran en resolver problemas mediante restricciones y lógica. Python es 3GL pero se usa mucho en IA gracias a sus librerías (TensorFlow, PyTorch).
 
 ```mermaid
 graph LR
@@ -643,6 +659,8 @@ Lenguajes como Java, C, C++, PHP y Visual Basic concentran alrededor del 60% del
 | Videojuegos | C++, C#, Lua |
 | DevOps/Scripting | Python, Bash, Go |
 | Inteligencia Artificial | Python, Lisp, Prolog |
+
+C# se usa en: desarrollo web con ASP.NET, escritorio con WPF y MAUI, juegos con Unity, móviles con .NET MAUI, y servicios en la nube con Azure. Es uno de los lenguajes más versátiles del mercado.
 
 ---
 

@@ -13,6 +13,9 @@
     - [IDE](#ide)
     - [Perfiles](#perfiles)
   - [10.4. Checklist de Supervivencia](#104-checklist-de-supervivencia)
+  - [10.5. Glosario de Términos](#105-glosario-de-términos)
+  - [10.6. Ejercicios de Repaso](#106-ejercicios-de-repaso)
+  - [10.7. ¿Qué viene después?](#107-qué-viene-después)
 
 
 # 10. Resumen y Conclusiones
@@ -167,3 +170,47 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 - [ ] ¿Conozco los roles principales en un equipo de desarrollo?
 - [ ] ¿Clasifico C# según nivel, traducción, tipado y paradigma?
 - [ ] ¿Explico qué es Roslyn y cómo compila C#?
+
+## 10.5. Glosario de Términos
+
+| Término | Definición |
+|---------|------------|
+| **Software** | Parte intangible: programas, datos, documentación |
+| **Hardware** | Parte física: componentes del ordenador |
+| **ERS** | Especificación de Requisitos del Software, contrato cliente-desarrollador |
+| **Bug** | Error o defecto en el código |
+| **Compilador** | Traduce código fuente a código máquina o intermedio |
+| **Intérprete** | Ejecuta código línea a línea sin compilación previa |
+| **Código intermedio** | IL o Bytecode: código entre el fuente y el máquina |
+| **Máquina Virtual** | Software que ejecuta código intermedio (JVM, CLR) |
+| **JIT** | Just-In-Time Compiler: compila código intermedio a máquina en tiempo de ejecución |
+| **GC** | Garbage Collector: gestiona la memoria automáticamente |
+| **Roslyn** | Compilador de C# escrito en C# |
+| **CLR** | Common Language Runtime: máquina virtual de .NET |
+| **IDE** | Entorno de Desarrollo Integrado (editor + compilador + depurador) |
+| **Git** | Sistema de control de versiones distribuido |
+| **Docker** | Plataforma de contenedores para portabilidad |
+| **Scrum** | Metodología ágil con sprints, roles y eventos definidos |
+| **Kanban** | Metodología ágil de flujo continuo con tablero visual |
+| **TDD** | Test-Driven Development: escribir test antes que código |
+| **Full-Stack** | Desarrollador que trabaja front-end y back-end |
+| **NuGet** | Gestor de paquetes de .NET |
+
+## 10.6. Ejercicios de Repaso
+
+1. **Clasificación**: Clasifica Python, C#, JavaScript y C en las 5 dimensiones de lenguajes (abstracción, traducción, paradigma, tipado, inferencia).
+
+2. **Ciclo de vida**: Describe con tus palabras las 9 fases del ciclo de vida. Para cada fase, indica qué documento de entrada y salida se genera.
+
+3. **Modelos**: ¿Qué modelo elegirías para cada caso? Justifica.
+   - App móvil con requisitos cambiantes
+   - Sistema bancario con requisitos fijos
+   - Prototipo rápido para mostrar a un cliente
+
+4. **Traducción**: Explica el proceso completo de compilación de C# desde que escribes `Console.WriteLine("Hola")` hasta que ves el resultado en pantalla.
+
+5. **Herramientas**: Nombra 3 herramientas que usarías para desarrollar una app web en C# y explica para qué sirve cada una.
+
+## 10.7. ¿Qué viene después?
+
+En la **UD02: Entornos de Desarrollo** profundizaremos en las herramientas concretas que usarás como desarrollador: cómo configurar tu entorno de trabajo, dominar el IDE, y gestionar proyectos con Git. Pasaremos de la teoría a la práctica real del día a día.

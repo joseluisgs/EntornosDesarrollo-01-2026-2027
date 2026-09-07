@@ -293,12 +293,21 @@ graph TD
 Console.WriteLine("¡Hola desde C#!");
 ```
 
+Desde C# 9 (2020), puedes escribir código directamente en un archivo .cs sin necesidad de `class Program` ni método `Main`. Esto se llama **Top Level Statements** y hace que el código sea más limpio y fácil de leer para principiantes. El compilador genera la clase Main por debajo.
+
 ```bash
 # Compilar con dotnet CLI
 dotnet build
 
 # Resultado: bin/Debug/net10.0/HolaMundo.dll
 ```
+
+**Ejemplo completo: de C# a ejecución**
+1. Creas el proyecto: `dotnet new console -n MiApp`
+2. Escribes código en `Program.cs`
+3. Compilas: `dotnet build` → Roslyn genera `MiApp.dll` (código IL) en `bin/Debug/net10.0/`
+4. Ejecutas: `dotnet run` → CLR carga el `.dll`, JIT compila a máquina, CPU ejecuta
+5. Puedes ver el IL con herramientas como `ildasm` o con el desensamblador de Rider
 
 El `.dll` contiene:
 - **Código IL**: Las instrucciones intermedias
@@ -340,6 +349,12 @@ string nombre = "Ana";  // Reserva memoria
 // ... usamos nombre ...
 // Cuando ya no se usa, el Garbage Collector libera la memoria
 ```
+
+**¿Cuándo se ejecuta el GC?**
+- Se ejecuta periódicamente cuando el sistema detecta que hay suficiente basura acumulada.
+- También cuando falta memoria.
+- Puedes forzarlo con `GC.Collect()`, pero **no se recomienda** en producción porque causa una pausa en la ejecución.
+- El GC es uno de los grandes beneficios de C# sobre C++: no tienes que gestionar la memoria manualmente.
 
 > 💡 **Analogía:** La CLR es como un traductor automático que llevas en el bolsillo. Tú hablas en "C#" y ella traduce al "procesador" en tiempo real.
 
@@ -406,6 +421,15 @@ graph LR
 | **Futuro** | Mantenimiento | Desarrollo activo |
 | **NuGet** | Parcial | Completo |
 | **CLI** | NuGet Package Manager | dotnet CLI |
+
+**¿Qué es NuGet?** Es el gestor de paquetes de .NET, similar a npm para JavaScript o pip para Python. Contiene miles de librerías gratuitas que otros desarrolladores han creado.
+
+**Ejemplo: instalar una librería**
+```bash
+dotnet add package Newtonsoft.Json
+```
+
+Esto descarga la librería JSON.NET y la añade a tu proyecto. Puedes usarla con `using Newtonsoft.Json;`. NuGet resuelve automáticamente las dependencias (si una librería necesita otra, la instala también).
 
 > 📝 **Nota:** En DAM usaremos **.NET 10** (la versión más reciente). Es multiplataforma, rápido y tiene todas las características modernas de C#.
 
