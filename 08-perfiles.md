@@ -19,7 +19,7 @@
 > 💡 **¿Por qué me importa?**
 > Porque el desarrollo de software es un trabajo en equipo. No vas a trabajar solo: necesitarás hablar con analistas, diseñadores, testers y clientes. Entender qué hace cada perfil te hará un mejor compañero de equipo y te ayudará a decidir hacia dónde dirigir tu carrera.
 > 
-> 🔗 **Conexión con otros temas:** Cada perfil ejecuta las fases del Tema 03 según la metodología del Tema 04. Usan las herramientas del Tema 07 y escriben código en los lenguajes del Tema 05.
+> 🔗 **Conexión con otros puntos:** Cada perfil ejecuta las fases del Punto 03 según la metodología del Punto 04. Usan las herramientas del Punto 07 y escriben código en los lenguajes del Punto 05.
 
 En el Punto 07 vimos las herramientas de apoyo. Ahora veremos **quién** usa esas herramientas: los perfiles profesionales del desarrollo de software.
 
@@ -28,7 +28,7 @@ En el Punto 07 vimos las herramientas de apoyo. Ahora veremos **quién** usa esa
 - Conocer los perfiles principales de un equipo de desarrollo
 - Entender las responsabilidades de cada rol
 - Diferenciar entre analista, programador y arquitecto
-- Conocer el camino profesional desde DAM
+- Conocer el camino profesional desde DAW
 
 ---
 
@@ -76,7 +76,7 @@ graph TD
 - Capacidad de diseño y abstracción
 - Comunicación con stakeholders técnicos y no técnicos
 
-> 📝 **Nota:** En DAM seréis programadores, pero con experiencia podréis crecer hacia roles de arquitectura. El arquitecto es el "veterano" del equipo técnico.
+> 📝 **Nota:** En DAW seréis programadores, pero con experiencia podréis crecer hacia roles de arquitectura. El arquitecto es el "veterano" del equipo técnico.
 
 ## 8.2. Jefe de Proyecto
 
@@ -168,7 +168,7 @@ graph TD
 - Control de versiones (Git)
 - Testing básico
 
-**Carrera profesional típica desde DAM:**
+**Carrera profesional típica desde DAW:**
 ```mermaid
 graph LR
     A[Junior<br/>0-2 años] --> B[Mid-level<br/>2-5 años]
@@ -178,7 +178,7 @@ graph LR
     D --> F[Engineering Manager<br/>10+ años]
 ```
 
-> 💡 **Consejo:** En DAM empezaréis como Junior. No os preocupéis por el nivel: con experiencia y práctica, el crecimiento es natural. Lo importante es nunca dejar de aprender.
+> 💡 **Consejo:** En DAW empezaréis como Junior. No os preocupéis por el nivel: con experiencia y práctica, el crecimiento es natural. Lo importante es nunca dejar de aprender.
 
 ## 8.6. QA (Quality Assurance) / Testeador
 
@@ -290,7 +290,7 @@ graph TD
     style G fill:#E91E63,color:#fff
 ```
 
-> 📝 **Nota:** En empresas pequeñas o startups, una persona puede acumular varios roles (programador + QA + DevOps). En empresas grandes, cada rol está especializado. En DAM vais a aprender los fundamentos de todos estos roles.
+> 📝 **Nota:** En empresas pequeñas o startups, una persona puede acumular varios roles (programador + QA + DevOps). En empresas grandes, cada rol está especializado. En DAW vais a aprender los fundamentos de todos estos roles.
 
 ---
 

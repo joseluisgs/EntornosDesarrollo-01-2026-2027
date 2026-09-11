@@ -21,7 +21,7 @@
 > 💡 **¿Por qué me importa?**
 > Porque la diferencia entre un proyecto exitoso y un fracaso no es el código: es la organización. Si no eliges bien el modelo de desarrollo, tu proyecto se retrasará, costará más de lo previsto o directamente fracasará.
 > 
-> 🔗 **Conexión con otros temas:** El Tema 03 explicó las fases del ciclo de vida. Este tema enseña CÓMO organizar esas fases. El Tema 07 presentará las herramientas que apoyan estas metodologías (Git, Docker). El Tema 08 mostrará los roles que ejecutan cada metodología.
+> 🔗 **Conexión con otros puntos:** El Punto 03 explicó las fases del ciclo de vida. Este punto enseña CÓMO organizar esas fases. El Punto 07 presentará las herramientas que apoyan estas metodologías (Git, Docker). El Punto 08 mostrará los roles que ejecutan cada metodología.
 
 En el Punto 03 vimos las fases del ciclo de vida. Ahora veremos cómo se organizan estas fases en diferentes modelos y metodologías.
 
@@ -127,7 +127,7 @@ graph TB
 - Industria aeroespacial, médica, nuclear
 - Proyectos con altos requisitos de calidad y seguridad
 
-> 📝 **Nota:** En DAM trabajaremos principalmente con modelos ágiles, pero es importante que conozcáis los modelos clásicos porque muchas empresas (especialmente en sectores regulados) todavía los usan.
+> 📝 **Nota:** En DAW trabajaremos principalmente con modelos ágiles, pero es importante que conozcáis los modelos clásicos porque muchas empresas (especialmente en sectores regulados) todavía los usan.
 
 ![Diagrama: Modelo en V](/images/modelo_v.jpeg)
 
@@ -394,7 +394,7 @@ graph LR
 - **Velocity**: Número medio de story points que el equipo completa en un sprint. Se calcula con los últimos 3-5 sprints. Ejemplo: si el equipo completa 20, 25, 23 puntos, la velocity media es ~23.
 - **Uso**: Si la velocity es 23 y hay 92 puntos pendientes, se necesitan ~4 sprints para terminar.
 
-> 📝 **Nota:** En DAM vamos a practicar Scrum con sprints de 2 semanas. Tendréis roles de Product Owner, Scrum Master y equipo de desarrollo. Es una experiencia muy valiosa para el mercado laboral.
+> 📝 **Nota:** En DAW vamos a practicar Scrum con sprints de 2 semanas. Tendréis roles de Product Owner, Scrum Master y equipo de desarrollo. Es una experiencia muy valiosa para el mercado laboral.
 
 ![Diagrama: Proceso Scrum](/images/modelo_scrum.webp)
 

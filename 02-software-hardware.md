@@ -23,7 +23,7 @@
 > 💡 **¿Por qué me importa?**
 > Para desarrollar software necesitas entender en qué lo ejecutas. Tu código C# se ejecuta en una CPU, se almacena en disco y usa memoria RAM. Si no entiendes el hardware, no entenderás por qué una aplicación va lenta o se queda sin memoria.
 > 
-> 🔗 **Conexión con otros temas:** El Tema 06 explicará cómo tu código C# se traduce a código máquina que la CPU ejecuta. El Tema 09 mostrará cómo .NET CLR gestiona la memoria RAM con el Garbage Collector. El Tema 07 presentará las herramientas (IDEs, Docker) que gestionan estos recursos.
+> 🔗 **Conexión con otros puntos:** El Punto 06 explicará cómo tu código C# se traduce a código máquina que la CPU ejecuta. El Punto 09 mostrará cómo .NET CLR gestiona la memoria RAM con el Garbage Collector. El Punto 07 presentará las herramientas (IDEs, Docker) que gestionan estos recursos.
 
 En el Punto 01 vimos qué es el desarrollo de software y sus fases. Ahora veremos qué es exactamente el software, qué es el hardware, y cómo se relacionan para que un ordenador funcione.
 
@@ -66,7 +66,7 @@ Es un conjunto de programas que tienen una finalidad más o menos concreta. Ejem
 #### Software de Desarrollo (o de Programación)
 Es el conjunto de herramientas que permiten desarrollar programas informáticos. Esto incluye editores, compiladores, intérpretes, entre otros.
 
-**Herramientas que usarás en DAM:**
+**Herramientas que usarás en DAW:**
 - Visual Studio Code, IntelliJ IDEA, Eclipse (editores/IDEs)
 - GCC, Clang (compiladores de C/C++)
 - Python interpreter
@@ -90,7 +90,7 @@ Es un software genérico válido para cualquier cliente potencial y resuelve mú
 - Salesforce (CRM)
 - Microsoft Dynamics (ERP)
 
-> 📝 **Nota:** En DAM vais a crear tanto software a medida (prácticas y proyectos) como a integrar soluciones estándar (usando APIs, conectando con bases de datos existentes, etc.). Ambos enfoques son valiosos en la industria.
+> 📝 **Nota:** En DAW vais a crear tanto software a medida (prácticas y proyectos) como a integrar soluciones estándar (usando APIs, conectando con bases de datos existentes, etc.). Ambos enfoques son valiosos en la industria.
 
 ## 2.2. ¿Qué es el Hardware?
 
@@ -202,7 +202,7 @@ graph TD
 
 > 📝 **Nota:** Esta separación entre hardware y software es lo que hace posible que puedas ejecutar el mismo programa (por ejemplo, Visual Studio Code) en Windows, Linux o macOS. El código es el mismo, pero el sistema operativo traduce tus órdenes a las señales específicas que entiende cada hardware.
 
-> 💡 **Dato profesional:** En DAM, necesitarás entender esta relación para diagnosticar problemas en aplicaciones. Un error puede ser de software (bug en el código) o de hardware (falta de memoria, disco lleno).
+> 💡 **Dato profesional:** En DAW, necesitarás entender esta relación para diagnosticar problemas en aplicaciones. Un error puede ser de software (bug en el código) o de hardware (falta de memoria, disco lleno).
 
 ---
 

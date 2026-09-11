@@ -26,7 +26,7 @@
 > 💡 **¿Por qué me importa?**
 > Porque cuando escribes `dotnet build` en tu proyecto C#, ocurren 50 cosas en milisegundos que este tema explica. Si entiendes el proceso de traducción, sabrás por qué tu código da ciertos errores, por qué compilar en Release es más rápido que en Debug, y qué es exactamente un archivo .dll.
 > 
-> 🔗 **Conexión con otros temas:** El Tema 05 clasificó los lenguajes por tipo de traducción. Este tema muestra CÓMO funciona esa traducción. El Tema 09 aplicará todo esto al proceso concreto de compilación de C# con Roslyn y CLR.
+> 🔗 **Conexión con otros puntos:** El Punto 05 clasificó los lenguajes por tipo de traducción. Este punto muestra CÓMO funciona esa traducción. El Punto 09 aplicará todo esto al proceso concreto de compilación de C# con Roslyn y CLR.
 
 En el Punto 05 vimos los tipos de lenguajes y sus mecanismos de traducción. Ahora profundizaremos en **cómo funciona ese proceso** de principio a fin.
 
@@ -371,7 +371,7 @@ graph TB
 > - **Python Virtual Machine:** Python
 > - **BEAM:** Erlang, Elixir
 
-> 🔗 **Ver Tema 09:** El proceso completo de C# se estudiará en detalle en el caso de estudio: desde `Program.cs` hasta ejecución.
+> 🔗 **Ver Punto 09:** El proceso completo de C# se estudiará en detalle en el caso de estudio: desde `Program.cs` hasta ejecución.
 
 ![Diagrama: Máquina Virtual](/images/lenguaje_java.webp)
 

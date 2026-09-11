@@ -16,7 +16,7 @@
 > 💡 **¿Por qué me importa?**
 > Porque sin las herramientas adecuadas, desarrollar es como construir una casa con las manos. Un IDE como Rider te ahorra horas, Git te salva de errores catastróficos, y Docker evita el "funciona en mi máquina". Son tus herramientas de trabajo diario.
 > 
-> 🔗 **Conexión con otros temas:** Las herramientas apoyan TODAS las fases del Tema 03. Se usan según la metodología del Tema 04 (Git para Scrum, por ejemplo). Son gestionadas por los perfiles del Tema 08.
+> 🔗 **Conexión con otros puntos:** Las herramientas apoyan TODAS las fases del Punto 03. Se usan según la metodología del Punto 04 (Git para Scrum, por ejemplo). Son gestionadas por los perfiles del Punto 08.
 
 En el Punto 06 vimos los procesos de traducción y las máquinas virtuales. Ahora veremos las **herramientas** que facilitan y agilizan nuestro trabajo como desarrolladores.
 
@@ -70,7 +70,7 @@ graph TD
 | **Gestores de paquetes** | NuGet, npm, maven, gradle | Instalar librerías |
 | **Testing** | NUnit, pytest, Jest | Verificar código |
 
-> 📝 **Nota:** En DAM trabajaréis intensamente con estas herramientas. Dominar Visual Studio Code y Git es casi tan importante como saber programar. Son vuestras armas principales.
+> 📝 **Nota:** En DAW trabajaréis intensamente con estas herramientas. Dominar JetBrains Rider y Git es casi tan importante como saber programar. Son vuestras armas principales.
 
 ## 7.2. Herramientas CASE (Computer Aided Software Engineering)
 
@@ -219,14 +219,14 @@ graph TD
 | **JavaScript** | WebStorm | VS Code, Atom |
 | **General** | Visual Studio Code | Sublime, Vim |
 
-> 💡 **Consejo:** Para DAM, os recomiendo dominar Visual Studio Code porque es:
+> 💡 **Consejo:** Para DAW, os recomiendo dominar Visual Studio Code porque es:
 > - Ligero y rápido
 > - Multiplataforma (Windows, Mac, Linux)
 > - Extensible con miles de extensiones
 > - Gratis y open source
 > - Usado en la industria
 
-**Extensiones esenciales para VS Code (DAM):**
+**Extensiones esenciales para VS Code (DAW):**
 
 | Extensión | Utilidad |
 |-----------|----------|
@@ -311,7 +311,7 @@ Esta convención facilita la generación automática de changelogs y la búsqued
 - **Trunk-Based Development**: Solo se usa `main` (o `trunk`). Las ramas de feature son cortas (1-2 días). Se integra frecuentemente. Ideal para equipos ágiles con CI/CD.
 - **GitHub Flow**: Simplificado: `main` + ramas de feature con pull requests. Ideal para proyectos con despliegue continuo.
 
-> 📝 **Nota:** En DAM vais a usar Git en todos los proyectos. Es una habilidad fundamental en cualquier empresa de software. GitHub y GitLab son las plataformas más populares para alojar repositorios remotos.
+> 📝 **Nota:** En DAW vais a usar Git en todos los proyectos. Es una habilidad fundamental en cualquier empresa de software. GitHub y GitLab son las plataformas más populares para alojar repositorios remotos.
 
 ## 7.6. Contenedores: Docker
 
@@ -381,7 +381,7 @@ Con `docker-compose up` levantas la app y la base de datos simultáneamente. Cad
 | **CASE** | Automatización del proceso de desarrollo |
 | **RAD** | Desarrollo rápido con prototipos |
 | **IDE** | Todo integrado en una sola aplicación |
-| **VS Code** | Editor principal para DAM (ligero, gratuito) |
+| **Rider** | Editor principal para DAW (C#, Java, Python, C/C++) |
 | **Visual Studio** | IDE completo para C# (el más potente) |
 | **Git** | Control de versiones esencial en cualquier proyecto |
 | **Docker** | Contenedores para entornos reproducibles y portables |

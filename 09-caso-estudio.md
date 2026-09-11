@@ -23,11 +23,11 @@
 > 💡 **Punto de partida:** Hemos visto teoría sobre lenguajes, compilación, máquinas virtuales... pero, ¿cómo funciona todo esto en la práctica? Vamos a aplicar todo lo aprendido a un lenguaje real: C#.
 
 > 💡 **¿Por qué me importa?**
-> Porque C# y .NET son la tecnología que usaréis en este ciclo. Aquí convergen TODOS los conceptos anteriores: C# es un lenguaje (Tema 05) que se compila (Tema 06) usando herramientas (Tema 07) en un equipo con roles (Tema 08) siguiendo un modelo de desarrollo (Tema 04).
+> Porque C# y .NET son la tecnología que usaréis en este ciclo. Aquí convergen TODOS los conceptos anteriores: C# es un lenguaje (Punto 05) que se compila (Punto 06) usando herramientas (Punto 07) en un equipo con roles (Punto 08) siguiendo un modelo de desarrollo (Punto 04).
 > 
-> 🔗 **Conexión con todos los temas anteriores:** C# es el hilo conductor de toda la unidad: lenguaje de alto nivel (Tema 05), compilado a código intermedio (Tema 06), ejecutado por CLR/JIT (Tema 02), desarrollado con IDEs como Rider (Tema 07), en equipos que usan Scrum (Tema 04), siguiendo el ciclo de vida (Tema 03).
+> 🔗 **Conexión con todos los puntos anteriores:** C# es el hilo conductor de toda la unidad: lenguaje de alto nivel (Punto 05), compilado a código intermedio (Punto 06), ejecutado por CLR/JIT (Punto 02), desarrollado con IDEs como Rider (Punto 07), en equipos que usan Scrum (Punto 04), siguiendo el ciclo de vida (Punto 03).
 
-En los puntos anteriores vimos los conceptos teóricos. Ahora veremos cómo se aplican a un lenguaje real que usarás en DAM.
+En los puntos anteriores vimos los conceptos teóricos. Ahora veremos cómo se aplican a un lenguaje real que usarás en DAW.
 
 **Objetivos de aprendizaje:**
 
@@ -436,7 +436,7 @@ dotnet add package Newtonsoft.Json
 
 Esto descarga la librería JSON.NET y la añade a tu proyecto. Puedes usarla con `using Newtonsoft.Json;`. NuGet resuelve automáticamente las dependencias (si una librería necesita otra, la instala también).
 
-> 📝 **Nota:** En DAM usaremos **.NET 10** (la versión más reciente). Es multiplataforma, rápido y tiene todas las características modernas de C#.
+> 📝 **Nota:** En DAW usaremos **.NET 10** (la versión más reciente). Es multiplataforma, rápido y tiene todas las características modernas de C#.
 
 ## 9.6. Resumen
 

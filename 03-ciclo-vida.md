@@ -27,7 +27,7 @@ En el Punto 02 vimos qué es el software y el hardware. Ahora veremos cómo se c
 > 💡 **¿Por qué me importa?**
 > Porque todo software que creas seguirá estas fases, aunque sea de forma invisible. Si no entiendes el ciclo de vida, no sabrás qué hacer después de escribir el código (que es solo 1 de las 9 fases). Un desarrollo sin método es un caos garantizado.
 > 
-> 🔗 **Conexión con otros temas:** Este tema es el centro de todo lo que verás en la unidad: los modelos del Tema 04 organizan estas fases, los lenguajes del Tema 05 se usan en la fase de codificación, las herramientas del Tema 07 apoyan todas las fases, y los perfiles del Tema 08 ejecutan cada una.
+> 🔗 **Conexión con otros puntos:** Este punto es el centro de todo lo que verás en la unidad: los modelos del Punto 04 organizan estas fases, los lenguajes del Punto 05 se usan en la fase de codificación, las herramientas del Punto 07 apoyan todas las fases, y los perfiles del Punto 08 ejecutan cada una.
 
 **Objetivos de aprendizaje:**
 
@@ -50,7 +50,7 @@ Sin un ciclo de vida estructurado, los proyectos de software suelen fracasar. Se
 - **Los errores en fases tempranas cuestan 10-100x más** si se descubren tarde
 - **El mantenimiento representa el 60-80% del coste total** del software
 
-> 📝 **Nota:** En vuestras prácticas de DAM vais a trabajar el ciclo de vida completo. Aunque sean proyectos pequeños, es fundamental que entendáis qué fase estáis trabajando en cada momento. Cuando entregáis código sin haberlo analizado antes, estáis "construyendo sin planos".
+> 📝 **Nota:** En vuestras prácticas de DAW vais a trabajar el ciclo de vida completo. Aunque sean proyectos pequeños, es fundamental que entendáis qué fase estáis trabajando en cada momento. Cuando entregáis código sin haberlo analizado antes, estáis "construyendo sin planos".
 
 ## 3.2. Fases Principales del Desarrollo de una Aplicación Informática
 
@@ -146,7 +146,7 @@ La culminación de esta fase es el documento de **Especificación de Requisitos 
 
 > 📝 **Nota:** Los requisitos de información detallan qué datos entran y salen del sistema. Ejemplo: "El sistema recibirá: DNI, nombre, dirección. El sistema generará: factura con fecha, productos, subtotal, IVA y total."
 
-> 📝 **Nota:** En DAM, vais a crear ERS simplificados en prácticas. Un ERS real puede tener 50+ páginas para proyectos grandes. La clave es que sea claro, completo y sin ambigüedades.
+> 📝 **Nota:** En DAW, vais a crear ERS simplificados en prácticas. Un ERS real puede tener 50+ páginas para proyectos grandes. La clave es que sea claro, completo y sin ambigüedades.
 
 > ⚠️ **Advertencia:** No confundir requisitos funcionales (qué hace el sistema) con requisitos de diseño (cómo lo hace). Ejemplo: "El sistema guardará los datos en una base de datos PostgreSQL" es un DETALLE DE IMPLEMENTACIÓN, no un requisito funcional.
 
@@ -221,7 +221,7 @@ El principal objetivo de las **pruebas** es conseguir que el programa funcione i
 
 Los resultados de las pruebas de unidades son **Módulos utilizables**, y de las pruebas de integración, un **Sistema utilizable**. Las pruebas del sistema culminan con un **Sistema aceptado**.
 
-> 📝 **Nota:** En DAM trabajaréis con frameworks de testing como JUnit (Java), pytest (Python) o Jest (JavaScript). Unit testing NO es opcional, es parte del trabajo profesional.
+> 📝 **Nota:** En DAW trabajaréis con frameworks de testing como JUnit (Java), pytest (Python) o Jest (JavaScript). Unit testing NO es opcional, es parte del trabajo profesional.
 
 ### 3.2.6. Documentación
 
@@ -326,40 +326,30 @@ Para ver cómo el ciclo de vida se aplica en la práctica, vamos a seguir las 9 
 
 ```csharp
 // Diseño de la estructura
-class Program {
-    static void Main() {
-        double nota1 = PedirNota("Primera nota");
-        double nota2 = PedirNota("Segunda nota");
-        double nota3 = PedirNota("Tercera nota");
-        double media = CalcularMedia(nota1, nota2, nota3);
-        MostrarResultado(media);
-    }
-}
+double nota1 = PedirNota("Primera nota");
+double nota2 = PedirNota("Segunda nota");
+double nota3 = PedirNota("Tercera nota");
+double media = CalcularMedia(nota1, nota2, nota3);
+MostrarResultado(media);
 ```
 
 ### Fase 4 — Codificación
 
 ```csharp
-using System;
+Console.Write("Primera nota: ");
+double nota1 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Segunda nota: ");
+double nota2 = Convert.ToDouble(Console.ReadLine());
+Console.Write("Tercera nota: ");
+double nota3 = Convert.ToDouble(Console.ReadLine());
 
-class Program {
-    static void Main() {
-        Console.Write("Primera nota: ");
-        double nota1 = Convert.ToDouble(Console.ReadLine());
-        Console.Write("Segunda nota: ");
-        double nota2 = Convert.ToDouble(Console.ReadLine());
-        Console.Write("Tercera nota: ");
-        double nota3 = Convert.ToDouble(Console.ReadLine());
+double media = (nota1 + nota2 + nota3) / 3;
+Console.WriteLine($"Media: {media:F1}");
 
-        double media = (nota1 + nota2 + nota3) / 3;
-        Console.WriteLine($"Media: {media:F1}");
-
-        if (media >= 5)
-            Console.WriteLine("Aprobado");
-        else
-            Console.WriteLine("Suspenso");
-    }
-}
+if (media >= 5)
+    Console.WriteLine("Aprobado");
+else
+    Console.WriteLine("Suspenso");
 ```
 
 ### Fase 5 — Pruebas

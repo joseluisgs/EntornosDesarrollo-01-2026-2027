@@ -10,7 +10,7 @@
 > 💡 **¿Por qué me importa?**
 > Porque vas a dedicar tu vida profesional a crear software. No basta con saber programar: necesitas entender todo el proceso (análisis, diseño, pruebas, mantenimiento) para ser un desarrollador completo y no solo un "escritor de código".
 > 
-> 🔗 **Conexión con otros temas:** En el Tema 03 verás las fases del ciclo de vida en detalle. En el Tema 04 aprenderás los modelos de desarrollo que organizan esas fases. En el Tema 08 conocerás los perfiles profesionales que ejecutan cada fase.
+> 🔗 **Conexión con otros puntos:** En el Punto 03 verás las fases del ciclo de vida en detalle. En el Punto 04 aprenderás los modelos de desarrollo que organizan esas fases. En el Punto 08 conocerás los perfiles profesionales que ejecutan cada fase.
 
 En este punto aprenderás qué es el desarrollo de software, cuáles son las fases de un proyecto y por qué es tan importante seguir un proceso estructurado. Comprenderás que programar es solo una parte del proceso completo.
 
@@ -91,7 +91,7 @@ Imagina que quieres construir una casa. ¿Empezarías a colocar ladrillos sin te
 ### La regla del 80/20
 En desarrollo de software se cumple una regla no escrita: el **80% del tiempo** de un proyecto se dedica a **mantenimiento y evolución**, mientras que solo el **20%** corresponde al desarrollo inicial. Por eso es crucial hacer las cosas bien desde el principio.
 
-> 📝 **Nota:** En los módulos de DAM, vais a practicar cada fase del ciclo de vida. En el primer trimestre nos centraremos más en planificación y análisis; en segundo y tercero profundizaremos en diseño y codificación. Las prácticas profesionales (FCT) os permitirán ver el ciclo completo en empresas reales.
+> 📝 **Nota:** En los módulos de DAW, vais a practicar cada fase del ciclo de vida. En el primer trimestre nos centraremos más en planificación y análisis; en segundo y tercero profundizaremos en diseño y codificación. Las prácticas profesionales (FCT) os permitirán ver el ciclo completo en empresas reales.
 
 ---
 

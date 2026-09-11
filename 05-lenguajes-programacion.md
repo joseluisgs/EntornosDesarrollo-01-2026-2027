@@ -32,7 +32,7 @@
 > 💡 **¿Por qué me importa?**
 > Porque elegir el lenguaje adecuado es como elegir la herramienta correcta: no se usa un martillo para tornillos. C# es perfecto para apps empresariales y web, Python para datos y scripts, JavaScript para la web. Entender las diferencias te hará un mejor desarrollador.
 > 
-> 🔗 **Conexión con otros temas:** El Tema 04 explicó por qué hay tantos modelos de desarrollo: porque los proyectos son distintos. Lo mismo pasa con los lenguajes. El Tema 06 verás cómo se traducen a código máquina. El Tema 09 profundizará en C#/.NET como caso de estudio.
+> 🔗 **Conexión con otros puntos:** El Punto 04 explicó por qué hay tantos modelos de desarrollo: porque los proyectos son distintos. Lo mismo pasa con los lenguajes. El Punto 06 verás cómo se traducen a código máquina. El Punto 09 profundizará en C#/.NET como caso de estudio.
 
 En el Punto 04 vimos los modelos de desarrollo. Ahora veremos la herramienta que usamos para implementar esos modelos: los lenguajes de programación.
 
@@ -119,7 +119,7 @@ graph TB
 
 ## 5.2. Clasificación de Lenguajes de Programación
 
-Los lenguajes se pueden clasificar de muchas formas. Las más importantes para DAM son:
+Los lenguajes se pueden clasificar de muchas formas. Las más importantes para DAW son:
 
 ### 5.2.1. Según su cercanía al lenguaje humano (Nivel de Abstracción)
 
@@ -615,7 +615,7 @@ graph LR
     style E fill:#9C27B0,color:#fff
 ```
 
-> 💡 **Dato:** La mayoría de los lenguajes que aprenderás en DAM son de 3GL (C, Java, Python) y 4GL (SQL). La 5GL está más relacionada con investigación en IA.
+> 💡 **Dato:** La mayoría de los lenguajes que aprenderás en DAW son de 3GL (C, Java, Python) y 4GL (SQL). La 5GL está más relacionada con investigación en IA.
 
 ## 5.3. Criterios para la Selección de un Lenguaje de Programación
 
