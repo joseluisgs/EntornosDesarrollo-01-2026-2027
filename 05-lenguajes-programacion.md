@@ -447,14 +447,14 @@ graph TB
     A --> C[Momento de Verificación]
     A --> D[Declaración]
 
-    B --> B1[Tipado Fuerte<br/>Python, Java]
-    B --> B2[Tipado Débil<br/>JavaScript, PHP]
+    B --> B1[Fuerte: Python, Java]
+    B --> B2[Débil: JavaScript, PHP]
 
-    C --> C1[Tipado Estático<br/>verificación en compilación]
-    C --> C2[Tipado Dinámico<br/>verificación en ejecución]
+    C --> C1[Estático: verificación en compilación]
+    C --> C2[Dinámico: verificación en ejecución]
 
-    D --> D1[Tipado Explícito<br/>int x = 5]
-    D --> D2[Tipado Implícito<br/>x = 5 (infiere)]
+    D --> D1[Explícito: int x = 5]
+    D --> D2[Implícito: x = 5 infiere tipo]
 
     style A fill:#2196F3,color:#fff
     style B fill:#4CAF50,color:#fff
@@ -640,17 +640,17 @@ La elección del lenguaje a utilizar en un proyecto es de extrema importancia. A
 
 Lenguajes como Java, C, C++, PHP y Visual Basic concentran alrededor del 60% del interés de la comunidad informática mundial. Existen índices como [TIOBE](https://www.tiobe.com/tiobe-index/) que analizan la demanda de lenguajes de programación diariamente.
 
-**Índice TIOBE (2024):**
-1. Python - IA, ciencia de datos, web
-2. C - sistemas embebidos, rendimiento
-3. C++ - juegos, sistemas, rendimiento crítico
-4. Java - empresa, Android, web
-5. C# - Windows, juegos (Unity), web
-6. JavaScript - web frontend y backend
-7. PHP - web backend
-8. SQL - bases de datos
-9. Rust - sistemas seguros
-10. Go - cloud, microservices
+**Índice TIOBE (Septiembre 2026):**
+1. Python - IA, ciencia de datos, web (17.76%)
+2. C - sistemas embebidos, rendimiento (10.28%)
+3. C++ - juegos, sistemas, rendimiento crítico (8.67%)
+4. Java - empresa, Android, web (7.54%)
+5. C# - Windows, juegos (Unity), web (4.22%)
+6. JavaScript - web frontend y backend (2.76%)
+7. SQL - bases de datos (2.16%)
+8. R - ciencia de datos, estadística (1.69%)
+9. Rust - sistemas seguros (1.34%)
+10. Go - cloud, microservices (1.10%)
 
 **Lenguajes por área profesional:**
 

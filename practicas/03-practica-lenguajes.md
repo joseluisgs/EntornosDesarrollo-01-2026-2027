@@ -9,7 +9,7 @@
 
 **Instrucciones para el Alumnado:**
 
-1. Busca y consulta el "TIOBE Index for September 2025".
+1. Busca y consulta el "TIOBE Index for September 2026".
 2. Identifica los 20 lenguajes de programación más demandados según ese índice.
 3. Para cada uno de los 20 lenguajes, completa la tabla a continuación con la información solicitada.
 4. Asegúrate de aplicar correctamente los conceptos de:
