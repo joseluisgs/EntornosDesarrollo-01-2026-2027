@@ -221,7 +221,7 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 | **Full-Stack** | Desarrollador que trabaja front-end y back-end |
 | **NuGet** | Gestor de paquetes de .NET |
 
-## 10.6. Ejercicios de Repaso
+## 10.7. Ejercicios de Repaso
 
 1. **Clasificación**: Clasifica Python, C#, JavaScript y C en las 5 dimensiones de lenguajes (abstracción, traducción, paradigma, tipado, inferencia).
 
@@ -236,7 +236,7 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 
 5. **Herramientas**: Nombra 3 herramientas que usarías para desarrollar una app web en C# y explica para qué sirve cada una.
 
-## 10.8. Mapa de Conexiones entre Temas
+## 10.9. Mapa de Conexiones entre Temas
 
 ```mermaid
 graph LR
@@ -272,6 +272,6 @@ graph LR
 
 > 📝 **Nota:** Todos los temas están interconectados. No son temas sueltos: son piezas de un mismo puzzle. El Desarrollo de Software es un todo donde cada concepto alimenta a los demás.
 
-## 10.7. ¿Qué viene después?
+## 10.8. ¿Qué viene después?
 
 En la **UD02: Entornos de Desarrollo** profundizaremos en las herramientas concretas que usarás como desarrollador: cómo configurar tu entorno de trabajo, dominar el IDE, y gestionar proyectos con Git. Pasaremos de la teoría a la práctica real del día a día.
