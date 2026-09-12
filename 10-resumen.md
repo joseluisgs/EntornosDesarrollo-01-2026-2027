@@ -87,6 +87,16 @@ graph TD
     CS --> CS1[C#: Alto nivel, mixto, estático]
     CS --> CS2[.NET: CLR, JIT, BCL]
     CS --> CS3[Roslyn: Compilador]
+
+    style UD01 fill:#2196F3,color:#fff
+    style SWHW fill:#4CAF50,color:#fff
+    style CV fill:#FF9800,color:#fff
+    style MM fill:#9C27B0,color:#fff
+    style LP fill:#f44336,color:#fff
+    style PT fill:#607D8B,color:#fff
+    style HA fill:#4CAF50,color:#fff
+    style PE fill:#FF9800,color:#fff
+    style CS fill:#2196F3,color:#fff
 ```
 
 ## 10.2. Conceptos Clave
@@ -233,6 +243,17 @@ graph LR
     T07 -.->|apoya| T04
     T08 -.->|usa| T07
     T09 -.->|aplica todo| T01
+
+    style T01 fill:#2196F3,color:#fff
+    style T02 fill:#4CAF50,color:#fff
+    style T03 fill:#FF9800,color:#fff
+    style T04 fill:#9C27B0,color:#fff
+    style T05 fill:#f44336,color:#fff
+    style T06 fill:#607D8B,color:#fff
+    style T07 fill:#4CAF50,color:#fff
+    style T08 fill:#FF9800,color:#fff
+    style T09 fill:#2196F3,color:#fff
+    style T10 fill:#9C27B0,color:#fff
 ```
 
 > 📝 **Nota:** Todos los temas están interconectados. No son temas sueltos: son piezas de un mismo puzzle. El Desarrollo de Software es un todo donde cada concepto alimenta a los demás.
