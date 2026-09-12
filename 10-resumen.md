@@ -13,10 +13,11 @@
     - [IDE](#ide)
     - [Perfiles](#perfiles)
   - [10.4. Checklist de Supervivencia](#104-checklist-de-supervivencia)
-  - [10.5. Glosario de Términos](#105-glosario-de-términos)
-  - [10.6. Ejercicios de Repaso](#106-ejercicios-de-repaso)
-  - [10.7. ¿Qué viene después?](#107-qué-viene-después)
-  - [10.8. Mapa de Conexiones entre Temas](#108-mapa-de-conexiones-entre-temas)
+  - [10.5. Errores Comunes a Evitar](#105-errores-comunes-a-evitar)
+  - [10.6. Glosario de Términos](#106-glosario-de-términos)
+  - [10.7. Ejercicios de Repaso](#107-ejercicios-de-repaso)
+  - [10.8. ¿Qué viene después?](#108-qué-viene-después)
+  - [10.9. Mapa de Conexiones entre Temas](#109-mapa-de-conexiones-entre-temas)
 
 
 # 10. Resumen y Conclusiones
@@ -182,7 +183,20 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 - [ ] ¿Clasifico C# según nivel, traducción, tipado y paradigma?
 - [ ] ¿Explico qué es Roslyn y cómo compila C#?
 
-## 10.5. Glosario de Términos
+## 10.5. Errores Comunes a Evitar
+
+| Error | Por qué está mal | Cómo evitarlo |
+|-------|------------------|---------------|
+| Confundir software de sistema y de aplicación | Son categorías distintas con objetivos diferentes |Recordar: sistema = SO; aplicación = herramienta para el usuario |
+| Saltarse fases del ciclo de vida | Genera código sin requisitos claros y errores costosos | Seguir el modelo elegido, no improvisar |
+| Usar Cascada para requisitos cambiantes | El modelo es rígido y no admite cambios fácilmente | Elegir Scrum o Kanban si los requisitos evolucionan |
+| No hacer pruebas hasta el final | Los errores se acumulan y son difíciles de corregir | Pruebas unitarias desde la codificación |
+| Confundir compilado e interpretado | C# no es interpretado puro (usa IL + JIT) | Recordar: C# → IL → JIT → máquina |
+| No conocer los perfiles del equipo | Cada rol tiene responsabilidades específicas | Estudiar: Arquitecto, Analista, Programador, QA |
+| Olvidar la documentación | El software sin documentación es inmantenible | Documentar por fases, no todo al final |
+| No usar un IDE | Programar en bloc de notas es lento y propenso a errores | Usar Rider o VS Code desde el primer día |
+
+## 10.6. Glosario de Términos
 
 | Término | Definición |
 |---------|------------|
