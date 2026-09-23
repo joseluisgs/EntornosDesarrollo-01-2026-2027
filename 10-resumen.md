@@ -239,6 +239,16 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 
 En la **UD02: Entornos de Desarrollo** profundizaremos en las herramientas concretas que usarás como desarrollador: cómo configurar tu entorno de trabajo, dominar el IDE, y gestionar proyectos con Git. Pasaremos de la teoría a la práctica real del día a día.
 
+> 📌 **Ejemplo real:** Netflix es un ejemplo perfecto de cómo se aplican TODOS los conceptos de esta unidad. Su arquitectura usa microservicios (diseño del Punto 03), con equipos Scrum (Punto 04) que programan en C# (Punto 05) usando IDEs como Rider (Punto 07). El código se compila con Roslyn (Punto 06) y ejecuta sobre .NET CLR (Punto 02). Netflix despliega actualizaciones cada pocos minutos usando metodologías ágiles, y su equipo incluye arquitectos, analistas, programadores y testers (Punto 08). Todo el ciclo de vida del software (Punto 03) se vive en cada feature que llega a tu televisor.
+
+> 💡 **Buenas Prácticas:**
+> - **Entiende el panorama completo antes de programar**: No empezar a escribir código sin entender qué es el software, qué hardware lo ejecuta, y qué ciclo de vida seguirá. Cada línea de código forma parte de un proceso mayor.
+> - **Domina las clasificaciones de lenguajes**: Saber si un lenguaje es compilado, interpretado o mixto, estático o dinámico, te ayudará a elegir la herramienta adecuada para cada proyecto.
+> - **No subestimes la documentación**: Un software sin documentación es inmantenible. Documenta desde el inicio, no dejes todo para el final.
+> - **Usa pruebas desde el principio**: El testing no es opcional. Las pruebas unitarias durante la codificación ahorran horas de debugging en producción.
+> - **Conoce a tu equipo**: Entender los perfiles profesionales (arquitecto, analista, programador, QA) te hará un mejor desarrollador porque sabrás comunicarte con cada rol.
+> - **Elige el modelo de desarrollo adecuado**: Si los requisitos cambian (como en una app móvil), usa Scrum o Kanban. Si son fijos (sistema bancario), Cascada puede funcionar. No hay un modelo único para todo.
+
 ## 10.9. Mapa de Conexiones entre Temas
 
 ```mermaid

@@ -436,6 +436,16 @@ Esto descarga la librería JSON.NET y la añade a tu proyecto. Puedes usarla con
 
 > 📝 **Nota:** En DAW usaremos **.NET 10** (la versión más reciente). Es multiplataforma, rápido y tiene todas las características modernas de C#.
 
+> 💡 **Buenas Prácticas:**
+> - **Usa siempre la versión más reciente de .NET**: En DAW usaremos .NET 10, que es multiplataforma y tiene todas las características modernas de C#. No uses versiones antiguas como .NET Framework para proyectos nuevos.
+> - **Aprende a usar el CLI de .NET**: Los comandos `dotnet new`, `dotnet build`, `dotnet run` y `dotnet add package` son tus mejores aliados. Domínalos desde el primer día.
+> - **Habilita Nullable Reference Types**: En todos los proyectos, añade `<Nullable>enable</Nullable>` en el `.csproj`. Esto te ayuda a evitar errores comunes con valores null.
+> - **Usa Top Level Statements**: Para programas simples, escribe código directamente en `Program.cs` sin necesidad de `class Program` ni `Main`. Tu código será más limpio y fácil de leer.
+> - **Aprende a leer errores de compilación**: Roslyn da mensajes de error muy descriptivos. Lee con atención las pistas que te da — suelen indicarte exactamente qué está mal y cómo corregirlo.
+> - **Explora NuGet antes de escribir código**: Antes de implementar algo complejo, busca en NuGet si ya existe una librería que lo haga. No reinventes la rueda.
+
+> 📌 **Ejemplo real:** Netflix utiliza C# y .NET para partes de su infraestructura backend. Su sistema de recomendaciones procesa millones de peticiones diarias. Cuando abres la app y ves "Porque viste X", hay un servicio en .NET que está ejecutando algoritmos de machine learning sobre tu historial de visualización, todo compilado con Roslyn y ejecutándose sobre CLR con JIT compilation para máximo rendimiento.
+
 **Resumen del punto:**
 
 | Clasificación | C# |

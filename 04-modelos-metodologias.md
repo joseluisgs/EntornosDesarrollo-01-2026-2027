@@ -485,6 +485,16 @@ graph TB
 | **Métricas** | Velocity, burndown | Lead time, WIP |
 | **Mejor para** | Proyectos con objetivos claros | Mantenimiento, soporte |
 
+> 💡 **Buenas Prácticas:** Elegir la metodología adecuada según el proyecto
+>
+> - **Cascada**: Úsalo solo cuando los requisitos son 100% fijos e inmutables (sistemas legacy, regulaciones médicas, aeroespacial). Ejemplo real: el software de control de tráfico aéreo no puede "iterar" con cambios.
+> - **Scrum**: Es la opción por defecto para productos web y apps. Si tienes un equipo de 3-9 personas y un Product Owner claro, Scrum funciona. Ejemplo: Netflix usa sprints para lanzar nuevas funcionalidades cada 2 semanas.
+> - **Kanban**: Perfecto para soporte técnico, mantenimiento y flujos continuos. Si tu trabajo es responder tickets o gestionar incidencias, Kanban es mejor que Scrum. Ejemplo: los equipos de soporte de Spotify usan Kanban para gestionar peticiones de usuarios.
+> - **XP**: Elige XP cuando la calidad del código es crítica y los requisitos cambian constantemente. El TDD y pair programming reducen bugs. Ejemplo: startups en fase temprana donde todo cambia cada día.
+> - **Prototipos**: Cuando el cliente no sabe lo que quiere hasta que lo ve. Crea un prototipo rápido en Figma, muéstraselo, y refina. Ejemplo: Instagram empezó como prototipo (Burbn) antes de definir su producto final.
+>
+> 🔧 **Truco:** En proyectos reales se suelen **combinar** metodologías: Scrum para el desarrollo principal + Kanban para bugs y soporte. No te obsesiones con ser "puro".
+
 ---
 
 **Resumen del punto:**

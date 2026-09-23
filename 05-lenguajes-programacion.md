@@ -667,6 +667,16 @@ Lenguajes como Java, C, C++, PHP y Visual Basic concentran alrededor del 60% del
 
 C# se usa en: desarrollo web con ASP.NET, escritorio con WPF y MAUI, juegos con Unity, móviles con .NET MAUI, y servicios en la nube con Azure. Es uno de los lenguajes más versátiles del mercado.
 
+> 💡 **Buenas Prácticas:** Cómo elegir el lenguaje correcto para cada proyecto
+>
+> - **No hay "el mejor lenguaje"**: Hay el lenguaje adecuado para cada contexto. No intentes usar C# para un script de 20 líneas (usa Python) ni Python para un sistema embebido en tiempo real (usa C).
+> - **C# para DAW es una apuesta segura**: ASP.NET Core es uno de los frameworks web más rápidos del mundo (benchmarks TechEmpower). C# tipado estático = menos bugs en producción. Y con .NET 10 puedes hacer web, móvil (MAUI), escritorio y juegos (Unity).
+> - **Mira el ecosistema, no solo el lenguaje**: Un lenguaje sin buenos frameworks, IDEs y comunidad es como un coche sin gasolina. Python tiene PyPI (500K+ paquetes), C# tiene NuGet (400K+ paquetes).
+> - **Considera el mercado laboral**: En España, C#/.NET tiene alta demanda en empresas de banca, seguros y consultoría (Santander, BBVA, Indra, Accenture). Python domina en data science y IA.
+> - **No te cases con un solo lenguaje**: Los buenos desarrolladores conocen 2-3 lenguajes. Aprende C# a fondo en DAW, pero conoce JavaScript para el frontend y Python para scripts automatización.
+>
+> 📌 Ejemplo real: Spotify usa Java para su backend, Python para análisis de datos, y JavaScript/TypeScript para su web. Cada lenguaje resuelve un problema distinto en la misma empresa.
+
 ---
 
 **Resumen del punto:**

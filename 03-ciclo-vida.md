@@ -391,6 +391,15 @@ Cuando el alumno ya no la necesite (o la mejore con una app web), se retira esta
 
 > 📝 **Nota:** Este proyecto parece simple, pero tiene todas las fases. En proyectos reales, cada fase es más compleja, pero el proceso es el mismo. Lo que hacéis aquí con 20 líneas de código, en una empresa se hace con 20.000 y un equipo de 10 personas.
 
+> 💡 **Buenas Prácticas:** ¿Cómo elegir el modelo de ciclo de vida adecuado? No hay una respuesta única, pero aquí tienes una guía rápida:
+> - **Proyecto pequeño y requisitos claros** (ej: una app de consola para un ejercicio): Usa el **modelo en cascada**. Es simple, lineal y suficiente.
+> - **Requisitos que cambian frecuentemente** (ej: una startup que lanza un MVP y va iterando): Usa **Scrum o Kanban**. Te permite entregar valor cada 2 semanas y adaptarte.
+> - **Proyecto con requisitos críticos de seguridad** (ej: software bancario o sanitario): Usa **cascada o V-model**. La documentación exhaustiva y las pruebas obligatorias en cada fase son imprescindibles.
+> - **Equipo pequeño sin experiencia** (ej: vuestro primer proyecto en DAW): **Scrum simplificado** con sprints de 1 semana. Lo importante es crear el hábito de planificar, ejecutar y revisar.
+> - **No inventes**: No uses Scrum porque "está de moda". Si tu proyecto no necesita iteraciones, el modelo cascada es más eficiente.
+>
+> 📌 **Ejemplo real:** Spotify usa un modelo híbrido: Kanban para el mantenimiento continuo de infraestructura y Scrum para el desarrollo de nuevas funcionalidades de la app. Cada equipo de Spotify ("squad") decide internamente qué metodología le funciona mejor. No hay una talla única; lo importante es que el proceso sea visible, repetible y mejorable.
+
 ---
 
 **Resumen del punto:**

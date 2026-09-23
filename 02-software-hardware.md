@@ -206,6 +206,14 @@ graph TD
 
 ---
 
+> 💡 **Buenas Prácticas:** ¿Hardware nuevo o optimizar software? Antes de gastarte 500 € en más RAM, prueba esto:
+> - **Perfilador de rendimiento**: Herramientas como Task Manager (Windows) o `htop` (Linux) te dicen qué recurso está saturado. Si la CPU está al 100% y la RAM al 30%, el problema es de software, no de hardware.
+> - **Optimiza primero**: Cierra procesos innecesarios, actualiza drivers, limpia archivos temporales. A veces un sistema lento se arregla con una reinstalación del SO, no con hardware nuevo.
+> - **Sabe cuándo SÍ actualizar**: Si tu disco duro mecánico (HDD) tarda 2 minutos en arrancar, un SSD lo reduce a 15 segundos. Eso es hardware que sí marca la diferencia. Si tienes 4 GB de RAM y abres Chrome con 20 pestañas, necesitas más RAM sí o sí.
+> - **En el trabajo**: Los desarrolladores profesionales suelen tener máquinas potentes (16-32 GB RAM, SSD, CPU multi-core). Si tu ordenador de casa no da para ejecutar Android Studio + Docker + un navegador, no es culpa tuya: es hardware limitado para desarrollo pesado.
+>
+> 🔧 **Truco:** Antes de invertir en hardware, busca cuellos de botella de software con herramientas gratuitas como [Windows Performance Monitor](https://docs.microsoft.com/es-es/windows/win32/perfctrc/performance-monitor) o `perf` en Linux.
+
 **Resumen del punto:**
 
 | Concepto | Descripción |

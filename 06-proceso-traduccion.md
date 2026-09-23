@@ -425,6 +425,15 @@ Ejemplos de Frameworks son **.NET** (para Windows, con el ".Net framework" para 
 | PHP | Laravel, Symfony, WordPress |
 | C# | .NET, ASP.NET, Entity Framework |
 
+> 💡 **Buenas Prácticas:** Entender cuándo usar compilación, interpretación o formato mixto
+>
+> - **Compilados (C, C++)**: Úsalos cuando necesitas **máximo rendimiento**: sistemas embebidos, videojuegos AAA, sistemas operativos. El coste es que no son portables y cada cambio requiere recompilar. Ejemplo: el motor de Unreal Engine está en C++ porque cada milisegundo cuenta.
+> - **Interpretados (Python, JavaScript)**: Ideales para **prototipos rápidos, scripts y automatización**. La portabilidad es máxima (cualquier máquina con el intérprete lo ejecuta), pero el rendimiento es menor. Ejemplo: un script de Python para procesar datos de un CSV no necesita velocidad extrema.
+> - **Mixto/Bytecode (C#, Java)**: El mejor equilibrio entre portabilidad y rendimiento. Compilar a bytecode una vez, ejecutar en cualquier plataforma con la MV. Ejemplo: una app ASP.NET Core funciona en Windows, Linux y Mac sin cambios. La CLR optimiza en runtime con JIT.
+> - **Transpilados (TypeScript → JS)**: Usar cuando el lenguaje "de origen" es más seguro/mantenible pero el "de destino" es el que ejecuta la plataforma. TypeScript en proyectos grandes con equipo es casi obligatorio por la seguridad de tipos.
+>
+> 🔧 **Truco:** En C#, compila en **Debug** durante desarrollo (más rápido de compilar, más errores visibles) y en **Release** para producción (optimizado, más rápido). El compilador aplica optimizaciones agresivas en Release que no aplicas en Debug.
+
 ---
 
 **Resumen del punto:**

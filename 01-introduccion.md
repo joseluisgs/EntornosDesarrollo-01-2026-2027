@@ -97,4 +97,13 @@ En desarrollo de software se cumple una regla no escrita: el **80% del tiempo** 
 
 **¿Y si no existiera el software?** Imagina tu móvil sin aplicaciones, tu ordenador sin sistema operativo, tu coche sin programación. El hardware sin software es un ladrillo caro. Por eso el desarrollo de software es fundamental: crea la parte inteligente que hace que los dispositivos físicos sean útiles.
 
+> 📌 **Ejemplo real:** Netflix es mucho más que una web para ver series. Detrás hay un ecosistema completo de desarrollo de software: algoritmos de recomendación que analizan lo que ves para sugerirte contenido, un sistema de streaming que adapta la calidad de vídeo a tu velocidad de internet, una infraestructura en la nube que soporta 250 millones de usuarios simultáneos, y aplicaciones nativas para móvil, TV, consolas y navegador. Cada una de esas piezas pasa por todas las fases del ciclo de vida: desde que alguien en Netflix tiene la idea de "mostrar prévias de 30 segundos" hasta que esa función llega a tu pantalla. Sin un proceso de desarrollo estructurado, Netflix no podría desplegar cientos de veces al día sin que todo se rompa.
+
+> 💡 **Buenas Prácticas:** Si estás empezando en desarrollo de software, recuerda estas reglas de oro:
+> - **Aprende el proceso, no solo la sintaxis.** Saber escribir un bucle `for` no te hace desarrollador; saber cuándo usarlo y por qué sí.
+> - **Documenta desde el día uno.** Un comentario que explica el "por qué" de una decisión te ahorrará horas cuando vuelvas a ese código dentro de tres meses.
+> - **Usa control de versiones (Git) aunque sea un ejercicio pequeño.** Es como tener un "deshacer" infinito y aprendes un hábito que usarás cada día en tu trabajo.
+> - **No tengas miedo de preguntar.** Los mejores desarrolladores no son los que lo saben todo, sino los que saben buscar la información correcta.
+> - **Practica con proyectos reales.** Una app de consola que calcula la media de notas es más valiosa que memorizar teoría sin aplicarla.
+
 En el siguiente punto veremos en detalle la relación entre software y hardware, y cómo se comunican entre sí.

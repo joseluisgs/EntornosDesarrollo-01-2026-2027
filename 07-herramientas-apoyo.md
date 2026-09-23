@@ -369,7 +369,9 @@ services:
 
 Con `docker-compose up` levantas la app y la base de datos simultáneamente. Cada servicio corre en su propio contenedor aislado.
 
----
+> 📌 **Ejemplo real:** Spotify utiliza internamente más de 800 microservicios y cada equipo tiene su propio conjunto de herramientas. Sus desarrolladores usan IDEs como IntelliJ y VS Code, repositorios internos basados en Git (con su propio sistema de code review llamado "Backstage"), y contenedores Docker con Kubernetes para desplegar. Cada servicio tiene su pipeline CI/CD automatizado: cuando un programador hace push, se ejecutan tests, se construye la imagen Docker y se despliega automáticamente. Incluso crearon su propia herramienta de gestión de componentes, Backstage, que hoy es open source y usan empresas de todo el mundo.
+
+> 💡 **Buenas Prácticas:** Para elegir las herramientas adecuadas en un proyecto, sigue estas pautas: (1) **Evalúa el contexto**: no uses un IDE pesado como Visual Studio para un script de 50 líneas; un editor ligero como VS Code es suficiente. (2) **Usa lo que ya domina tu equipo**: introduce nuevas herramientas solo si aportan un beneficio claro. (3) **Automatiza lo repetitivo**: si haces la misma tarea más de 3 veces, busca una herramienta que la automatice (CI/CD, scripts de build). (4) **Empieza simple, escala después**: un proyecto pequeño no necesita Docker ni microservicios; un repositorio Git y un IDE ya son un gran comienzo. (5) **Documenta las decisiones**: en un archivo README o AGENTS.md, registra qué herramientas usa el proyecto y por qué, para que nuevos miembros del equipo se adapten rápido.
 
 **Resumen del punto:**
 

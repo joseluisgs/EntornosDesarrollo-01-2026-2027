@@ -296,7 +296,9 @@ graph TD
 
 En la siguiente unidad (**UD02: Entornos de Desarrollo**) aprenderás a configurar tu entorno de trabajo, a usar un IDE como JetBrains Rider o VS Code, y a gestionar proyectos con Git y la línea de comandos de .NET. Pasaremos de la teoría a la práctica real del día a día.
 
----
+> 📌 **Ejemplo real:** Netflix tiene un equipo de desarrollo de más de 2000 ingenieros organizado en equipos autonomous (squads). Cada squad se encarga de un área específica (recomendación, streaming, pagos) y está compuesto por un Tech Lead, 4-6 desarrolladores (front y back), un QA, un diseñador UX/UI y un Product Manager. Los desarrolladores usan herramientas como IntelliJ, Jenkins, Docker y su propio sistema de despliegue llamado Spinnaker. Un ingeniero de Netflix puede empezar como Junior, crecer hasta Senior y luego especializarse como Staff Engineer (equivalente al Arquitecto) o como Engineering Manager. Lo interesante es que cada perfil usa las herramientas del Punto 07 de forma diferente: el DevOps gestiona Kubernetes, el QA automatiza pruebas con Selenium, y el programador escribe código en Java/Python dentro de sus IDEs.
+
+> 💡 **Buenas Prácticas:** Para elegir tu especialización profesional, ten en cuenta: (1) **Prueba antes de decidir**: en DAW vas a tocar front, back, bases de datos y devops. Usa esa variedad para descubrir qué te apasiona más. (2) **No cierres puertas**: ser especialista no significa ignorar lo demás. Un buen programador back entiende de UX, y un buen frontend conoce de APIs. (3) **Mira el mercado**: consulta ofertas de trabajo en InfoJobs o LinkedIn para ver qué perfiles se buscan más en tu zona. (4) **Invierte en fundamentos**: un Junior que domina bien Git, patrones de diseño y buenas prácticas progresa más rápido que uno que solo sabe un framework. (5) **Aprende de otros**: en un equipo, el QA te enseña a pensar en casos límite, el DevOps te enseña sobre infraestructura, y el diseñador te enseña a ponerle en el centro al usuario. Aprovecha cada conversación.
 
 **Resumen del punto:**
 
