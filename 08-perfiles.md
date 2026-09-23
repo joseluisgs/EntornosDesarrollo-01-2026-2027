@@ -53,7 +53,7 @@ graph TD
     style E fill:#f44336,color:#fff
     style F fill:#3F51B5,color:#fff
     style G fill:#607D8B,color:#fff
-    style H fill:#795548,color:#fff
+    style H fill:#607D8B,color:#fff
 ```
 
 ## 8.1. Arquitecto de Software
@@ -286,11 +286,15 @@ graph TD
     style C fill:#4CAF50,color:#fff
     style D fill:#9C27B0,color:#fff
     style E fill:#607D8B,color:#fff
-    style F fill:#795548,color:#fff
+    style F fill:#607D8B,color:#fff
     style G fill:#E91E63,color:#fff
 ```
 
 > 📝 **Nota:** En empresas pequeñas o startups, una persona puede acumular varios roles (programador + QA + DevOps). En empresas grandes, cada rol está especializado. En DAW vais a aprender los fundamentos de todos estos roles.
+
+## ¿Qué viene después?
+
+En la siguiente unidad (**UD02: Entornos de Desarrollo**) aprenderás a configurar tu entorno de trabajo, a usar un IDE como JetBrains Rider o VS Code, y a gestionar proyectos con Git y la línea de comandos de .NET. Pasaremos de la teoría a la práctica real del día a día.
 
 ---
 

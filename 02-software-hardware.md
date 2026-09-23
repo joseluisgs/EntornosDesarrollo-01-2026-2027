@@ -215,4 +215,6 @@ graph TD
 | **Relación** | El software necesita hardware para ejecutarse; el hardware necesita software para funcionar |
 | **SO** | Intermediario que gestiona los recursos hardware para las aplicaciones |
 
+**¿Qué viene después?**
+
 En el siguiente punto veremos el **ciclo de vida del desarrollo de software**, es decir, cómo se crea el software que se ejecuta en este hardware.

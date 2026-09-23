@@ -108,7 +108,7 @@ graph TB
     style E fill:#f44336,color:#fff
     style F fill:#607D8B,color:#fff
     style G fill:#3F51B5,color:#fff
-    style H fill:#795548,color:#fff
+    style H fill:#607D8B,color:#fff
 ```
 
 **Clave del Modelo en V**: Cada fase de desarrollo tiene una fase de verificación paralela. El diseño de pruebas empieza en la fase de análisis, no al final. Así se detectan errores antes.
@@ -464,8 +464,6 @@ graph TB
 
 ![Diagrama: Proceso XP](/images/modelo_tradicional_agil.png)
 
----
-
 ### Comparativa de Metodologías
 
 | Aspecto | Cascada | Scrum | Kanban | XP |
@@ -502,3 +500,9 @@ graph TB
 | **XP** | Ágil | Calidad de código, requisitos cambiantes |
 
 En el siguiente punto veremos los **lenguajes de programación**, que es la herramienta que usaremos para implementar estos modelos.
+
+---
+
+**¿Qué viene después?**
+
+En el **Punto 05: Lenguajes de Programación** aprenderás a elegir el lenguaje adecuado para cada tipo de proyecto, desde C# hasta Python.

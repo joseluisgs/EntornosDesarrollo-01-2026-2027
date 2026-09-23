@@ -159,7 +159,7 @@ graph TD
     style D fill:#4CAF50,color:#fff
     style E fill:#3F51B5,color:#fff
     style F fill:#f44336,color:#fff
-    style G fill:#795548,color:#fff
+    style G fill:#607D8B,color:#fff
     style H fill:#607D8B,color:#fff
     style I fill:#009688,color:#fff
 ```
@@ -442,5 +442,15 @@ Ejemplos de Frameworks son **.NET** (para Windows, con el ".Net framework" para 
 | **Código ejecutable** | `.exe`, `.app` (la máquina lo entiende) |
 | **Máquina virtual** | Capa que hace portable el código (JVM, CLR) |
 | **Framework** | Kit de construcción reutilizable |
+
+**¿Qué viene después?**
+
+En la **UD 01: Tema 08 - Perfiles Profesionales** aprenderás los roles de un equipo de desarrollo y cómo cada perfil utiliza estas herramientas en su día a día.
+
+| Tema de la UD actual | Se usa en la siguiente UD para |
+|----------------------|-------------------------------|
+| Proceso de traducción | Entender cómo se compila y ejecuta el código en C# |
+| Máquinas virtuales | Comprender el rol de la CLR y .NET Runtime |
+| Frameworks | Elegir el framework adecuado según el proyecto |
 
 En el siguiente punto veremos las **herramientas de apoyo** al desarrollo: editores, IDEs y otras utilidades que facilitan nuestro trabajo diario como programadores.

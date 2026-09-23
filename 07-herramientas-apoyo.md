@@ -191,7 +191,7 @@ graph TD
     style E fill:#f44336,color:#fff
     style F fill:#3F51B5,color:#fff
     style G fill:#607D8B,color:#fff
-    style H fill:#795548,color:#fff
+    style H fill:#607D8B,color:#fff
     style I fill:#455A64,color:#fff
     style J fill:#009688,color:#fff
 ```
@@ -256,8 +256,6 @@ graph TD
 **¿Cuándo usar cada uno?**
 - **Editor (VS Code)**: Scripts, proyectos pequeños, rápido para abrir y editar archivos sueltos, cuando trabajas con múltiples lenguajes.
 - **IDE (Rider, Visual Studio)**: Proyectos grandes de C#/Java, cuando necesitas depuración avanzada, refactorización automática, y herramientas integradas.
-
----
 
 ## 7.5. Control de Versiones: Git
 
@@ -385,5 +383,16 @@ Con `docker-compose up` levantas la app y la base de datos simultáneamente. Cad
 | **Visual Studio** | IDE completo para C# (el más potente) |
 | **Git** | Control de versiones esencial en cualquier proyecto |
 | **Docker** | Contenedores para entornos reproducibles y portables |
+
+**¿Qué viene después?**
+
+En la **UD 01: Tema 08 - Perfiles Profesionales** aprenderás los roles de un equipo de desarrollo y cómo cada perfil utiliza estas herramientas en su día a día.
+
+| Tema de la UD actual | Se usa en la siguiente UD para |
+|----------------------|-------------------------------|
+| Herramientas CASE | Diseñar el proyecto con diagramas UML antes de programar |
+| IDE (Rider/VS Code) | Desarrollar los ejercicios prácticos de la unidad |
+| Git | Gestionar el código del proyecto y trabajar en equipo |
+| Docker | Crear entornos de desarrollo reproducibles |
 
 En el siguiente punto veremos los **perfiles profesionales** del desarrollo de software: quién hace qué en un equipo de desarrollo.

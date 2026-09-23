@@ -98,7 +98,7 @@ graph TB
     style E fill:#f44336,color:#fff
     style F fill:#607D8B,color:#fff
     style G fill:#3F51B5,color:#fff
-    style H fill:#795548,color:#fff
+    style H fill:#607D8B,color:#fff
     style I fill:#455A64,color:#fff
     style J fill:#009688,color:#fff
 ```
@@ -574,7 +574,7 @@ graph TB
     style E fill:#f44336,color:#fff
     style F fill:#607D8B,color:#fff
     style G fill:#3F51B5,color:#fff
-    style H fill:#795548,color:#fff
+    style H fill:#607D8B,color:#fff
 ```
 
 | Paradigma | Idea central | Lenguajes | Ejemplo de uso |
@@ -685,3 +685,9 @@ C# se usa en: desarrollo web con ASP.NET, escritorio con WPF y MAUI, juegos con 
 | **Funcional** | Haskell, JavaScript moderno (funciones puras) |
 
 En el siguiente punto veremos el **proceso de traducción**, es decir, cómo los lenguajes de alto nivel se convierten en código que la máquina puede ejecutar.
+
+---
+
+**¿Qué viene después?**
+
+En el **Punto 06: Traducción de Lenguajes** aprenderás cómo el código que escribes se transforma en instrucciones que el procesador puede ejecutar directamente.

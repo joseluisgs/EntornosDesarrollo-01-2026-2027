@@ -75,7 +75,7 @@ graph LR
     style F fill:#607D8B,color:#fff
     style G fill:#3F51B5,color:#fff
     style H fill:#FF5722,color:#fff
-    style I fill:#795548,color:#fff
+    style I fill:#607D8B,color:#fff
 ```
 
 > ⚠️ **Advertencia:** Las fases NO son necesariamente secuenciales en todos los modelos. En metodologías ágiles, por ejemplo, todas las fases se repiten en cada iteración (sprint).
@@ -408,3 +408,7 @@ Cuando el alumno ya no la necesite (o la mejore con una app web), se retira esta
 | **Retirada** | Final de vida útil | Fin del ciclo |
 
 En el siguiente punto veremos los **modelos y metodologías de desarrollo**, es decir, cómo se organizan estas fases en diferentes enfoques de trabajo.
+
+**¿Qué viene después?**
+
+En el **Punto 04: Modelos y Metodologías de Desarrollo** verás cómo se organizan estas fases en diferentes enfoques: cascada, ágil, Scrum, Kanban y más.

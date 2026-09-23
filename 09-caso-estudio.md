@@ -15,7 +15,7 @@
     - [9.4.2. JIT (Just-In-Time Compilation)](#942-jit-just-in-time-compilation)
     - [9.4.3. Comparación con Java](#943-comparación-con-java)
   - [9.5. .NET Framework vs .NET (Core)](#95-net-framework-vs-net-core)
-  - [9.6. Resumen](#96-resumen)
+
 
 
 # 9. Caso de Estudio: El Lenguaje C# y la Plataforma .NET
@@ -238,8 +238,6 @@ Roslyn realiza las tres fases del análisis que vimos en el Punto 06:
 | **Sintáctico** | Verifica estructura | `if (x > {` → "syntax error" |
 | **Semántico** | Verifica sentido | `int x = "hola";` → "cannot convert string to int" |
 
----
-
 ### 9.3.2. Fases de compilación en C#
 
 Primero, conozcamos los términos que usaremos:
@@ -273,7 +271,7 @@ graph TD
     style E fill:#f44336,color:#fff
     style F fill:#3F51B5,color:#fff
     style G fill:#607D8B,color:#fff
-    style H fill:#795548,color:#fff
+    style H fill:#607D8B,color:#fff
     style I fill:#009688,color:#fff
 ```
 
@@ -438,7 +436,7 @@ Esto descarga la librería JSON.NET y la añade a tu proyecto. Puedes usarla con
 
 > 📝 **Nota:** En DAW usaremos **.NET 10** (la versión más reciente). Es multiplataforma, rápido y tiene todas las características modernas de C#.
 
-## 9.6. Resumen
+**Resumen del punto:**
 
 | Clasificación | C# |
 |---------------|-----|
@@ -456,3 +454,7 @@ Esto descarga la librería JSON.NET y la añade a tu proyecto. Puedes usarla con
 > 📝 **Nota:** C# es un ejemplo perfecto de todo lo que hemos visto en la unidad. Es alto nivel, mixto, estático, fuerte, multiparadigma y funciona con una máquina virtual que gestiona la memoria automáticamente.
 
 En el siguiente punto haremos un **resumen** de toda la unidad, consolidando todos los conceptos vistos.
+
+**¿Qué viene después?**
+
+En el **Punto 10: Resumen** consolidaremos todos los conceptos vistos en la unidad: tipos de software, hardware, ciclo de vida, modelos, lenguajes, compilación, herramientas, perfiles y este caso práctico.
