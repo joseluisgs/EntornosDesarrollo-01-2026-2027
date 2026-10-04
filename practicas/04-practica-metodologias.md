@@ -1,7 +1,7 @@
-- [Práctica 4: Análisis Comparativo de Modelos de Desarrollo](#práctica-4-análisis-comparativo-de-modelos-de-desarrollo)
+- [Práctica 4: análisis comparativo de modelos de desarrollo](#práctica-4-análisis-comparativo-de-modelos-de-desarrollo)
 
 
-# Práctica 4: Análisis Comparativo de Modelos de Desarrollo
+# Práctica 4: análisis comparativo de modelos de desarrollo
 
 **Objetivo:** Analizar y comparar los modelos de desarrollo de software clásicos, evolutivos y ágiles, identificando sus características, ventajas, desventajas y su aportación actual.
 

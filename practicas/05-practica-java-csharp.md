@@ -1,7 +1,7 @@
-- [Práctica 5: Comparativa de Lenguajes - Java, C#, Python y TypeScript](#práctica-5-comparativa-de-lenguajes---java-c-python-y-typescript)
+- [Práctica 5: comparativa de lenguajes - Java, C#, Python y TypeScript](#práctica-5-comparativa-de-lenguajes---java-c-python-y-typescript)
 
 
-# Práctica 5: Comparativa de Lenguajes - Java, C#, Python y TypeScript
+# Práctica 5: comparativa de lenguajes - Java, C#, Python y TypeScript
 
 **Objetivo:** Comprender y analizar en profundidad el proceso de compilación y ejecución de cuatro lenguajes de programación modernos, identificando las similitudes y diferencias clave.
 

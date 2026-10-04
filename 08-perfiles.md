@@ -1,18 +1,18 @@
-- [8. Perfiles del Desarrollo de Software](#8-perfiles-del-desarrollo-de-software)
-  - [8.1. Arquitecto de Software](#81-arquitecto-de-software)
-  - [8.2. Jefe de Proyecto](#82-jefe-de-proyecto)
-  - [8.3. Analista de Sistemas](#83-analista-de-sistemas)
-  - [8.4. Analista Programador](#84-analista-programador)
-  - [8.5. Programador (o Desarrollador)](#85-programador-o-desarrollador)
-  - [8.6. QA (Quality Assurance) / Testeador](#86-qa-quality-assurance--testeador)
-  - [8.7. Full-Stack Developer](#87-full-stack-developer)
+- [8. Perfiles del desarrollo de software](#8-perfiles-del-desarrollo-de-software)
+  - [8.1. Arquitecto de software](#81-arquitecto-de-software)
+  - [8.2. Jefe de proyecto](#82-jefe-de-proyecto)
+  - [8.3. Analista de sistemas](#83-analista-de-sistemas)
+  - [8.4. Analista programador](#84-analista-programador)
+  - [8.5. Programador (o desarrollador)](#85-programador-o-desarrollador)
+  - [8.6. QA (Quality Assurance) / testeador](#86-qa-quality-assurance--testeador)
+  - [8.7. Full-stack developer](#87-full-stack-developer)
   - [8.8. DevOps](#88-devops)
-  - [8.9. Scrum Master](#89-scrum-master)
+  - [8.9. Scrum master](#89-scrum-master)
   - [8.10. Diseñador UX/UI](#810-diseñador-uxui)
-  - [8.11. Organigrama de un Equipo de Desarrollo](#811-organigrama-de-un-equipo-de-desarrollo)
+  - [8.11. Organigrama de un equipo de desarrollo](#811-organigrama-de-un-equipo-de-desarrollo)
 
 
-# 8. Perfiles del Desarrollo de Software
+# 8. Perfiles del desarrollo de software
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado quién hace qué cuando se crea una app como Instagram o Netflix? ¿Es una sola persona o un equipo? ¿Y qué diferencias hay entre un programador y un arquitecto de software?
 
@@ -56,7 +56,7 @@ graph TD
     style H fill:#607D8B,color:#fff
 ```
 
-## 8.1. Arquitecto de Software
+## 8.1. Arquitecto de software
 
 - Este profesional tiene la responsabilidad de decidir "cómo" se realiza el proyecto y cómo se estructurará.
 - Posee un amplio conocimiento de las tecnologías, los *frameworks* y las librerías disponibles.
@@ -78,7 +78,7 @@ graph TD
 
 > 📝 **Nota:** En DAW seréis programadores, pero con experiencia podréis crecer hacia roles de arquitectura. El arquitecto es el "veterano" del equipo técnico.
 
-## 8.2. Jefe de Proyecto
+## 8.2. Jefe de proyecto
 
 - Es el encargado de dirigir el curso del proyecto.
 - Puede ser un analista con experiencia, un arquitecto o una persona dedicada en exclusividad a este puesto.
@@ -101,7 +101,7 @@ graph TD
 
 > 💡 **Dato:** Muchos jefes de proyecto en software provienen de perfiles técnicos (ex-programadores) porque entienden mejor las complejidades del desarrollo.
 
-## 8.3. Analista de Sistemas
+## 8.3. Analista de sistemas
 
 - Realiza un estudio exhaustivo del problema a resolver.
 - Efectúa el análisis y el diseño de todo el sistema.
@@ -123,7 +123,7 @@ graph TD
 
 > 📝 **Nota:** El analista es el "traductor" entre lo que quiere el cliente (lenguaje de negocio) y lo que necesita el programador (lenguaje técnico). Es crucial para evitar malentendidos.
 
-## 8.4. Analista Programador
+## 8.4. Analista programador
 
 - Según las fuentes, este rol comparte muchas responsabilidades con el **Analista de Sistemas**, incluyendo la realización de un estudio exhaustivo del problema, la ejecución del análisis y diseño del sistema, y la interacción con el cliente.
 - Este perfil también requiere mucha experiencia y conocimiento tanto en la definición de soluciones como en la capacidad de comprender la implementación técnica.
@@ -143,7 +143,7 @@ graph TD
 
 > 💡 **Consejo:** El analista se centra en el "qué" (requisitos), el programador en el "cómo" (implementación). El analista-programador hace ambas cosas.
 
-## 8.5. Programador (o Desarrollador)
+## 8.5. Programador (o desarrollador)
 
 - Conoce en profundidad el lenguaje de programación que se utiliza en el proyecto.
 - Se encarga de codificar las tareas encomendadas por el analista o el analista programador.
@@ -180,7 +180,7 @@ graph LR
 
 > 💡 **Consejo:** En DAW empezaréis como Junior. No os preocupéis por el nivel: con experiencia y práctica, el crecimiento es natural. Lo importante es nunca dejar de aprender.
 
-## 8.6. QA (Quality Assurance) / Testeador
+## 8.6. QA (Quality Assurance) / testeador
 
 - Aunque las fuentes no lo mencionan explícitamente como un "rol" con título específico en la lista de perfiles, la fase de **Pruebas** es fundamental y su objetivo principal es "conseguir que el programa funcione incorrectamente para descubrir y corregir defectos".
 - Este rol se enfoca en someter el programa al máximo número de situaciones diferentes, realizando pruebas unitarias, de integración, funcionales, estructurales y *Beta Test*.
@@ -203,7 +203,7 @@ graph LR
 
 > 💡 **Dato:** El testing es una carrera en sí misma. Hay QA manual, automatización de pruebas, testing de rendimiento, security testing, etc.
 
-## 8.7. Full-Stack Developer
+## 8.7. Full-stack developer
 
 Un **Full-Stack Developer** es capaz de trabajar tanto en el **front-end** (lo que ve el usuario: interfaces web, maquetas, interacción) como en el **back-end** (la lógica del servidor, bases de datos, APIs).
 
@@ -233,7 +233,7 @@ Aunque no aparece en el contenido original, DevOps es un perfil esencial en equi
 - Pipelines CI/CD (Jenkins, GitHub Actions)
 - Infrastructure as Code
 
-## 8.9. Scrum Master
+## 8.9. Scrum master
 
 El **Scrum Master** es el responsable de facilitar el proceso Scrum y eliminar obstáculos que impidan al equipo avanzar.
 
@@ -270,7 +270,7 @@ Aunque no es un perfil estrictamente de programación, el diseñador UX/UI es fu
 
 > 💡 **Dato:** En DAW, muchos programadores terminan haciendo tareas de UI porque entienden las restricciones técnicas. Un diseñador que conoceHTML/CSS y un programador que entiende de UX forman un equipo imparable.
 
-## 8.11. Organigrama de un Equipo de Desarrollo
+## 8.11. Organigrama de un equipo de desarrollo
 
 ```mermaid
 graph TD

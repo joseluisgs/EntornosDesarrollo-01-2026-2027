@@ -1,7 +1,7 @@
-- [Práctica 3: Análisis de Lenguajes de Programación según TIOBE](#práctica-3-análisis-de-lenguajes-de-programación-según-tiobe)
+- [Práctica 3: análisis de lenguajes de programación según TIOBE](#práctica-3-análisis-de-lenguajes-de-programación-según-tiobe)
 
 
-# Práctica 3: Análisis de Lenguajes de Programación según TIOBE
+# Práctica 3: análisis de lenguajes de programación según TIOBE
 
 **Objetivo:** Realizar un análisis exhaustivo de los 20 lenguajes de programación más demandados según el Índice TIOBE.
 

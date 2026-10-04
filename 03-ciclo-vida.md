@@ -1,24 +1,24 @@
-- [3. El Ciclo de Vida del Desarrollo de Software (Fases)](#3-el-ciclo-de-vida-del-desarrollo-de-software-fases)
-  - [3.1. Concepto de Ciclo de Vida del Software](#31-concepto-de-ciclo-de-vida-del-software)
-  - [3.2. Fases Principales del Desarrollo de una Aplicación Informática](#32-fases-principales-del-desarrollo-de-una-aplicación-informática)
-    - [3.2.1. Fase Inicial (Planificación)](#321-fase-inicial-planificación)
-    - [3.2.2. Análisis (Etapa de Análisis)](#322-análisis-etapa-de-análisis)
-      - [3.2.2.1. Especificación de Requisitos](#3221-especificación-de-requisitos)
-      - [3.2.2.2. Tipos de Requisitos](#3222-tipos-de-requisitos)
+- [3. El ciclo de vida del desarrollo de software (fases)](#3-el-ciclo-de-vida-del-desarrollo-de-software-fases)
+  - [3.1. Concepto de ciclo de vida del software](#31-concepto-de-ciclo-de-vida-del-software)
+  - [3.2. Fases principales del desarrollo de una aplicación informática](#32-fases-principales-del-desarrollo-de-una-aplicación-informática)
+    - [3.2.1. Fase inicial (planificación)](#321-fase-inicial-planificación)
+    - [3.2.2. Análisis (etapa de análisis)](#322-análisis-etapa-de-análisis)
+      - [3.2.2.1. Especificación de requisitos](#3221-especificación-de-requisitos)
+      - [3.2.2.2. Tipos de requisitos](#3222-tipos-de-requisitos)
     - [3.2.3. Diseño](#323-diseño)
-    - [3.2.4. Codificación (Implementación)](#324-codificación-implementación)
+    - [3.2.4. Codificación (implementación)](#324-codificación-implementación)
       - [3.2.4.1. Características deseables del código](#3241-características-deseables-del-código)
     - [3.2.5. Pruebas](#325-pruebas)
-      - [3.2.5.1. Tipos de Pruebas](#3251-tipos-de-pruebas)
+      - [3.2.5.1. Tipos de pruebas](#3251-tipos-de-pruebas)
     - [3.2.6. Documentación](#326-documentación)
-      - [3.2.6.1. Tipos de Documentos](#3261-tipos-de-documentos)
-    - [3.2.7. Explotación (Despliegue)](#327-explotación-despliegue)
+      - [3.2.6.1. Tipos de documentos](#3261-tipos-de-documentos)
+    - [3.2.7. Explotación (despliegue)](#327-explotación-despliegue)
     - [3.2.8. Mantenimiento](#328-mantenimiento)
-      - [3.2.8.1. Tipos de Mantenimiento](#3281-tipos-de-mantenimiento)
-    - [3.2.9. Retirada del Software](#329-retirada-del-software)
+      - [3.2.8.1. Tipos de mantenimiento](#3281-tipos-de-mantenimiento)
+    - [3.2.9. Retirada del software](#329-retirada-del-software)
 
 
-# 3. El Ciclo de Vida del Desarrollo de Software (Fases)
+# 3. El ciclo de vida del desarrollo de software (fases)
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué algunos proyectos de software tienen éxito y otros fracasan estrepitosamente? La diferencia suele estar en si siguen un proceso estructurado o improvisan sobre la marcha.
 
@@ -36,7 +36,7 @@ En el Punto 02 vimos qué es el software y el hardware. Ahora veremos cómo se c
 - Comprender la importancia de cada fase
 - Reconocer los tipos de mantenimiento de software
 
-## 3.1. Concepto de Ciclo de Vida del Software
+## 3.1. Concepto de ciclo de vida del software
 
 La serie de pasos a seguir para desarrollar un programa es lo que se conoce como **Ciclo de Vida del Software**. Cada etapa del ciclo de vida del software se explicará con más detalle, y el desarrollo de software es un proceso que conlleva una serie de pasos genéricos. Es un proceso que puede parecer muy complejo y que exige una gran coordinación y disciplina del grupo de trabajo que lo desarrolle.
 
@@ -52,7 +52,7 @@ Sin un ciclo de vida estructurado, los proyectos de software suelen fracasar. Se
 
 > 📝 **Nota:** En vuestras prácticas de DAW vais a trabajar el ciclo de vida completo. Aunque sean proyectos pequeños, es fundamental que entendáis qué fase estáis trabajando en cada momento. Cuando entregáis código sin haberlo analizado antes, estáis "construyendo sin planos".
 
-## 3.2. Fases Principales del Desarrollo de una Aplicación Informática
+## 3.2. Fases principales del desarrollo de una aplicación informática
 
 Independientemente del modelo elegido, siempre hay una serie de etapas que se deben seguir para construir software fiable y de calidad. Las fases principales, comúnmente aceptadas, son:
 
@@ -82,7 +82,7 @@ graph LR
 
 ![Diagrama: Fases del Desarrollo de Software](/images/fases_desarrollo.jpg)
 
-### 3.2.1. Fase Inicial (Planificación)
+### 3.2.1. Fase inicial (planificación)
 
 En esta fase se establecen los **objetivos** del proyecto, se define su **alcance** y se realiza un **estudio de viabilidad y costes**. Es la fase más compleja, que precisa de expertos en planificación de proyectos y donde se desarrollan documentos importantes como el de viabilidad y estimación.
 
@@ -100,7 +100,7 @@ En esta fase se establecen los **objetivos** del proyecto, se define su **alcanc
 
 > 💡 **Ejemplo real:** Antes de desarrollar Instagram, los fundadores analisaron: "¿La gente quiere compartir fotos con filtros?" "Sí, pero necesitamos servidores baratos y una app ligera". Sin este análisis, habrían invertido millones en un producto que nadie quería.
 
-### 3.2.2. Análisis (Etapa de Análisis)
+### 3.2.2. Análisis (etapa de análisis)
 
 Esta es la primera fase y la de mayor importancia en el desarrollo del proyecto. Todo lo demás dependerá de lo bien detallada que esté, siendo también la más complicada ya que no está automatizada y depende en gran medida del analista que la realice.
 
@@ -108,7 +108,7 @@ En esta fase, se determina y define claramente las **necesidades del cliente** y
 
 > 📝 **Nota:** "No asumas nada". Si el cliente dice "quiero una tienda online", debes preguntar: ¿qué productos? ¿pago con tarjeta? ¿incluye IVA? ¿qué pasa si no hay stock? ¿qué estadísticas quieres ver?
 
-### 3.2.2.1. Especificación de Requisitos
+### 3.2.2.1. Especificación de requisitos
 
 La **especificación de requisitos** debe:
 
@@ -121,7 +121,7 @@ La **especificación de requisitos** debe:
 - Dividir y jerarquizar el modelo.
 - Fijar criterios de validación.
 
-### 3.2.2.2. Tipos de Requisitos
+### 3.2.2.2. Tipos de requisitos
 
 - **Requisitos Funcionales**: Definen qué funciones tendrá que realizar la aplicación. Responden a preguntas como qué respuesta dará la aplicación ante todas las entradas o cómo se comportará en situaciones inesperadas. Por ejemplo, en una aplicación de cosmética, podría ser si desea que la lectura de productos se haga mediante códigos de barras, cómo se detallan las facturas, si se controlará el stock o si se operará con tarjetas de crédito.
 
@@ -164,7 +164,7 @@ Las actividades habituales incluyen el diseño arquitectónico, el diseño detal
 
 > 💡 **Analogía:** Si la fase de análisis responde "construiré una casa de 3 habitaciones con jardín", la fase de diseño responde "la cocina estará aquí, el salón tendrá 30m², usaremos ladrillo caravista, el fontanero entrará por aquí...".
 
-### 3.2.4. Codificación (Implementación)
+### 3.2.4. Codificación (implementación)
 
 Esta etapa consiste en transformar o traducir los resultados obtenidos a un determinado lenguaje de programación. Se escribe el código fuente de cada componente, traduciendo los algoritmos definidos en la fase de diseño. Esta tarea la realiza el programador y debe cumplir exhaustivamente con los datos impuestos en el análisis y diseño.
 
@@ -197,7 +197,7 @@ El principal objetivo de las **pruebas** es conseguir que el programa funcione i
 
 > 💡 **Consejo:** "Si no has encontrado un bug, es que no has probado lo suficiente."
 
-### 3.2.5.1. Tipos de Pruebas
+### 3.2.5.1. Tipos de pruebas
 
 - **Pruebas Unitarias**: Prueban, una a una, las diferentes partes del software y comprueban su funcionamiento por separado.
   
@@ -227,7 +227,7 @@ Los resultados de las pruebas de unidades son **Módulos utilizables**, y de las
 
 La **documentación** es vital para el desarrollo y mantenimiento del software. Todas las etapas en el desarrollo de software deben quedar perfectamente documentadas. Una correcta documentación permitirá la reutilización de parte de los programas en otras aplicaciones, especialmente si se desarrollan con diseño modular.
 
-### 3.2.6.1. Tipos de Documentos
+### 3.2.6.1. Tipos de documentos
 
 - **Guía Técnica (o Manual Técnico)**: Dirigida al personal técnico (analistas y programadores). Refleja el diseño, la codificación de los programas y las pruebas realizadas. Su objetivo es facilitar el desarrollo, las correcciones y el mantenimiento futuro.
   
@@ -245,7 +245,7 @@ El resultado final es la **Documentación técnica y de usuario**.
 
 > ⚠️ **Advertencia:** "Sin documentación, el código es tan útil como un contrato en un idioma que no entiendes."
 
-### 3.2.7. Explotación (Despliegue)
+### 3.2.7. Explotación (despliegue)
 
 La **explotación** es la fase en que los usuarios finales conocen la aplicación y comienzan a utilizarla. Implica la instalación, puesta a punto y funcionamiento de la aplicación en el equipo final del cliente. En esta fase, los programas son transferidos al computador del usuario, configurados y verificados. Es recomendable que los clientes estén presentes durante la instalación. También se pueden llevar a cabo las Beta Test en los equipos del cliente bajo cargas normales de trabajo. La configuración puede ser realizada por los propios usuarios con la guía de instalación o programarse automáticamente si el software es sencillo. Es un momento crítico del proyecto tenerlo todo preparado antes de la presentación al cliente.
 
@@ -260,7 +260,7 @@ La **explotación** es la fase en que los usuarios finales conocen la aplicació
 
 La etapa de **mantenimiento** es la más larga de todo el ciclo de vida del software. Por su naturaleza, el software es cambiante y deberá actualizarse y evolucionar con el tiempo, adaptándose a mejoras de hardware y nuevas situaciones. Siempre surgen errores y la necesidad de nuevas versiones. El mantenimiento se define como el proceso de control, mejora y optimización del software.
 
-### 3.2.8.1. Tipos de Mantenimiento
+### 3.2.8.1. Tipos de mantenimiento
 
 - **Correctivo**: Para corregir defectos o fallos encontrados en el software.
   
@@ -289,7 +289,7 @@ Los resultados del mantenimiento son **Informes de errores y control de cambios*
 
 > 📝 **Nota:** Cuando heredéis código de otros desarrolladores (en empresas o en GitHub), el 80% de vuestro trabajo será mantenimiento. Por eso es crucial que el código esté bien documentado y sea mantenible.
 
-### 3.2.9. Retirada del Software
+### 3.2.9. Retirada del software
 
 Esta fase ocurre cuando el software ha llegado al **final de su vida útil** y ya no resulta rentable seguir ampliándolo o manteniéndolo. En este punto, el ciclo puede comenzar de nuevo, ya sea comprando un nuevo software o desarrollando uno a medida.
 
@@ -304,17 +304,17 @@ Esta fase ocurre cuando el software ha llegado al **final de su vida útil** y y
 - Flash Player: Adobe lo discontinuó en 2020 por razones de seguridad
 - MySpace: En su momento fue la red social más grande; ahora está casi abandonada
 
-## Mini-Proyecto: Calculadora de Calificaciones
+## Mini-proyecto: calculadora de calificaciones
 
 Para ver cómo el ciclo de vida se aplica en la práctica, vamos a seguir las 9 fases con un proyecto sencillo: una app de consola en C# que calcule la media de un alumno.
 
-### Fase 1 — Planificación
+### Fase 1 — planificación
 
 - **Objetivo:** Crear una app que calcule la media de 3 notas y muestre si el alumno aprueba.
 - **Viabilidad:** Se puede hacer en C# de consola. Un solo programador, 1 día.
 - **Coste estimado:** 0 € (proyecto de aprendizaje).
 
-### Fase 2 — Análisis
+### Fase 2 — análisis
 
 - **Requisitos funcionales:** El usuario introduce 3 notas. El sistema calcula la media. El sistema muestra el resultado y si aprueba (≥5) o suspende (<5).
 - **Requisitos no funcionales:** Respuesta instantánea, mensaje claro en español.
@@ -322,7 +322,7 @@ Para ver cómo el ciclo de vida se aplica en la práctica, vamos a seguir las 9 
   - Entrada: 3 números decimales (notas)
   - Salida: Media numérica + texto "Aprobado" o "Suspenso"
 
-### Fase 3 — Diseño
+### Fase 3 — diseño
 
 ```csharp
 // Diseño de la estructura
@@ -333,7 +333,7 @@ double media = CalcularMedia(nota1, nota2, nota3);
 MostrarResultado(media);
 ```
 
-### Fase 4 — Codificación
+### Fase 4 — codificación
 
 ```csharp
 Console.Write("Primera nota: ");
@@ -352,7 +352,7 @@ else
     Console.WriteLine("Suspenso");
 ```
 
-### Fase 5 — Pruebas
+### Fase 5 — pruebas
 
 | Prueba | Entrada | Salida esperada | Resultado |
 |--------|---------|-----------------|-----------|
@@ -361,7 +361,7 @@ else
 | Nota límite | 5, 5, 5 | Media: 5.0, Aprobado | ✅ |
 | Decimales | 6.5, 7.3, 8.1 | Media: 7.3, Aprobado | ✅ |
 
-### Fase 6 — Documentación
+### Fase 6 — documentación
 
 ```markdown
 # Calculadora de Calificaciones
@@ -371,7 +371,7 @@ else
 3. Ver la media y si se aprueba
 ```
 
-### Fase 7 — Explotación
+### Fase 7 — explotación
 
 ```bash
 dotnet run
@@ -379,13 +379,13 @@ dotnet run
 
 El programa se ejecuta en la consola. Funciona en cualquier sistema operativo con .NET instalado.
 
-### Fase 8 — Mantenimiento
+### Fase 8 — mantenimiento
 
 - **Evolutivo:** Añadir más de 3 notas (introducir notas hasta que el usuario escriba "fin").
 - **Perfectivo:** Mostrar también la nota más alta y la más baja.
 - **Correctivo:** Si el usuario introduce una letra en vez de un número, el programa falla. Hay que añadir validación.
 
-### Fase 9 — Retirada
+### Fase 9 — retirada
 
 Cuando el alumno ya no la necesite (o la mejore con una app web), se retira esta versión de consola.
 

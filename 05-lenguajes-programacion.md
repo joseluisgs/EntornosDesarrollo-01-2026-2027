@@ -1,31 +1,31 @@
-- [5. Lenguajes de Programación](#5-lenguajes-de-programación)
-  - [5.1. ¿Qué es un Lenguaje de Programación?](#51-qué-es-un-lenguaje-de-programación)
+- [5. Lenguajes de programación](#5-lenguajes-de-programación)
+  - [5.1. ¿Qué es un lenguaje de programación?](#51-qué-es-un-lenguaje-de-programación)
     - [5.1.1. Elementos que componen un lenguaje de programación](#511-elementos-que-componen-un-lenguaje-de-programación)
     - [5.1.2. Otros elementos importantes](#512-otros-elementos-importantes)
-  - [5.2. Clasificación de Lenguajes de Programación](#52-clasificación-de-lenguajes-de-programación)
-    - [5.2.1. Según su cercanía al lenguaje humano (Nivel de Abstracción)](#521-según-su-cercanía-al-lenguaje-humano-nivel-de-abstracción)
-      - [5.2.1.1. Lenguajes de Bajo Nivel](#5211-lenguajes-de-bajo-nivel)
-      - [5.2.1.2. Lenguajes de Medio Nivel](#5212-lenguajes-de-medio-nivel)
-      - [5.2.1.3. Lenguajes de Alto Nivel](#5213-lenguajes-de-alto-nivel)
-    - [5.2.2. Según su mecanismo de traducción (Compilados, Interpretados, Mixtos)](#522-según-su-mecanismo-de-traducción-compilados-interpretados-mixtos)
-      - [5.2.2.1. Lenguajes Compilados](#5221-lenguajes-compilados)
-      - [5.2.2.2. Lenguajes Interpretados](#5222-lenguajes-interpretados)
-      - [5.2.2.3. Lenguajes Mixtos o Virtuales](#5223-lenguajes-mixtos-o-virtuales)
-      - [5.2.2.4. Lenguajes Transpilados](#5224-lenguajes-transpilados)
-    - [5.2.3. Según su sistema de tipos (Tipado Fuerte, Tipado Débil)](#523-según-su-sistema-de-tipos-tipado-fuerte-tipado-débil)
-      - [5.2.3.1. Rigidez: Tipado Fuerte vs. Tipado Débil](#5231-rigidez-tipado-fuerte-vs-tipado-débil)
-      - [5.2.3.2. Momento de Verificación: Tipado Estático vs. Tipado Dinámico](#5232-momento-de-verificación-tipado-estático-vs-tipado-dinámico)
-      - [5.2.3.3. Declaración: Tipado Explícito vs. Implícito (Inferencia)](#5233-declaración-tipado-explícito-vs-implícito-inferencia)
-      - [5.2.3.4. Lenguajes sin Tipado (Tipado Nulo)](#5234-lenguajes-sin-tipado-tipado-nulo)
-      - [5.2.3.5. Tabla Resumen de Sistemas de Tipado](#5235-tabla-resumen-de-sistemas-de-tipado)
-    - [5.2.4. Según la forma en que operan (Paradigmas de Programación)](#524-según-la-forma-en-que-operan-paradigmas-de-programación)
-      - [5.2.4.1. Principales Paradigmas](#5241-principales-paradigmas)
-    - [5.2.5. Según Generaciones](#525-según-generaciones)
-  - [5.3. Criterios para la Selección de un Lenguaje de Programación](#53-criterios-para-la-selección-de-un-lenguaje-de-programación)
-  - [5.4. Lenguajes más Utilizados en la Actualidad](#54-lenguajes-más-utilizados-en-la-actualidad)
+  - [5.2. Clasificación de lenguajes de programación](#52-clasificación-de-lenguajes-de-programación)
+    - [5.2.1. Según su cercanía al lenguaje humano (nivel de abstracción)](#521-según-su-cercanía-al-lenguaje-humano-nivel-de-abstracción)
+      - [5.2.1.1. Lenguajes de bajo nivel](#5211-lenguajes-de-bajo-nivel)
+      - [5.2.1.2. Lenguajes de medio nivel](#5212-lenguajes-de-medio-nivel)
+      - [5.2.1.3. Lenguajes de alto nivel](#5213-lenguajes-de-alto-nivel)
+    - [5.2.2. Según su mecanismo de traducción (compilados, interpretados, mixtos)](#522-según-su-mecanismo-de-traducción-compilados-interpretados-mixtos)
+      - [5.2.2.1. Lenguajes compilados](#5221-lenguajes-compilados)
+      - [5.2.2.2. Lenguajes interpretados](#5222-lenguajes-interpretados)
+      - [5.2.2.3. Lenguajes mixtos o virtuales](#5223-lenguajes-mixtos-o-virtuales)
+      - [5.2.2.4. Lenguajes transpilados](#5224-lenguajes-transpilados)
+    - [5.2.3. Según su sistema de tipos (tipado fuerte, tipado débil)](#523-según-su-sistema-de-tipos-tipado-fuerte-tipado-débil)
+      - [5.2.3.1. Rigidez: tipado fuerte vs. tipado débil](#5231-rigidez-tipado-fuerte-vs-tipado-débil)
+      - [5.2.3.2. Momento de verificación: tipado estático vs. tipado dinámico](#5232-momento-de-verificación-tipado-estático-vs-tipado-dinámico)
+      - [5.2.3.3. Declaración: tipado explícito vs. implícito (inferencia)](#5233-declaración-tipado-explícito-vs-implícito-inferencia)
+      - [5.2.3.4. Lenguajes sin tipado (tipado nulo)](#5234-lenguajes-sin-tipado-tipado-nulo)
+      - [5.2.3.5. Tabla resumen de sistemas de tipado](#5235-tabla-resumen-de-sistemas-de-tipado)
+    - [5.2.4. Según la forma en que operan (paradigmas de programación)](#524-según-la-forma-en-que-operan-paradigmas-de-programación)
+      - [5.2.4.1. Principales paradigmas](#5241-principales-paradigmas)
+    - [5.2.5. Según generaciones](#525-según-generaciones)
+  - [5.3. Criterios para la selección de un lenguaje de programación](#53-criterios-para-la-selección-de-un-lenguaje-de-programación)
+  - [5.4. Lenguajes más utilizados en la actualidad](#54-lenguajes-más-utilizados-en-la-actualidad)
 
 
-# 5. Lenguajes de Programación
+# 5. Lenguajes de programación
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué existen tantos lenguajes de programación? ¿Por qué no usamos todos el mismo? La respuesta está en que cada lenguaje está diseñado para resolver problemas diferentes.
 
@@ -43,7 +43,7 @@ En el Punto 04 vimos los modelos de desarrollo. Ahora veremos la herramienta que
 - Conocer los principales paradigmas de programación
 - Saber elegir un lenguaje según el contexto
 
-## 5.1. ¿Qué es un Lenguaje de Programación?
+## 5.1. ¿Qué es un lenguaje de programación?
 
 Un **lenguaje de programación** es un idioma creado de forma artificial, formado por un conjunto de símbolos y normas que se aplican sobre un alfabeto para obtener un código que el hardware de la computadora pueda entender y ejecutar. Son los instrumentos que tenemos para que el ordenador realice las tareas que necesitamos. Es un lenguaje formal que proporciona un conjunto de instrucciones que permiten a un programador escribir secuencias de comandos, que son interpretadas por una máquina, para producir un comportamiento deseado.
 
@@ -117,15 +117,15 @@ graph TB
 
 ![Diagrama: Elementos de un Lenguaje de Programación](/images/componentes_lenguaje.jpg)
 
-## 5.2. Clasificación de Lenguajes de Programación
+## 5.2. Clasificación de lenguajes de programación
 
 Los lenguajes se pueden clasificar de muchas formas. Las más importantes para DAW son:
 
-### 5.2.1. Según su cercanía al lenguaje humano (Nivel de Abstracción)
+### 5.2.1. Según su cercanía al lenguaje humano (nivel de abstracción)
 
 Los lenguajes han evolucionado siempre hacia una mayor usabilidad y cercanía al razonamiento humano.
 
-### 5.2.1.1. Lenguajes de Bajo Nivel
+### 5.2.1.1. Lenguajes de bajo nivel
 
 Son lenguajes totalmente dependientes de la máquina, lo que significa que un programa desarrollado en ellos no puede ser migrado o utilizado en otras máquinas. Aprovechan al máximo las características del hardware.
 
@@ -147,7 +147,7 @@ Son lenguajes totalmente dependientes de la máquina, lo que significa que un pr
   ADD AX, BX     ; Sumar AX + BX
   ```
 
-### 5.2.1.2. Lenguajes de Medio Nivel
+### 5.2.1.2. Lenguajes de medio nivel
 
 Este término no es universalmente aceptado, pero se refiere a lenguajes que se encuentran en un punto medio. Pueden acceder a los registros del sistema y trabajar con direcciones de memoria (características de bajo nivel), y a la vez realizar operaciones de alto nivel. Un ejemplo es C.
 
@@ -164,7 +164,7 @@ int main() {
 }
 ```
 
-### 5.2.1.3. Lenguajes de Alto Nivel
+### 5.2.1.3. Lenguajes de alto nivel
 
 Se encuentran más cercanos al lenguaje natural que al lenguaje máquina, y son independientes de la arquitectura del ordenador. Permiten al programador olvidarse del funcionamiento interno de la máquina. Utilizan sentencias y órdenes derivadas del idioma inglés. Necesitan un traductor para ser entendidos por la máquina. Incorporan librerías y funciones predeterminadas, y suelen ofrecer *frameworks*. La mayoría de los lenguajes de programación actuales se engloban en esta categoría. Ejemplos incluyen C#, C++, Java, Python, JavaScript, PHP.
 
@@ -214,11 +214,11 @@ graph TB
 
 ![Diagrama: Clasificación de Lenguajes por Nivel](/images/lenguajes_cercania.png)
 
-### 5.2.2. Según su mecanismo de traducción (Compilados, Interpretados, Mixtos)
+### 5.2.2. Según su mecanismo de traducción (compilados, interpretados, mixtos)
 
 La obtención de código binario ejecutable se realiza mediante compilación o interpretación.
 
-### 5.2.2.1. Lenguajes Compilados
+### 5.2.2.1. Lenguajes compilados
 
 Necesitan un **compilador** que traduce el código fuente a código binario (código objeto) en un solo paso. Se ejecutan muy eficientemente. La principal desventaja es que es necesario compilar cada vez que el código fuente es modificado. Precisan de un programa enlazador (*linker*) que une el código objeto con el código objeto de librerías. El código es más seguro, ya que el código fuente no es directamente accesible. Ejemplos incluyen C y C++.
 
@@ -235,7 +235,7 @@ Código Fuente (.c) → Compilador → Código Objeto (.o) → Enlazador → Eje
 - Plataforma-dependiente (compilar para Windows ≠ para Linux)
 - Cada modificación requiere recompilar
 
-### 5.2.2.2. Lenguajes Interpretados
+### 5.2.2.2. Lenguajes interpretados
 
 No generan código objeto. El código fuente se interpreta directamente, línea a línea, y se ejecuta simultáneamente. Esto se realiza mediante un programa auxiliar llamado **intérprete**, que debe estar cargado en memoria. La ejecución es menos eficiente que los compilados. La ventaja es que el código fuente se interpreta directamente sin un paso de compilación explícito a código objeto. La detección de errores es más detallada. La principal desventaja es que el código fuente es legible, lo que puede comprometer la seguridad o los derechos de autor. Ejemplos incluyen PHP y JavaScript.
 
@@ -253,7 +253,7 @@ Código Fuente (.js) → Intérprete → Ejecución directa línea a línea
 - Ejecución más lenta
 - Código fuente visible (problemas de seguridad)
 
-### 5.2.2.3. Lenguajes Mixtos o Virtuales
+### 5.2.2.3. Lenguajes mixtos o virtuales
 
 Combinan características de ambos. El código fuente se compila a un código binario intermedio denominado **bytecode**. Este bytecode puede considerarse código objeto, pero está destinado a una **máquina virtual** en lugar de a código objeto nativo. Luego, este bytecode se interpreta para ejecutarlo en cualquier máquina virtual compatible. Son más portables que los lenguajes compilados. El objetivo es compilar una vez y ejecutar en distintos sistemas. Ejemplos incluyen Java, C# o Python.
 
@@ -294,7 +294,7 @@ graph LR
 
 ![Diagrama: Clasificación de Lenguajes por Traducción](/images/lenguajes_compialdos_interpretados.jpg)
 
-### 5.2.2.4. Lenguajes Transpilados
+### 5.2.2.4. Lenguajes transpilados
 
 Un **transpilador** (o transcompiler) es un tipo de compilador que traduce código de un lenguaje de programación a otro lenguaje de programación de **similar nivel de abstracción**. A diferencia de un compilador tradicional (que va de alto a bajo nivel), la transpilación va de un lenguaje de alto nivel a otro de alto nivel.
 
@@ -347,13 +347,13 @@ graph LR
     style C fill:#4CAF50,color:#fff
 ```
 
-### 5.2.3. Según su sistema de tipos (Tipado Fuerte, Tipado Débil)
+### 5.2.3. Según su sistema de tipos (tipado fuerte, tipado débil)
 
 Un **tipo de dato** es una clasificación que define el conjunto de valores que una variable puede tomar y las operaciones válidas que se pueden realizar sobre esos valores. Esta clasificación es fundamental porque **determina la cantidad de memoria que el sistema operativo debe reservar** para la variable. Por ejemplo, una variable de tipo `int` ocupará menos espacio que una de tipo `float` porque su rango de valores es menor.
 
 El **sistema de tipos** de un lenguaje de programación es un conjunto de reglas que definen cómo se manejan y verifican estos tipos de datos. La clasificación de estos sistemas se basa en tres dimensiones principales: la rigidez, el momento de verificación y la declaración.
 
-### 5.2.3.1. Rigidez: Tipado Fuerte vs. Tipado Débil
+### 5.2.3.1. Rigidez: tipado fuerte vs. tipado débil
 
 Esta dimensión se refiere a la flexibilidad con la que un lenguaje maneja las conversiones entre tipos de datos.
 
@@ -379,7 +379,7 @@ Esta dimensión se refiere a la flexibilidad con la que un lenguaje maneja las c
   resultado = "5" - 3  // 2 (convierte "5" a número)
   ```
 
-### 5.2.3.2. Momento de Verificación: Tipado Estático vs. Tipado Dinámico
+### 5.2.3.2. Momento de verificación: tipado estático vs. tipado dinámico
 
 Esta dimensión se basa en el momento en que se realiza la verificación de los tipos de datos.
 
@@ -411,7 +411,7 @@ Esta dimensión se basa en el momento en que se realiza la verificación de los 
   # Funciona, pero cuidado con los bugs!
   ```
 
-### 5.2.3.3. Declaración: Tipado Explícito vs. Implícito (Inferencia)
+### 5.2.3.3. Declaración: tipado explícito vs. implícito (inferencia)
 
 Esta dimensión se refiere a la forma en que el programador indica el tipo de una variable.
 
@@ -426,11 +426,11 @@ Esta dimensión se refiere a la forma en que el programador indica el tipo de un
 
 **¿Cuándo usar var vs tipo explícito?** Usa `var` cuando el tipo es evidente: `var nombre = "Ana"` (es obvio que es string). Usa tipo explícito cuando no lo es: `List<Persona> personas = ObtenerPersonas()` (sin el tipo no se sabe qué devuelve).
 
-### 5.2.3.4. Lenguajes sin Tipado (Tipado Nulo)
+### 5.2.3.4. Lenguajes sin tipado (tipado nulo)
 
 En algunos lenguajes de muy bajo nivel, como el **lenguaje de ensamblador**, no existe un sistema de tipos formal. Todas las variables se manejan como una simple secuencia de bits, y es responsabilidad total del programador interpretar los datos.
 
-### 5.2.3.5. Tabla Resumen de Sistemas de Tipado
+### 5.2.3.5. Tabla resumen de sistemas de tipado
 
 La combinación de estas tres dimensiones define el sistema de tipos de un lenguaje.
 
@@ -464,11 +464,11 @@ graph TB
 
 > 📝 **Nota:** No existe un "mejor" sistema de tipos. El tipado fuerte y estático (Java, C#) detecta errores antes pero requiere más código. El tipado dinámico (Python, JavaScript) es más rápido de escribir pero puede ocultar errores hasta producción. Elegid según el contexto del proyecto.
 
-### 5.2.4. Según la forma en que operan (Paradigmas de Programación)
+### 5.2.4. Según la forma en que operan (paradigmas de programación)
 
 Un **paradigma de programación** es un modelo fundamental para el diseño y la implementación de programas, que determina la estructura y el enfoque del código. La mayoría de los lenguajes de programación modernos, como **Java**, **Kotlin** y **C#**, son multiparadigma, lo que significa que combinan características de varios de ellos para ofrecer mayor flexibilidad y poder a los desarrolladores.
 
-### 5.2.4.1. Principales Paradigmas
+### 5.2.4.1. Principales paradigmas
 
 - **Programación Imperativa/Estructurada**: Se basa en una serie de comandos que la computadora ejecuta en orden para cambiar el estado del programa. Es un enfoque muy directo y se basa en tres estructuras principales: sentencias secuenciales, selectivas (condicionales) y repetitivas (bucles). Es fácil de entender para programas sencillos, pero puede volverse difícil de manejar en proyectos grandes, ya que todo el código se concentra en un solo bloque. Ejemplos: C, Pascal.
 
@@ -585,7 +585,7 @@ graph TB
 | Declarativo | Describes qué, no cómo | SQL, HTML | Bases de datos, web |
 | Multiparadigma | Combina varios | C#, Python, JavaScript | La mayoría de proyectos modernos |
 
-### 5.2.5. Según Generaciones
+### 5.2.5. Según generaciones
 
 La evolución de los lenguajes de programación se puede dividir en 5 etapas o generaciones:
 
@@ -617,7 +617,7 @@ graph LR
 
 > 💡 **Dato:** La mayoría de los lenguajes que aprenderás en DAW son de 3GL (C, Java, Python) y 4GL (SQL). La 5GL está más relacionada con investigación en IA.
 
-## 5.3. Criterios para la Selección de un Lenguaje de Programación
+## 5.3. Criterios para la selección de un lenguaje de programación
 
 La elección del lenguaje a utilizar en un proyecto es de extrema importancia. Algunos criterios para su selección son:
 
@@ -636,7 +636,7 @@ La elección del lenguaje a utilizar en un proyecto es de extrema importancia. A
 
 > 📝 **Nota:** No existe el "mejor" lenguaje. Existe el lenguaje adecuado para cada situación. Un científico de datos prefiere Python por sus librerías de ML. Un desarrollador de videojuegos AAA prefiere C++ por rendimiento. Un startup web elige JavaScript/Node.js por velocidad de desarrollo.
 
-## 5.4. Lenguajes más Utilizados en la Actualidad
+## 5.4. Lenguajes más utilizados en la actualidad
 
 Lenguajes como Java, C, C++, PHP y Visual Basic concentran alrededor del 60% del interés de la comunidad informática mundial. Existen índices como [TIOBE](https://www.tiobe.com/tiobe-index/) que analizan la demanda de lenguajes de programación diariamente.
 

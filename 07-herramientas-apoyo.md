@@ -1,15 +1,15 @@
-- [7. Herramientas de Apoyo al Desarrollo de Software](#7-herramientas-de-apoyo-al-desarrollo-de-software)
-  - [7.1. Herramientas de Desarrollo](#71-herramientas-de-desarrollo)
+- [7. Herramientas de apoyo al desarrollo de software](#7-herramientas-de-apoyo-al-desarrollo-de-software)
+  - [7.1. Herramientas de desarrollo](#71-herramientas-de-desarrollo)
   - [7.2. Herramientas CASE (Computer Aided Software Engineering)](#72-herramientas-case-computer-aided-software-engineering)
     - [7.2.1. Funcionalidad](#721-funcionalidad)
     - [7.2.2. Clasificación según fases](#722-clasificación-según-fases)
-  - [7.3. Desarrollo Rápido de Aplicaciones (RAD)](#73-desarrollo-rápido-de-aplicaciones-rad)
-  - [7.4. Entornos de Desarrollo Integrado (IDE)](#74-entornos-de-desarrollo-integrado-ide)
-  - [7.5. Control de Versiones: Git](#75-control-de-versiones-git)
+  - [7.3. Desarrollo rápido de aplicaciones (RAD)](#73-desarrollo-rápido-de-aplicaciones-rad)
+  - [7.4. Entornos de desarrollo integrado (IDE)](#74-entornos-de-desarrollo-integrado-ide)
+  - [7.5. Control de versiones: Git](#75-control-de-versiones-git)
   - [7.6. Contenedores: Docker](#76-contenedores-docker)
 
 
-# 7. Herramientas de Apoyo al Desarrollo de Software
+# 7. Herramientas de apoyo al desarrollo de software
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado cómo un programador puede crear una aplicación completa sin escribir todo el código desde cero? ¿O cómo se gestiona el trabajo en equipo cuando 10 personas modifican el mismo proyecto? La respuesta está en las herramientas de apoyo.
 
@@ -27,7 +27,7 @@ En el Punto 06 vimos los procesos de traducción y las máquinas virtuales. Ahor
 - Diferenciar entre editores simples e IDEs
 - Saber elegir la herramienta adecuada según el contexto
 
-## 7.1. Herramientas de Desarrollo
+## 7.1. Herramientas de desarrollo
 
 En la práctica, para llevar a cabo varias de las etapas del desarrollo de software, se utilizan **herramientas informáticas**. Su finalidad principal es automatizar las tareas y ganar fiabilidad y tiempo. Esto permite a los desarrolladores centrarse en los requerimientos del sistema y el análisis, que son las causas principales de los fallos del software. Los tipos de software de desarrollo incluyen editores, compiladores e intérpretes.
 
@@ -127,7 +127,7 @@ Herramientas modernas: PlantUML (diagramas UML desde texto), Draw.io/diagrams.ne
 
 > 📝 **Nota:** En ciclos de desarrollo, las herramientas CASE se usan especialmente en las fases de análisis y diseño para crear diagramas UML que documenten el sistema antes de programar.
 
-## 7.3. Desarrollo Rápido de Aplicaciones (RAD)
+## 7.3. Desarrollo rápido de aplicaciones (RAD)
 
 El **Desarrollo Rápido de Aplicaciones (RAD)** es un proceso que comprende el desarrollo iterativo, la construcción de prototipos y el uso de utilidades CASE. Actualmente se utiliza para referirse al desarrollo rápido de interfaces gráficas de usuario o entornos de desarrollo integrado completos.
 
@@ -168,7 +168,7 @@ graph LR
 
 > 📝 **Nota:** El movimiento "low-code" y "no-code" son herederos modernos de RAD. Permiten crear aplicaciones sin apenas programar, aunque tienen limitaciones.
 
-## 7.4. Entornos de Desarrollo Integrado (IDE)
+## 7.4. Entornos de desarrollo integrado (IDE)
 
 Un **Entorno de Desarrollo Integrado (IDE)** es una herramienta que facilita y posibilita el desarrollo de software. Agrupa diversas herramientas de desarrollo (editor de código, compilador, depurador) en una única interfaz gráfica para aumentar la productividad del programador.
 
@@ -257,7 +257,7 @@ graph TD
 - **Editor (VS Code)**: Scripts, proyectos pequeños, rápido para abrir y editar archivos sueltos, cuando trabajas con múltiples lenguajes.
 - **IDE (Rider, Visual Studio)**: Proyectos grandes de C#/Java, cuando necesitas depuración avanzada, refactorización automática, y herramientas integradas.
 
-## 7.5. Control de Versiones: Git
+## 7.5. Control de versiones: Git
 
 **Git** es la herramienta de control de versiones más utilizada en el mundo. Permite registrar los cambios realizados en archivos a lo largo del tiempo, de modo que puedas recuperar versiones anteriores y trabajar en equipo sin pisarte los unos a los otros.
 

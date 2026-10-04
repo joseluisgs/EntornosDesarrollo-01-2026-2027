@@ -1,9 +1,9 @@
-- [1. Introducción al Desarrollo de Software](#1-introducción-al-desarrollo-de-software)
-  - [1.1. ¿Qué es el Desarrollo de Software?](#11-qué-es-el-desarrollo-de-software)
-  - [1.2. La Importancia del Proceso de Desarrollo](#12-la-importancia-del-proceso-de-desarrollo)
+- [1. Introducción al desarrollo de software](#1-introducción-al-desarrollo-de-software)
+  - [1.1. ¿Qué es el desarrollo de software?](#11-qué-es-el-desarrollo-de-software)
+  - [1.2. La importancia del proceso de desarrollo](#12-la-importancia-del-proceso-de-desarrollo)
 
 
-# 1. Introducción al Desarrollo de Software
+# 1. Introducción al desarrollo de software
 
 > 💡 **Punto de partida:** ¿Crees que para crear una app como Instagram solo hace falta escribir código? La respuesta es no. Programar es solo una pieza del puzle. ¿Qué más hace falta?
 
@@ -21,7 +21,7 @@ En este punto aprenderás qué es el desarrollo de software, cuáles son las fas
 - Comprender por qué no se pueden "saltar" pasos en un proyecto
 - Reconocer la importancia del mantenimiento en el ciclo de vida
 
-## 1.1. ¿Qué es el Desarrollo de Software?
+## 1.1. ¿Qué es el desarrollo de software?
 
 El **Desarrollo de Software** abarca todo el proceso que ocurre desde que se concibe una idea hasta que un programa está implementado en el ordenador y funcionando. Es una disciplina que estudia los principios y metodologías para el desarrollo y mantenimiento de sistemas software. Algunos autores consideran que el término "desarrollo de software" es más apropiado que "ingeniería de software", ya que este último implica niveles de rigor y prueba de procesos que no son siempre adecuados para todo tipo de desarrollo de software. La **Ingeniería del software** se define como la ciencia y el arte de especificar, diseñar y desarrollar programas, documentación y procedimientos operativos.
 
@@ -53,7 +53,7 @@ graph LR
 
 💡 **Dato curioso:** El término "bug" (bicho) para referirse a un error de software proviene de 1947, cuando la científica Grace Hopper encontró una polilla real atascada en un relé de la computadora Harvard Mark II.
 
-## 1.2. La Importancia del Proceso de Desarrollo
+## 1.2. La importancia del proceso de desarrollo
 
 El proceso de desarrollo, que al principio puede parecer una tarea simple, consta de una serie de pasos de obligado cumplimiento. Solo así se puede garantizar que los programas creados sean eficientes, fiables, seguros y respondan a las necesidades de los usuarios finales.
 

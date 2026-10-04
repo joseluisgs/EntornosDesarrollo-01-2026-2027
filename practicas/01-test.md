@@ -1,19 +1,19 @@
-- [Práctica 1: Test de Conocimientos](#práctica-1-test-de-conocimientos)
-  - [Bloque 1: Software y Hardware (Preguntas 1-8)](#bloque-1-software-y-hardware-preguntas-1-8)
-  - [Bloque 2: Ciclo de Vida del Software (Preguntas 9-16)](#bloque-2-ciclo-de-vida-del-software-preguntas-9-16)
-  - [Bloque 3: Modelos y Metodologías (Preguntas 17-26)](#bloque-3-modelos-y-metodologías-preguntas-17-26)
-  - [Bloque 4: Lenguajes de Programación (Preguntas 27-36)](#bloque-4-lenguajes-de-programación-preguntas-27-36)
-  - [Bloque 5: Proceso de Traducción y Máquinas Virtuales (Preguntas 37-44)](#bloque-5-proceso-de-traducción-y-máquinas-virtuales-preguntas-37-44)
-  - [Bloque 6: Herramientas y Perfiles (Preguntas 45-50)](#bloque-6-herramientas-y-perfiles-preguntas-45-50)
+- [Práctica 1: test de conocimientos](#práctica-1-test-de-conocimientos)
+  - [Bloque 1: software y hardware (preguntas 1-8)](#bloque-1-software-y-hardware-preguntas-1-8)
+  - [Bloque 2: ciclo de vida del software (preguntas 9-16)](#bloque-2-ciclo-de-vida-del-software-preguntas-9-16)
+  - [Bloque 3: modelos y metodologías (preguntas 17-26)](#bloque-3-modelos-y-metodologías-preguntas-17-26)
+  - [Bloque 4: lenguajes de programación (preguntas 27-36)](#bloque-4-lenguajes-de-programación-preguntas-27-36)
+  - [Bloque 5: proceso de traducción y máquinas virtuales (preguntas 37-44)](#bloque-5-proceso-de-traducción-y-máquinas-virtuales-preguntas-37-44)
+  - [Bloque 6: herramientas y perfiles (preguntas 45-50)](#bloque-6-herramientas-y-perfiles-preguntas-45-50)
 
 
-# Práctica 1: Test de Conocimientos
+# Práctica 1: test de conocimientos
 
 **Instrucciones:** Lee atentamente cada pregunta y selecciona la opción que consideres correcta.
 
 ---
 
-### Bloque 1: Software y Hardware (Preguntas 1-8)
+### Bloque 1: software y hardware (preguntas 1-8)
 
 1.  **¿Qué es el software según las fuentes proporcionadas?**
     a) La parte física o tangible de un sistema informático.
@@ -65,7 +65,7 @@
 
 ---
 
-### Bloque 2: Ciclo de Vida del Software (Preguntas 9-16)
+### Bloque 2: ciclo de vida del software (preguntas 9-16)
 
 9.  **¿Cuál de las siguientes fases es considerada una de las fases principales del ciclo de vida del desarrollo de una aplicación informática?**
     a) Publicidad.
@@ -117,7 +117,7 @@
 
 ---
 
-### Bloque 3: Modelos y Metodologías (Preguntas 17-26)
+### Bloque 3: modelos y metodologías (preguntas 17-26)
 
 17. **¿Cuál de los modelos de desarrollo de software es el de mayor antigüedad y se caracteriza por realizar sus fases en un orden secuencial rígido, donde el resultado de una fase es la entrada de la siguiente?**
     a) Modelo en Espiral.
@@ -181,7 +181,7 @@
 
 ---
 
-### Bloque 4: Lenguajes de Programación (Preguntas 27-36)
+### Bloque 4: lenguajes de programación (preguntas 27-36)
 
 27. **¿Qué tipo de lenguaje de programación necesita un compilador que traduce el código fuente a código binario en un solo paso antes de la ejecución, lo que resulta en una ejecución muy eficiente?**
     a) Lenguajes interpretados.
@@ -245,7 +245,7 @@
 
 ---
 
-### Bloque 5: Proceso de Traducción y Máquinas Virtuales (Preguntas 37-44)
+### Bloque 5: proceso de traducción y máquinas virtuales (preguntas 37-44)
 
 37. **Un programa cuya función es convertir el código escrito por un programador (código fuente) en un lenguaje que la máquina puede entender directamente (código máquina o código objeto) se denomina:**
     a) Editor de texto.
@@ -297,7 +297,7 @@
 
 ---
 
-### Bloque 6: Herramientas y Perfiles (Preguntas 45-50)
+### Bloque 6: herramientas y perfiles (preguntas 45-50)
 
 45. **¿Qué herramienta de control de versiones es la más utilizada en la industria del software?**
     a) SVN.

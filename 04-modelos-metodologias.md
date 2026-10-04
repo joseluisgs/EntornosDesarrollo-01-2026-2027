@@ -1,20 +1,20 @@
-- [4. Modelos y Metodologías de Desarrollo de Software](#4-modelos-y-metodologías-de-desarrollo-de-software)
-  - [4.1. Modelos Clásicos (Predictivos)](#41-modelos-clásicos-predictivos)
-    - [4.1.1. Modelo en Cascada](#411-modelo-en-cascada)
+- [4. Modelos y metodologías de desarrollo de software](#4-modelos-y-metodologías-de-desarrollo-de-software)
+  - [4.1. Modelos clásicos (predictivos)](#41-modelos-clásicos-predictivos)
+    - [4.1.1. Modelo en cascada](#411-modelo-en-cascada)
     - [4.1.2. Modelo en V](#412-modelo-en-v)
-  - [4.2. Modelo de Construcción de Prototipos](#42-modelo-de-construcción-de-prototipos)
-    - [4.2.1. Tipos de Prototipos](#421-tipos-de-prototipos)
-  - [4.3. Modelos Evolutivos o Incrementales](#43-modelos-evolutivos-o-incrementales)
+  - [4.2. Modelo de construcción de prototipos](#42-modelo-de-construcción-de-prototipos)
+    - [4.2.1. Tipos de prototipos](#421-tipos-de-prototipos)
+  - [4.3. Modelos evolutivos o incrementales](#43-modelos-evolutivos-o-incrementales)
     - [4.3.1. Variantes](#431-variantes)
-  - [4.4. Metodologías Ágiles (Adaptativas)](#44-metodologías-ágiles-adaptativas)
-    - [4.4.1. Manifiesto Ágil](#441-manifiesto-ágil)
+  - [4.4. Metodologías ágiles (adaptativas)](#44-metodologías-ágiles-adaptativas)
+    - [4.4.1. Manifiesto ágil](#441-manifiesto-ágil)
     - [4.4.2. Kanban](#442-kanban)
     - [4.4.3. Scrum](#443-scrum)
     - [4.4.4. XP (eXtreme Programming)](#444-xp-extreme-programming)
-  - [4.5. Comparativa de Metodologías](#45-comparativa-de-metodologías)
+  - [4.5. Comparativa de metodologías](#45-comparativa-de-metodologías)
 
 
-# 4. Modelos y Metodologías de Desarrollo de Software
+# 4. Modelos y metodologías de desarrollo de software
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué algunas empresas entregan software a tiempo y otras siempre se retrasan? La diferencia está en el modelo de desarrollo que eligen.
 
@@ -38,11 +38,11 @@ Siempre se debe aplicar un modelo de ciclo de vida al desarrollo de cualquier pr
 
 > 💡 **Analogía:** Elegir un modelo de desarrollo es como elegir el método de construcción de una casa. No es lo mismo construir una cabaña en el bosque (modelo simple, requisitos claros) que un rascacielos en el centro de una ciudad (modelo complejo, muchos cambios durante la construcción).
 
-## 4.1. Modelos Clásicos (Predictivos)
+## 4.1. Modelos clásicos (predictivos)
 
 Los modelos clásicos son más rígidos y presuponen que podemos conocer todos los requisitos al inicio del proyecto.
 
-### 4.1.1. Modelo en Cascada
+### 4.1.1. Modelo en cascada
 
 Es el modelo de desarrollo de software de mayor antigüedad. Identifica las fases principales del desarrollo de software y establece que las fases deben realizarse en el orden indicado, siendo el resultado de una fase la entrada de la siguiente. Es un modelo secuencial y lineal. Es un modelo bastante rígido que se adapta mal al cambio continuo de especificaciones. Es prácticamente imposible que se pueda utilizar, ya que requiere conocer de antemano todos los requisitos del sistema. Solo es aplicable a pequeños desarrollos, ya que las etapas pasan de una a otra sin retorno posible. Cualquier error detectado en una fase muy tardía implica sobrecoste y desperdicios.
 
@@ -71,7 +71,7 @@ graph LR
 
 > ⚠️ **Advertencia:** Si en la fase de análisis te equivocas y lo descubres en fase de pruebas, tienes que volver atrás Y RECODIFICAR TODO. Esto multiplica costes.
 
-##### Modelo en Cascada con Realimentación
+##### Modelo en cascada con realimentación
 
 Es una variante del modelo en cascada que introduce una realimentación entre etapas. Esto permite volver atrás en cualquier momento para corregir, modificar o depurar algún aspecto. Es el modelo perfecto si el proyecto es rígido (pocos cambios, poco evolutivo) y los requisitos están claros, aunque no es el más idóneo si se prevén muchos cambios.
 
@@ -131,13 +131,13 @@ graph TB
 
 ![Diagrama: Modelo en V](/images/modelo_v.jpeg)
 
-## 4.2. Modelo de Construcción de Prototipos
+## 4.2. Modelo de construcción de prototipos
 
 Se utiliza a menudo cuando los requisitos no están especificados claramente, ya sea por falta de experiencia previa o por omisión/falta de concreción del usuario/cliente. El proceso implica crear un prototipo durante la fase de análisis, que es probado por el usuario/cliente para refinar los requisitos del software a desarrollar. Este paso se repite las veces necesarias.
 
 > 💡 **Analogía:** Es como dibujar varios bocetos de un logo antes de quedarse con el definitivo. Cada prototipo "refina" lo que el cliente realmente quiere.
 
-### 4.2.1. Tipos de Prototipos
+### 4.2.1. Tipos de prototipos
 
 - **Prototipos rápidos (Throwaway/Rapid)**: El prototipo puede desarrollarse usando otro lenguaje o herramientas y finalmente se desecha. Su único propósito es validar requisitos.
 
@@ -175,13 +175,13 @@ graph LR
 
 ![Diagrama: Modelo de Prototipos](/images/modelo_prototipos.webp)
 
-## 4.3. Modelos Evolutivos o Incrementales
+## 4.3. Modelos evolutivos o incrementales
 
 Son modelos más modernos que los clásicos y tienen en cuenta la naturaleza cambiante y evolutiva del software. La idea es desarrollar una implementación inicial del sistema, exponerla a los comentarios del usuario y refinarla en sucesivas versiones hasta obtener el sistema adecuado. Permiten una rápida realimentación del usuario, ya que las actividades de especificación, desarrollo y pruebas se ejecutan en cada iteración.
 
 ### 4.3.1. Variantes
 
-#### Modelo Iterativo Incremental
+#### Modelo iterativo incremental
 
 Está basado en el modelo en cascada con realimentación, donde las fases se repiten y refinan, propagando su mejora a las fases siguientes.
 
@@ -202,7 +202,7 @@ graph TD
     style D fill:#4CAF50,color:#fff
 ```
 
-#### Modelo en Espiral
+#### Modelo en espiral
 
 Desarrollado por Boehm en 1988, es una combinación del modelo iterativo incremental con el modelo en cascada. El software se construye repetidamente en forma de versiones que son cada vez mejores, incrementando la funcionalidad en cada versión. Este modelo también se centra en la gestión de riesgos en cada fase del proceso de desarrollo. Es un modelo bastante complejo.
 
@@ -244,11 +244,11 @@ Las cuatro fases principales del modelo en espiral son:
 
 ![Diagrama: Modelo en Espiral](/images/modelo_espiral.png)
 
-## 4.4. Metodologías Ágiles (Adaptativas)
+## 4.4. Metodologías ágiles (adaptativas)
 
 Las **metodologías ágiles** son un conjunto de metodologías de desarrollo de software basadas en el desarrollo iterativo e incremental. Los requisitos y soluciones evolucionan con el tiempo según la necesidad del proyecto. Promueven el trabajo en equipo, la colaboración con el cliente y la adaptación al cambio. Los equipos se autoorganizan y son multidisciplinares, inmersos en un proceso compartido de toma de decisiones a corto plazo.
 
-### 4.4.1. Manifiesto Ágil
+### 4.4.1. Manifiesto ágil
 
 Todos los equipos de desarrollo ágil deben seguir los cuatro valores y los doce principios del Manifiesto Ágil, creados en 2001 por 17 desarrolladores frustrados con la rigidez de los métodos tradicionales.
 
@@ -388,7 +388,7 @@ graph LR
 - **Sprint Backlog**: Tareas del sprint actual
 - **Incremento**: Producto usable al final del sprint
 
-#### Métricas ágiles: Velocity y Story Points
+#### Métricas ágiles: velocity y story points
 
 - **Story Points**: Unidad de medida del esfuerzo de una tarea. No son horas, sino una estimación relativa (1, 2, 3, 5, 8, 13...). Una tarea de 3 puntos es más compleja que una de 1, pero no necesariamente el triple.
 - **Velocity**: Número medio de story points que el equipo completa en un sprint. Se calcula con los últimos 3-5 sprints. Ejemplo: si el equipo completa 20, 25, 23 puntos, la velocity media es ~23.
@@ -464,7 +464,7 @@ graph TB
 
 ![Diagrama: Proceso XP](/images/modelo_tradicional_agil.png)
 
-### Comparativa de Metodologías
+### Comparativa de metodologías
 
 | Aspecto | Cascada | Scrum | Kanban | XP |
 |---------|---------|-------|--------|-----|

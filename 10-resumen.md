@@ -1,26 +1,26 @@
-- [10. Resumen y Conclusiones](#10-resumen-y-conclusiones)
-  - [10.1. Mapa Conceptual de la Unidad](#101-mapa-conceptual-de-la-unidad)
-  - [10.2. Conceptos Clave](#102-conceptos-clave)
-    - [Software y Hardware](#software-y-hardware)
-    - [Ciclo de Vida del Software](#ciclo-de-vida-del-software)
-    - [Modelos de Desarrollo](#modelos-de-desarrollo)
-    - [Lenguajes de Programación](#lenguajes-de-programación)
-    - [Proceso de Traducción](#proceso-de-traducción)
-    - [Máquinas Virtuales](#máquinas-virtuales)
+- [10. Resumen y conclusiones](#10-resumen-y-conclusiones)
+  - [10.1. Mapa conceptual de la unidad](#101-mapa-conceptual-de-la-unidad)
+  - [10.2. Conceptos clave](#102-conceptos-clave)
+    - [Software y hardware](#software-y-hardware)
+    - [Ciclo de vida del software](#ciclo-de-vida-del-software)
+    - [Modelos de desarrollo](#modelos-de-desarrollo)
+    - [Lenguajes de programación](#lenguajes-de-programación)
+    - [Proceso de traducción](#proceso-de-traducción)
+    - [Máquinas virtuales](#máquinas-virtuales)
     - [C# y .NET](#c-y-net)
-  - [10.3. Herramientas y Perfiles](#103-herramientas-y-perfiles)
+  - [10.3. Herramientas y perfiles](#103-herramientas-y-perfiles)
     - [Herramientas CASE (por fases)](#herramientas-case-por-fases)
     - [IDE](#ide)
     - [Perfiles](#perfiles)
-  - [10.4. Checklist de Supervivencia](#104-checklist-de-supervivencia)
-  - [10.5. Errores Comunes a Evitar](#105-errores-comunes-a-evitar)
-  - [10.6. Glosario de Términos](#106-glosario-de-términos)
-  - [10.7. Ejercicios de Repaso](#107-ejercicios-de-repaso)
+  - [10.4. Checklist de supervivencia](#104-checklist-de-supervivencia)
+  - [10.5. Errores comunes a evitar](#105-errores-comunes-a-evitar)
+  - [10.6. Glosario de términos](#106-glosario-de-términos)
+  - [10.7. Ejercicios de repaso](#107-ejercicios-de-repaso)
   - [10.8. ¿Qué viene después?](#108-qué-viene-después)
-  - [10.9. Mapa de Conexiones entre Temas](#109-mapa-de-conexiones-entre-temas)
+  - [10.9. Mapa de conexiones entre temas](#109-mapa-de-conexiones-entre-temas)
 
 
-# 10. Resumen y Conclusiones
+# 10. Resumen y conclusiones
 
 > 💡 **Punto de partida:** Hemos recorrido todo el camino desde qué es el software hasta los perfiles profesionales. Este resumen consolida todo lo aprendido.
 
@@ -32,7 +32,7 @@ Hemos visto la teoría completa del Desarrollo de Software. Este punto consolida
 - Consolidar el vocabulario técnico
 - Tener una referencia rápida para el examen
 
-## 10.1. Mapa Conceptual de la Unidad
+## 10.1. Mapa conceptual de la unidad
 
 ```mermaid
 graph TD
@@ -100,14 +100,14 @@ graph TD
     style CS fill:#2196F3,color:#fff
 ```
 
-## 10.2. Conceptos Clave
+## 10.2. Conceptos clave
 
-### Software y Hardware
+### Software y hardware
 - **Software:** Parte lógica (sistema, aplicación, desarrollo)
 - **Hardware:** Parte física (CPU, RAM, disco, periféricos)
 - **Relación:** El SO actúa como intermediario entre aplicaciones y hardware
 
-### Ciclo de Vida del Software
+### Ciclo de vida del software
 1. **Planificación:** Objetivos, viabilidad y costes
 2. **Análisis:** Requisitos funcionales y no funcionales (ERS)
 3. **Diseño:** Arquitectura y especificación de módulos
@@ -117,19 +117,19 @@ graph TD
 7. **Explotación:** Despliegue y puesta en producción
 8. **Mantenimiento:** Correctivo, perfectivo, evolutivo, adaptativo
 
-### Modelos de Desarrollo
+### Modelos de desarrollo
 - **Clásicos:** Cascada (rígido, lineal), Modelo en V (verificación paralelas)
 - **Prototipos:** Rápidos (desechables) o evolutivos
 - **Evolutivos:** Iterativo Incremental, Espiral (gestión de riesgos)
 - **Ágiles:** Manifiesto Ágil, Scrum (sprints), Kanban (flujo), XP (parejas)
 
-### Lenguajes de Programación
+### Lenguajes de programación
 - **Por nivel:** Bajo (máquina, ensamblador), Medio (C), Alto (Java, Python)
 - **Por traducción:** Compilados (C++), Interpretados (JS), Mixtos (Java)
 - **Por tipado:** Estático vs Dinámico, Fuerte vs Débil
 - **Paradigmas:** Imperativa, POO, Funcional, Declarativa
 
-### Proceso de Traducción
+### Proceso de traducción
 1. **Análisis Léxico:** Tokens
 2. **Análisis Sintáctico:** Árbol sintáctico
 3. **Análisis Semántico:** Compatibilidad de tipos
@@ -138,7 +138,7 @@ graph TD
 6. **Código Objeto:** Binario no ejecutable
 7. **Enlazador:** Une librerías y genera ejecutable
 
-### Máquinas Virtuales
+### Máquinas virtuales
 - **Concepto:** Capa entre bytecode y hardware (portabilidad)
 - **Ejemplos:** JVM, .NET CLR
 - **Runtime:** Entorno de ejecución (JRE)
@@ -151,7 +151,7 @@ graph TD
 - **CLR:** Gestiona memoria (GC) y compila JIT a código nativo
 - **Proceso:** .cs → Roslyn → IL/CIL → JIT → Código máquina
 
-## 10.3. Herramientas y Perfiles
+## 10.3. Herramientas y perfiles
 
 ### Herramientas CASE (por fases)
 - **U-CASE:** Planificación y análisis
@@ -168,7 +168,7 @@ graph TD
 - **Programador:** Codificación y pruebas unitarias
 - **QA/Tester:** Validación y verificación de calidad
 
-## 10.4. Checklist de Supervivencia
+## 10.4. Checklist de supervivencia
 
 Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas preguntas:
 
@@ -183,7 +183,7 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 - [ ] ¿Clasifico C# según nivel, traducción, tipado y paradigma?
 - [ ] ¿Explico qué es Roslyn y cómo compila C#?
 
-## 10.5. Errores Comunes a Evitar
+## 10.5. Errores comunes a evitar
 
 | Error | Por qué está mal | Cómo evitarlo |
 |-------|------------------|---------------|
@@ -196,7 +196,7 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 | Olvidar la documentación | El software sin documentación es inmantenible | Documentar por fases, no todo al final |
 | No usar un IDE | Programar en bloc de notas es lento y propenso a errores | Usar Rider o VS Code desde el primer día |
 
-## 10.6. Glosario de Términos
+## 10.6. Glosario de términos
 
 | Término | Definición |
 |---------|------------|
@@ -221,7 +221,7 @@ Antes de dar por cerrado el tema, asegúrate de poder responder **SÍ** a estas 
 | **Full-Stack** | Desarrollador que trabaja front-end y back-end |
 | **NuGet** | Gestor de paquetes de .NET |
 
-## 10.7. Ejercicios de Repaso
+## 10.7. Ejercicios de repaso
 
 1. **Clasificación**: Clasifica Python, C#, JavaScript y C en las 5 dimensiones de lenguajes (abstracción, traducción, paradigma, tipado, inferencia).
 
@@ -250,7 +250,7 @@ En la **UD02: Entornos de Desarrollo** profundizaremos en las herramientas concr
 > - **Conoce a tu equipo**: Entender los perfiles profesionales (arquitecto, analista, programador, QA) te hará un mejor desarrollador porque sabrás comunicarte con cada rol.
 > - **Elige el modelo de desarrollo adecuado**: Si los requisitos cambian (como en una app móvil), usa Scrum o Kanban. Si son fijos (sistema bancario), Cascada puede funcionar. No hay un modelo único para todo.
 
-## 10.9. Mapa de Conexiones entre Temas
+## 10.9. Mapa de conexiones entre temas
 
 ```mermaid
 graph LR

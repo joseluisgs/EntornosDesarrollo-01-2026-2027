@@ -1,4 +1,4 @@
-- [9. Caso de Estudio: El Lenguaje C# y la Plataforma .NET](#9-caso-de-estudio-el-lenguaje-c-y-la-plataforma-net)
+- [9. Caso de estudio: el lenguaje C# y la plataforma .NET](#9-caso-de-estudio-el-lenguaje-c-y-la-plataforma-net)
   - [9.1. Introducción a C# y .NET](#91-introducción-a-c-y-net)
   - [9.2. Clasificación de C# según lo visto en la unidad](#92-clasificación-de-c-según-lo-visto-en-la-unidad)
     - [9.2.1. Según nivel de abstracción](#921-según-nivel-de-abstracción)
@@ -12,13 +12,13 @@
     - [9.3.3. Enlazador y generación de ensamblados](#933-enlazador-y-generación-de-ensamblados)
   - [9.4. La máquina virtual: CLR y JIT](#94-la-máquina-virtual-clr-y-jit)
     - [9.4.1. ¿Qué es la CLR (Common Language Runtime)?](#941-qué-es-la-clr-common-language-runtime)
-    - [9.4.2. JIT (Just-In-Time Compilation)](#942-jit-just-in-time-compilation)
+    - [9.4.2. JIT (Just-In-Time compilation)](#942-jit-just-in-time-compilation)
     - [9.4.3. Comparación con Java](#943-comparación-con-java)
   - [9.5. .NET Framework vs .NET (Core)](#95-net-framework-vs-net-core)
 
 
 
-# 9. Caso de Estudio: El Lenguaje C# y la Plataforma .NET
+# 9. Caso de estudio: el lenguaje C# y la plataforma .NET
 
 > 💡 **Punto de partida:** Hemos visto teoría sobre lenguajes, compilación, máquinas virtuales... pero, ¿cómo funciona todo esto en la práctica? Vamos a aplicar todo lo aprendido a un lenguaje real: C#.
 
@@ -361,7 +361,7 @@ string nombre = "Ana";  // Reserva memoria
 
 > 💡 **Analogía:** La CLR es como un traductor automático que llevas en el bolsillo. Tú hablas en "C#" y ella traduce al "procesador" en tiempo real.
 
-### 9.4.2. JIT (Just-In-Time Compilation)
+### 9.4.2. JIT (Just-In-Time compilation)
 
 El **JIT** (Compilación Justo a Tiempo) es el proceso que convierte el código IL a código máquina nativo.
 

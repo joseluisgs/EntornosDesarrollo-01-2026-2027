@@ -1,25 +1,25 @@
-- [6. Proceso de Traducción, Máquinas Virtuales y Entornos de Ejecución](#6-proceso-de-traducción-máquinas-virtuales-y-entornos-de-ejecución)
-  - [6.1. Proceso de Traducción: Compilación e Interpretación](#61-proceso-de-traducción-compilación-e-interpretación)
-    - [6.1.1. Diferenciación entre Traducción, Compilación e Interpretación](#611-diferenciación-entre-traducción-compilación-e-interpretación)
-    - [6.1.2. Fases de un Traductor (Compilador/Intérprete)](#612-fases-de-un-traductor-compiladorintérprete)
-      - [1. Análisis Léxico (Scanner)](#1-análisis-léxico-scanner)
-      - [2. Análisis Sintáctico (Parser)](#2-análisis-sintáctico-parser)
-      - [3. Análisis Semántico](#3-análisis-semántico)
-      - [4. Generación de Código Intermedio](#4-generación-de-código-intermedio)
-      - [5. Optimización de Código](#5-optimización-de-código)
-      - [6. Generación de Código Objeto](#6-generación-de-código-objeto)
-      - [7. Enlazador (Linker) y Cargador (Loader)](#7-enlazador-linker-y-cargador-loader)
-  - [6.2. Códigos Fuente, Objeto y Ejecutable](#62-códigos-fuente-objeto-y-ejecutable)
-  - [6.3. Máquinas Virtuales y Entornos de Ejecución](#63-máquinas-virtuales-y-entornos-de-ejecución)
-    - [6.3.1. Concepto de Máquina Virtual](#631-concepto-de-máquina-virtual)
+- [6. Proceso de traducción, máquinas virtuales y entornos de ejecución](#6-proceso-de-traducción-máquinas-virtuales-y-entornos-de-ejecución)
+  - [6.1. Proceso de traducción: compilación e interpretación](#61-proceso-de-traducción-compilación-e-interpretación)
+    - [6.1.1. Diferenciación entre traducción, compilación e interpretación](#611-diferenciación-entre-traducción-compilación-e-interpretación)
+    - [6.1.2. Fases de un traductor (compilador/intérprete)](#612-fases-de-un-traductor-compiladorintérprete)
+      - [1. Análisis léxico (scanner)](#1-análisis-léxico-scanner)
+      - [2. Análisis sintáctico (parser)](#2-análisis-sintáctico-parser)
+      - [3. Análisis semántico](#3-análisis-semántico)
+      - [4. Generación de código intermedio](#4-generación-de-código-intermedio)
+      - [5. Optimización de código](#5-optimización-de-código)
+      - [6. Generación de código objeto](#6-generación-de-código-objeto)
+      - [7. Enlazador (linker) y cargador (loader)](#7-enlazador-linker-y-cargador-loader)
+  - [6.2. Códigos fuente, objeto y ejecutable](#62-códigos-fuente-objeto-y-ejecutable)
+  - [6.3. Máquinas virtuales y entornos de ejecución](#63-máquinas-virtuales-y-entornos-de-ejecución)
+    - [6.3.1. Concepto de máquina virtual](#631-concepto-de-máquina-virtual)
     - [Funciones principales de una máquina virtual](#funciones-principales-de-una-máquina-virtual)
-    - [6.3.2. Entornos de Ejecución (Runtime Environments)](#632-entornos-de-ejecución-runtime-environments)
+    - [6.3.2. Entornos de ejecución (runtime environments)](#632-entornos-de-ejecución-runtime-environments)
     - [6.3.3. Frameworks](#633-frameworks)
     - [Ventajas de utilizar un framework](#ventajas-de-utilizar-un-framework)
     - [Inconvenientes](#inconvenientes)
 
 
-# 6. Proceso de Traducción, Máquinas Virtuales y Entornos de Ejecución
+# 6. Proceso de traducción, máquinas virtuales y entornos de ejecución
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado cómo tu código en Python o Java se convierte en algo que el procesador entiende? ¿Y por qué la misma aplicación puede funcionar en Windows, Linux y Mac? La respuesta está en los procesos de traducción y las máquinas virtuales.
 
@@ -38,7 +38,7 @@ En el Punto 05 vimos los tipos de lenguajes y sus mecanismos de traducción. Aho
 - Comprender qué es una máquina virtual y por qué existe
 - Conocer los entornos de ejecución y frameworks más comunes
 
-## 6.1. Proceso de Traducción: Compilación e Interpretación
+## 6.1. Proceso de traducción: compilación e interpretación
 
 Para que el ordenador entienda algo escrito en un lenguaje de programación, debe pasar por un proceso de traducción de código. La traducción de un programa escrito en un lenguaje de programación a un lenguaje de máquina se realiza mediante un **traductor**, que puede ser un **compilador** o un **intérprete**.
 
@@ -46,7 +46,7 @@ Para que el ordenador entienda algo escrito en un lenguaje de programación, deb
 > - **Compilar:** Traducir TODO el libro al español antes de leerlo (trabajo largo antes, lectura rápida después)
 > - **Interpretar:** Leerlo con un traductor que te va traduciendo frase por frase mientras lees (más lento pero adaptable)
 
-### 6.1.1. Diferenciación entre Traducción, Compilación e Interpretación
+### 6.1.1. Diferenciación entre traducción, compilación e interpretación
 
 - **Traducción**: Es el proceso general de transformar código de un lenguaje a otro.
 - **Compilación**: Proceso que traduce el código fuente completo a código objeto o binario ejecutable en un solo paso. Un ejemplo es el compilador de C.
@@ -139,7 +139,7 @@ graph LR
 
 Otro ejemplo: React usa JSX (una mezcla de JavaScript y HTML) que se transpila a JavaScript puro con Babel. Los desarrolladores escriben JSX porque es más legible, y Babel lo convierte en llamadas a `React.createElement()` que el navegador entiende.
 
-### 6.1.2. Fases de un Traductor (Compilador/Intérprete)
+### 6.1.2. Fases de un traductor (compilador/intérprete)
 
 Un **traductor** es un programa que convierte el código escrito por un programador (código fuente) en un lenguaje que la máquina puede entender directamente (código máquina o código objeto). Este proceso no es una simple traducción palabra por palabra, sino que se lleva a cabo en varias fases bien definidas.
 
@@ -168,7 +168,7 @@ graph TD
 
 ![Diagrama: Fases de un Compilador](/images/fases_compilador.png)
 
-#### 1. Análisis Léxico (Scanner)
+#### 1. Análisis léxico (scanner)
 
 Es la primera fase del proceso. El **analizador léxico** lee el código fuente carácter a carácter y lo agrupa en unidades lógicas llamadas **tokens**. Un token representa una unidad léxica, como una palabra clave (`if`, `while`), un identificador (`variableX`), un operador (`+`, `=`), o un literal (`"hola mundo"`, `123`). También se encarga de eliminar comentarios y espacios en blanco.
 
@@ -184,7 +184,7 @@ Es la primera fase del proceso. El **analizador léxico** lee el código fuente 
 
 > 💡 **Analogía:** El análisis léxico es como un niño aprendiendo a leer que primero identifica letras, luego sílabas y finalmente palabras completas. El scanner hace lo mismo: caracteres → palabras → tokens.
 
-#### 2. Análisis Sintáctico (Parser)
+#### 2. Análisis sintáctico (parser)
 
 Una vez que los tokens han sido identificados, el **analizador sintáctico** toma esta secuencia y comprueba que la estructura del programa sea gramaticalmente correcta. Este proceso genera una representación jerárquica del código, conocida como **Árbol Sintáctico (o Árbol de Análisis)**, también llamado AST (Abstract Syntax Tree). Si la secuencia de tokens no cumple con las reglas gramaticales del lenguaje, se genera un error de sintaxis.
 
@@ -208,7 +208,7 @@ graph TD
 
 > 📝 **Nota:** Cuando el compilador dice "Syntax error at line 10", está diciendo que los tokens no se pueden organizar en una estructura válida según las reglas del lenguaje.
 
-#### 3. Análisis Semántico
+#### 3. Análisis semántico
 
 En esta fase se verifica el "sentido" del programa, asegurando que las operaciones sean lógicamente coherentes y permitidas. El **analizador semántico** comprueba aspectos como:
 
@@ -244,7 +244,7 @@ Si el código supera esta fase, se garantiza que es válido y tiene un significa
 
 > 💡 **Consejo:** Un programa puede tener sintaxis correcta pero semántica incorrecta. "El gato come la televisión" es gramaticalmente correcto pero no tiene sentido.
 
-#### 4. Generación de Código Intermedio
+#### 4. Generación de código intermedio
 
 Antes de producir el código máquina final, muchos compiladores generan un **código intermedio**. Este es un lenguaje de bajo nivel, parecido al ensamblador, pero independiente de la arquitectura de la máquina de destino. Esta fase simplifica el diseño del compilador, ya que las optimizaciones pueden realizarse sobre este código genérico en lugar de sobre múltiples arquitecturas de máquina.
 
@@ -258,7 +258,7 @@ x = t2
 
 > 📝 **Nota:** Java usa el "bytecode" como código intermedio. Es como un ensamblador universal que todas las JVMs pueden entender.
 
-#### 5. Optimización de Código
+#### 5. Optimización de código
 
 Esta fase es opcional pero crucial para el rendimiento. El **optimizador** mejora el código intermedio (o, en algunos casos, el código final) para que el programa resultante sea más eficiente. El objetivo puede ser reducir el tiempo de ejecución, minimizar el tamaño del archivo o disminuir el consumo de memoria. Existen diversas técnicas de optimización, como la eliminación de código redundante o la sustitución de expresiones por resultados precalculados.
 
@@ -275,11 +275,11 @@ Ejemplo real: si escribes `const int x = 5 + 3;`, el compilador detecta que es u
 
 > 💡 **Dato:** El compilador de C (gcc) con optimización `-O3` puede hacer que tu código sea 10-100 veces más rápido que sin optimizar, pero el código resultante es casi imposible de entender para humanos.
 
-#### 6. Generación de Código Objeto
+#### 6. Generación de código objeto
 
 En esta fase, el código intermedio (ya optimizado) se convierte en **código máquina** de la arquitectura específica (por ejemplo, x86, ARM). El resultado es un archivo binario que contiene instrucciones que la CPU puede ejecutar directamente. Sin embargo, este código aún no es un programa completo, ya que las referencias a funciones o datos de otras partes del programa o de librerías externas están representadas por etiquetas simbólicas.
 
-#### 7. Enlazador (Linker) y Cargador (Loader)
+#### 7. Enlazador (linker) y cargador (loader)
 
 - **Enlazador (Linker):** Es el programa que toma uno o más archivos de código objeto y los combina con las **librerías** y rutinas necesarias (como las funciones para entrada y salida) para crear un único **archivo ejecutable** completo. El enlazador resuelve las referencias simbólicas, asignando direcciones de memoria reales. En lenguajes como C, esto incluye las instrucciones del preprocesador (ej. `#include`), que se encargan de incluir el contenido de otros archivos antes de la compilación.
 
@@ -289,7 +289,7 @@ Ejemplo práctico: cuando escribes `Console.WriteLine("Hola")` en C#, tu código
 
 - **Cargador (Loader):** Aunque no es parte del compilador, es la fase final que se encarga de cargar el archivo ejecutable en la memoria RAM y prepara su ejecución cuando el usuario lo inicia.
 
-## 6.2. Códigos Fuente, Objeto y Ejecutable
+## 6.2. Códigos fuente, objeto y ejecutable
 
 Durante el proceso de codificación, el código pasa por diferentes estados:
 
@@ -317,9 +317,9 @@ graph LR
 
 > 💡 **Dato:** Cuando desarrollas en Java, trabajas con código fuente (.java). El compilador javac genera bytecode (.class). Cuando ejecutas `java MiClase`, la JVM carga el bytecode y lo interpreta/JIT-compila a código máquina nativo.
 
-## 6.3. Máquinas Virtuales y Entornos de Ejecución
+## 6.3. Máquinas virtuales y entornos de ejecución
 
-### 6.3.1. Concepto de Máquina Virtual
+### 6.3.1. Concepto de máquina virtual
 
 Una **máquina virtual (MV)** es un tipo especial de software cuya misión es separar el funcionamiento del ordenador de los componentes hardware instalados. Actúa como una capa de software de bajo nivel, haciendo de puente entre el bytecode de la aplicación y los dispositivos físicos del sistema. Esto garantiza la **portabilidad** de las aplicaciones, permitiendo desarrollarlas y ejecutarlas sobre cualquier equipo, independientemente de sus características hardware.
 
@@ -377,7 +377,7 @@ graph TB
 
 ![img05](/images/lenguajes_traduccion.gif)
 
-### 6.3.2. Entornos de Ejecución (Runtime Environments)
+### 6.3.2. Entornos de ejecución (runtime environments)
 
 Un **entorno de ejecución** es un servicio de máquina virtual que sirve como base software para la ejecución de programas. Puede pertenecer al sistema operativo o instalarse como software independiente. Es un conjunto de utilidades que permiten la ejecución de programas. Se encarga de configurar la memoria principal, enlazar los archivos del programa con bibliotecas existentes y subprogramas creados, y depurar programas (comprobar errores semánticos).
 

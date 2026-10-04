@@ -1,22 +1,22 @@
-- [2. Conceptos Fundamentales: Software y Hardware](#2-conceptos-fundamentales-software-y-hardware)
-  - [2.1. ¿Qué es el Software?](#21-qué-es-el-software)
-    - [Tipos de Software](#tipos-de-software)
-      - [Software de Sistema](#software-de-sistema)
-      - [Software de Aplicación](#software-de-aplicación)
-      - [Software de Desarrollo (o de Programación)](#software-de-desarrollo-o-de-programación)
+- [2. Conceptos fundamentales: software y hardware](#2-conceptos-fundamentales-software-y-hardware)
+  - [2.1. ¿Qué es el software?](#21-qué-es-el-software)
+    - [Tipos de software](#tipos-de-software)
+      - [Software de sistema](#software-de-sistema)
+      - [Software de aplicación](#software-de-aplicación)
+      - [Software de desarrollo (o de programación)](#software-de-desarrollo-o-de-programación)
     - [Tipos según personalización](#tipos-según-personalización)
       - [Software a medida](#software-a-medida)
       - [Software estándar](#software-estándar)
-  - [2.2. ¿Qué es el Hardware?](#22-qué-es-el-hardware)
+  - [2.2. ¿Qué es el hardware?](#22-qué-es-el-hardware)
     - [La metáfora de la cocina](#la-metáfora-de-la-cocina)
-  - [2.3. Relación Hardware-Software](#23-relación-hardware-software)
-    - [Tabla comparativa: Software vs Hardware](#tabla-comparativa-software-vs-hardware)
+  - [2.3. Relación hardware-software](#23-relación-hardware-software)
+    - [Tabla comparativa: software vs hardware](#tabla-comparativa-software-vs-hardware)
     - [Desde el punto de vista del sistema operativo](#desde-el-punto-de-vista-del-sistema-operativo)
     - [Desde el punto de vista de las aplicaciones](#desde-el-punto-de-vista-de-las-aplicaciones)
     - [El puente hardware-software](#el-puente-hardware-software)
 
 
-# 2. Conceptos Fundamentales: Software y Hardware
+# 2. Conceptos fundamentales: software y hardware
 
 > 💡 **Punto de partida:** ¿Alguna vez te has preguntado por qué tu móvil funciona, mientras que un ladrillo del mismo tamaño no hace nada? La diferencia está en el software.
 
@@ -34,15 +34,15 @@ En el Punto 01 vimos qué es el desarrollo de software y sus fases. Ahora veremo
 - Comprender la relación entre software y hardware
 - Reconocer los tipos de software según su función
 
-## 2.1. ¿Qué es el Software?
+## 2.1. ¿Qué es el software?
 
 El **software** es la parte intangible o lógica de un sistema informático. Es el conjunto de programas informáticos que actúan sobre el hardware para ejecutar lo que el usuario desee. Se desarrolla para llevar a cabo una tarea determinada, se comunica con el hardware y le indica qué hacer, y se encarga de traducir las instrucciones de los usuarios.
 
 > 💡 **Analogía:** El hardware es como el cuerpo humano (órganos, huesos, músculos) y el software es como la mente y los pensamientos. Sin cuerpo no hay donde "vivir", pero sin mente no hay acciones ni decisiones.
 
-### Tipos de Software
+### Tipos de software
 
-#### Software de Sistema
+#### Software de sistema
 Es el software base que debe estar instalado y configurado en el ordenador para que las aplicaciones puedan ejecutarse y funcionar. Incluye el sistema operativo (como Windows, Linux, Mac OS X) y los *drivers* o controladores de dispositivos.
 
 **Ejemplos en tu día a día:**
@@ -52,7 +52,7 @@ Es el software base que debe estar instalado y configurado en el ordenador para 
 
 > 💡 **Ejemplo real:** ¿Alguna vez has actualizado Windows y tu impresora ha dejado de funcionar? Eso es un problema de driver: el sistema operativo cambió y el controlador necesita actualizarse para entender las nuevas órdenes. Por eso los fabricantes publican drivers periódicamente.
 
-#### Software de Aplicación
+#### Software de aplicación
 Es un conjunto de programas que tienen una finalidad más o menos concreta. Ejemplos incluyen suites ofimáticas, navegadores, editores de imagen, procesadores de textos, hojas de cálculo, reproductores de música o videojuegos.
 
 **Ejemplos:**
@@ -63,7 +63,7 @@ Es un conjunto de programas que tienen una finalidad más o menos concreta. Ejem
 - Spotify, Netflix (entretenimiento)
 - WhatsApp, Telegram (mensajería)
 
-#### Software de Desarrollo (o de Programación)
+#### Software de desarrollo (o de programación)
 Es el conjunto de herramientas que permiten desarrollar programas informáticos. Esto incluye editores, compiladores, intérpretes, entre otros.
 
 **Herramientas que usarás en DAW:**
@@ -92,7 +92,7 @@ Es un software genérico válido para cualquier cliente potencial y resuelve mú
 
 > 📝 **Nota:** En DAW vais a crear tanto software a medida (prácticas y proyectos) como a integrar soluciones estándar (usando APIs, conectando con bases de datos existentes, etc.). Ambos enfoques son valiosos en la industria.
 
-## 2.2. ¿Qué es el Hardware?
+## 2.2. ¿Qué es el hardware?
 
 El **hardware** es el conjunto de dispositivos físicos que conforman un ordenador. Los componentes principales del sistema informático incluyen:
 
@@ -150,11 +150,11 @@ graph TB
 
 > 💡 **Reflexión:** Abre tu móvil. ¿Cuántos componentes de hardware identificas? (pantalla, batería, cámara, altavoz...) ¿Y cuántos de software? (sistema operativo, apps, fotos, contactos...)
 
-## 2.3. Relación Hardware-Software
+## 2.3. Relación hardware-software
 
 Existe una relación indisoluble entre hardware y software, ya que ambos necesitan estar instalados y configurados correctamente para que el equipo funcione. El software se ejecutará sobre los dispositivos físicos.
 
-### Tabla comparativa: Software vs Hardware
+### Tabla comparativa: software vs hardware
 
 | Característica | Software | Hardware |
 |----------------|----------|----------|

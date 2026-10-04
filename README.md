@@ -1,4 +1,4 @@
-# Entornos de Desarrollo - 01 - Desarrollo de Software
+# Entornos de desarrollo - 01 - desarrollo de software
 
 UD1.  Desarrollo de Software. 1DAW. Curso 2026-2027
 
@@ -24,7 +24,7 @@ UD1.  Desarrollo de Software. 1DAW. Curso 2026-2027
 - [El Lenguaje C# y .NET](https://youtu.be/4Zm3UyXn3Y8)
 - [Lista de Reproducción](https://www.youtube.com/playlist?list=PLIaRVRNDWeMA)
 
-## Resultados de Aprendizaje y Criterios de Evaluación
+## Resultados de aprendizaje y criterios de evaluación
 
 - RA1: Reconoce los elementos y herramientas que intervienen en el desarrollo de un programa informático, analizando sus características y las fases en las que actúan hasta llegar a su puesta en funcionamiento.
 
