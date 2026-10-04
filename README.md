@@ -6,25 +6,25 @@ UD1.  Desarrollo de Software. 1DAW. Curso 2026-2027
 
 ## Contenidos
 
-1. [Introducción al desarrollo de software](./01-introduccion.md)
-2. [Software y hardware](./02-software-hardware.md)
-3. [Ciclo de vida del desarrollo de software](./03-ciclo-vida.md)
-4. [Modelos y metodologías de desarrollo](./04-modelos-metodologias.md)
-5. [Lenguajes de programación](./05-lenguajes-programacion.md)
-6. [Proceso de traducción](./06-proceso-traduccion.md)
-7. [Herramientas de apoyo al desarrollo](./07-herramientas-apoyo.md)
-8. [Perfiles del desarrollo de software](./08-perfiles.md)
-9. [Caso de estudio: el lenguaje C# y .NET](./09-caso-estudio.md)
-10. [Resumen y conclusiones](./10-resumen.md)
+1. [Introducción al Desarrollo de Software](./01-introduccion.md)
+2. [Software y Hardware](./02-software-hardware.md)
+3. [Ciclo de Vida del Desarrollo de Software](./03-ciclo-vida.md)
+4. [Modelos y Metodologías de Desarrollo](./04-modelos-metodologias.md)
+5. [Lenguajes de Programación](./05-lenguajes-programacion.md)
+6. [Proceso de Traducción](./06-proceso-traduccion.md)
+7. [Herramientas de Apoyo al Desarrollo](./07-herramientas-apoyo.md)
+8. [Perfiles del Desarrollo de Software](./08-perfiles.md)
+9. [Caso de Estudio: El lenguaje C# y .NET](./09-caso-estudio.md)
+10. [Resumen y Conclusiones](./10-resumen.md)
 
 ## Contenido en YouTube
 
 - [Resumen](https://youtu.be/1adhUS7xS6k)
-- [Análisis de lenguajes](https://youtu.be/mNJhKuermjo)
-- [El lenguaje C# y .NET](https://youtu.be/4Zm3UyXn3Y8)
-- [Lista de reproducción](https://www.youtube.com/playlist?list=PLIaRVRNDWeMA)
+- [Análisis de Lenguajes](https://youtu.be/mNJhKuermjo)
+- [El Lenguaje C# y .NET](https://youtu.be/4Zm3UyXn3Y8)
+- [Lista de Reproducción](https://www.youtube.com/playlist?list=PLIaRVRNDWeMA)
 
-## Resultados de aprendizaje y criterios de evaluación
+## Resultados de Aprendizaje y Criterios de Evaluación
 
 - RA1: Reconoce los elementos y herramientas que intervienen en el desarrollo de un programa informático, analizando sus características y las fases en las que actúan hasta llegar a su puesta en funcionamiento.
 
