@@ -3,9 +3,10 @@
 
 # Práctica 3: análisis de lenguajes de programación según TIOBE
 
-**Objetivo:** Realizar un análisis exhaustivo de los 20 lenguajes de programación más demandados según el Índice TIOBE.
+> 💡 **Punto de partida:** ¿Sabrías decir por qué unos lenguajes dominan el ranking TIOBE y otros caen? Hoy investigarás el estado real de los lenguajes.
 
----
+**Objetivos de aprendizaje:** Realizar un análisis exhaustivo de los 20 lenguajes de programación más demandados según el Índice TIOBE.
+
 
 **Instrucciones para el Alumnado:**
 

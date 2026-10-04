@@ -3,9 +3,10 @@
 
 # Práctica 5: comparativa de lenguajes - Java, C#, Python y TypeScript
 
-**Objetivo:** Comprender y analizar en profundidad el proceso de compilación y ejecución de cuatro lenguajes de programación modernos, identificando las similitudes y diferencias clave.
+> 💡 **Punto de partida:** ¿Qué ocurre exactamente cuando pulsas F5 en C# y por qué Python no hace lo mismo? Hoy compararás cuatro lenguajes en acción.
 
----
+**Objetivos de aprendizaje:** Comprender y analizar en profundidad el proceso de compilación y ejecución de cuatro lenguajes de programación modernos, identificando las similitudes y diferencias clave.
+
 
 **Descripción:**
 

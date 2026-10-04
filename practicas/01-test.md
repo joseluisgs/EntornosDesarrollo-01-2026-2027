@@ -9,9 +9,15 @@
 
 # Práctica 1: test de conocimientos
 
+> 💡 **Punto de partida:** ¿Sabrías explicar la diferencia entre software y hardware sin mirar los apuntes? Este test te dice por dónde vas antes de empezar.
+
+**Objetivos de aprendizaje:**
+- Repasar los conceptos clave de la unidad
+- Detectar tus lagunas antes del examen
+- Practicar el razonamiento tipo test
+
 **Instrucciones:** Lee atentamente cada pregunta y selecciona la opción que consideres correcta.
 
----
 
 ### Bloque 1: software y hardware (preguntas 1-8)
 
@@ -63,7 +69,6 @@
     c) Ayudar a crear nuevo software (compiladores, editores, etc.).
     d) Proteger el ordenador de virus.
 
----
 
 ### Bloque 2: ciclo de vida del software (preguntas 9-16)
 
@@ -115,7 +120,6 @@
     c) Solo comentarios en el código.
     d) No es una fase del ciclo de vida.
 
----
 
 ### Bloque 3: modelos y metodologías (preguntas 17-26)
 
@@ -179,7 +183,6 @@
     c) Project Manager.
     d) Development Team.
 
----
 
 ### Bloque 4: lenguajes de programación (preguntas 27-36)
 
@@ -243,7 +246,6 @@
     c) No necesitan compilador ni intérprete.
     d) Solo funcionan en un sistema operativo.
 
----
 
 ### Bloque 5: proceso de traducción y máquinas virtuales (preguntas 37-44)
 
@@ -295,7 +297,6 @@
     c) Un depurador.
     d) Un enlazador.
 
----
 
 ### Bloque 6: herramientas y perfiles (preguntas 45-50)
 

@@ -3,9 +3,15 @@
 
 # Práctica 2: cuestionario de razonamiento
 
+> 💡 **Punto de partida:** ¿Por qué un requisito mal entendido en la fase de análisis sale carísimo más adelante? Hoy razonarás sobre el ciclo de vida, no memorizarás fases.
+
+**Objetivos de aprendizaje:**
+- Relacionar las fases del ciclo de vida con casos reales
+- Justificar por qué no podemos saltarnos pasos
+- Practicar la explicación técnica por escrito
+
 **Instrucciones:** Responde a cada pregunta explicando tu razonamiento y basándote en la información proporcionada.
 
----
 
 1.  **Impacto de errores tempranos en el Ciclo de Vida del Software.**
     Durante la fase de Análisis de un proyecto de desarrollo de software, Ada, la supervisora, enfatiza la importancia de definir los requisitos de manera "completa y sin omisiones" y "evitar ambigüedades". Explica por qué un error o una mala interpretación en esta etapa inicial puede tener un "fuerte impacto negativo" en las fases posteriores del desarrollo y cómo esto contrasta con la creencia de que solo se pierde tiempo en las primeras etapas.

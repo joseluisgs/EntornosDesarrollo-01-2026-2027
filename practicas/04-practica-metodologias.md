@@ -3,9 +3,10 @@
 
 # Práctica 4: análisis comparativo de modelos de desarrollo
 
-**Objetivo:** Analizar y comparar los modelos de desarrollo de software clásicos, evolutivos y ágiles, identificando sus características, ventajas, desventajas y su aportación actual.
+> 💡 **Punto de partida:** ¿Cascada, espiral o ágil? Elegir metodología es elegir cómo afrontas el riesgo de un proyecto.
 
----
+**Objetivos de aprendizaje:** Analizar y comparar los modelos de desarrollo de software clásicos, evolutivos y ágiles, identificando sus características, ventajas, desventajas y su aportación actual.
+
 
 **Instrucciones para el Alumnado:**
 
