@@ -324,6 +324,8 @@ Para ver cómo el ciclo de vida se aplica en la práctica, vamos a seguir las 9 
 
 ### Fase 3 — diseño
 
+Antes de escribir el código en serio, decides sobre el papel cómo se va a organizar el programa: qué pasos tiene y en qué orden. Fíjate en que este esqueleto usa nombres de función como PedirNota o CalcularMedia sin entrar aún en cómo funcionan: eso es exactamente lo que da de sí la fase de diseño.
+
 ```csharp
 // Diseño de la estructura
 double nota1 = PedirNota("Primera nota");
@@ -334,6 +336,8 @@ MostrarResultado(media);
 ```
 
 ### Fase 4 — codificación
+
+Con el diseño en la mano, toca traducir cada paso a código real de C#. Aquí es donde sustituyes los nombres inventados del diseño por instrucciones concretas que la máquina entiende.
 
 ```csharp
 Console.Write("Primera nota: ");
@@ -363,6 +367,8 @@ else
 
 ### Fase 6 — documentación
 
+Un programa sin documentación es un misterio incluso para su propio autor. En esta fase redactas las instrucciones mínimas que necesita cualquier persona para usar tu programa sin tener que preguntarte cómo.
+
 ```markdown
 # Calculadora de Calificaciones
 ## Uso
@@ -372,6 +378,8 @@ else
 ```
 
 ### Fase 7 — explotación
+
+El programa ya está probado y documentado: toca ponerlo a trabajar para los usuarios. En este caso basta con lanzarlo desde la consola, pero en un proyecto real el paso sería instalarlo en el ordenador de quien lo va a usar.
 
 ```bash
 dotnet run
