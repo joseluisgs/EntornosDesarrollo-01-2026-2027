@@ -91,7 +91,7 @@ Imagina que quieres construir una casa. ¿Empezarías a colocar ladrillos sin te
 ### La regla del 80/20
 En desarrollo de software se cumple una regla no escrita: el **80% del tiempo** de un proyecto se dedica a **mantenimiento y evolución**, mientras que solo el **20%** corresponde al desarrollo inicial. Por eso es crucial hacer las cosas bien desde el principio.
 
-> 📝 **Nota:** En los módulos de DAW, vais a practicar cada fase del ciclo de vida. En el primer trimestre nos centraremos más en planificación y análisis; en segundo y tercero profundizaremos en diseño y codificación. Las prácticas profesionales (FCT) os permitirán ver el ciclo completo en empresas reales.
+> 📝 **Nota:** En los módulos de DAW, vais a practicar cada fase del ciclo de vida. En el primer trimestre nos centraremos más en planificación y análisis; en segundo y tercero profundizaremos en diseño y codificación. Las prácticas profesionales (FEE) os permitirán ver el ciclo completo en empresas reales.
 
 ---
 
