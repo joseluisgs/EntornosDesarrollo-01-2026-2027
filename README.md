@@ -24,6 +24,10 @@ UD1.  Desarrollo de Software. 1DAW. Curso 2026-2027
 - [El lenguaje C# y .NET](https://youtu.be/4Zm3UyXn3Y8)
 - [Lista de reproducción](https://www.youtube.com/playlist?list=PLIaRVRNDWeMA)
 
+## Presentaciones
+
+- Presentación PDF ([tema claro](presentaciones/ud01-desarrollo-software-claro.pdf), [tema oscuro](presentaciones/ud01-desarrollo-software-oscuro.pdf))
+
 ## Resultados de Aprendizaje y Criterios de Evaluación
 
 - RA1: Reconoce los elementos y herramientas que intervienen en el desarrollo de un programa informático, analizando sus características y las fases en las que actúan hasta llegar a su puesta en funcionamiento.
